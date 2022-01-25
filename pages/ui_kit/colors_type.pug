@@ -1,7 +1,16 @@
 extends ../../templates/sample
 block variables 
-  - var titlePage = 'Colors/Type'
+  - var titlePage = 'Colors & Type'
 block style       
+  include ../../blocks/squares/squares.css
+  include ../../blocks/logo/logo.css
+  include ../../blocks/text-examples/text-examples.css
   
 block content
-  include ../../blocks/logo/logo
+  .logo__wrapper
+    include ../../blocks/logo/logo
+  .container
+    .content__wrapper
+      include ../../blocks/squares/squares
+      include ../../blocks/text-examples/text-examples
+      
