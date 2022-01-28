@@ -1,0 +1,26 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: 1350px;
+  background:  #F4F4F6;
+
+}
+
+.container{
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.header__wrapper{
+  margin-top: 67px;
+}  
+
+.header__wrapper--account{
+  margin-top: 40px;
+} 
+
+.footer__wrapper{
+  margin-top: 40px;
+}

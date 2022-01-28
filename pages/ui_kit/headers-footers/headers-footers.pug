@@ -1,0 +1,21 @@
+extends ../../../templates/sample
+block variables 
+  - var titlePage = 'Headers & Footers'
+block style       
+  include ../../../blocks/logo/logo.css
+  include headers-footers.css  
+  include ../../../blocks/header/header.css  
+  include ../../../blocks/header-account/header-account.css  
+  include ../../../blocks/footer/footer.css
+block content
+  .logo__wrapper
+    include ../../../blocks/logo/logo
+  .container
+    .header__wrapper  
+      include ../../../blocks/header/header  
+  .container
+    .header__wrapper--account  
+      include ../../../blocks/header-account/header-account
+  .container 
+    .footer__wrapper 
+      include ../../../blocks/footer/footer   

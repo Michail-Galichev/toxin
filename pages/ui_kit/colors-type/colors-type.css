@@ -1,0 +1,22 @@
+body {
+  width: 1440px;
+  height: 900px;
+  padding: 0px;
+  margin: 0px;
+  background: white;
+}
+
+.container {
+  max-width: 1132px;
+  margin: 67px 158px 145px 150px;
+}
+
+.content__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/*# sourceMappingURL=colors-type.css.map */
