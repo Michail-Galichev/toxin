@@ -1,15 +1,5 @@
 @import "mixins.scss";
 
-.container {
-  max-width: 1132px;
-  margin: 67px 158px 145px 150px;
-}
-
-.content__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
 .squares__group {
   display: flex;
 }
