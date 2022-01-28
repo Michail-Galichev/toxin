@@ -1,0 +1,100 @@
+@import "mixins.scss";
+
+.header {
+  display: flex;
+  height: 70px;
+  max-width: 1440px;
+  background: rgba(255, 255, 255, 1);
+
+}
+
+.header__logo {
+  display: flex;
+  margin-left: 140px;
+  margin-right: 244px;
+  cursor: pointer;
+}
+
+.header__img--logo {
+  margin-right: 12.5px;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+}
+.header__ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.header__menu--link {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-right: 20px;
+}
+
+.header__menu--link:hover{
+  color: rgba(31, 32, 65, 0.75);
+ 
+}
+
+.material-icons-outlined {
+  @include expand_more;
+  width: 24px;
+  height: 21px;
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 20px;
+}
+
+.material-icons-outlined:hover{
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.header__ul--service {
+  margin-right: 0;
+}
+
+.header__ul--agreements {
+  margin-right: 0;
+}
+
+.header__buttons{
+  display: flex;
+  align-items: center;
+  
+}
+
+
+.header__buttons--to-come-in{
+  margin-right:20px;
+  @include button;
+  width: 95px;  
+}
+
+.header__buttons--registration{
+  @include button;
+  width: 196px;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
+  color:#ffffff;
+}
+
+.header__buttons--to-come-in:hover{
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  }
+
+
+.header__buttons--registration:hover{
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
