@@ -1,12 +1,11 @@
-mixin menu-footer(classMenu,classLink,punktOne,punktTwo,punktThree,punktFour,punktFive)
+mixin menu-footer(classMenu,punktOne,punktTwo,punktThree,punktFour,punktFive)
   ul(class=classMenu)
+    li(class="footer__menu--link footer__menu--first"  href="") #{punktOne}
     li
-      a(class=classLink href="") #{punktOne}
+      a(class="footer__menu--link" href="") #{punktTwo}
     li
-      a(class=classLink href="") #{punktTwo}
+      a(class="footer__menu--link" href="") #{punktThree}   
     li
-      a(class=classLink href="") #{punktThree}   
+      a(class="footer__menu--link" href="") #{punktFour}
     li
-      a(class=classLink href="") #{punktFour}
-    li
-      a(class=classLink href="") #{punktFive}
+      a(class="footer__menu--link" href="") #{punktFive}
