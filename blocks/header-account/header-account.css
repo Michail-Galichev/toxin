@@ -51,7 +51,7 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.material-icons-outlined {
+.header__menu--img {
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -75,7 +75,7 @@
   margin-right: 20px;
 }
 
-.material-icons-outlined:hover {
+.header__menu--img:hover {
   color: rgba(31, 32, 65, 0.75);
 }
 
