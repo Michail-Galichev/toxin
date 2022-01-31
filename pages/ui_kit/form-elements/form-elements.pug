@@ -1,0 +1,60 @@
+extends ../../../templates/sample
+block variables 
+  - var titlePage = 'Form elements'
+  - var textField = 'text field'
+  - var dropdown = 'dropdown'
+  - var deFault = 'default'
+  - var hoverFocus = 'hover/focus'
+  - var masked = 'masked text field'
+  - var dateDropdown = 'date dropdown'
+  - var filterDateDropdown = 'filter date dropdown'
+  - var subscriptionTextField = 'subscription text field'
+  - var expandet = 'expandet text field'
+  - var expandableCheckboxList = 'expandable checkbox list'
+  - var richCheckboxButtons = 'rich checkbox buttons'
+  - var checkboxButtons = 'checkbox buttons'
+  - var radioButtons = 'radio buttons'
+  - var toogle = 'toogle'
+  - var likeButton = 'like button'
+  - var rateButton = 'rate button'
+  - var rangeSlider = 'range slider'
+  - var buttons = 'buttons'
+  - var pagination = 'pagination'
+
+block style       
+  include form-elements.css
+  include ../../../blocks/logo/logo.css
+  include ../../../blocks/text-field-default/text-field-default.css
+  include ../../../blocks/text-field-hover-focus/text-field-hover-focus.css  
+  include ../../../blocks/text-field-dropdown/text-field-dropdown.css
+  include ../../../blocks/masked-text-field/masked-text-field.css
+  include ../../../blocks/date-dropdown/date-dropdown.css
+  include ../../../blocks/filter-date-dropdown/filter-date-dropdown.css
+  include ../../../blocks/subscription-text-field/subscription-text-field.css
+  include ../../../blocks/checkbox-buttons/checkbox-buttons.css
+  include ../../../blocks/radio-buttons/radio-buttons.css
+block content
+  .logo__wrapper
+    include ../../../blocks/logo/logo
+  .container
+    .text-fields__wrapper
+      .text-field-default__wrapper 
+        include ../../../blocks/text-field-default/text-field-default  
+      .text-field-hover-focus__wrapper 
+        include ../../../blocks/text-field-hover-focus/text-field-hover-focus
+      .text-field-dropdown__wrapper 
+        include ../../../blocks/text-field-dropdown/text-field-dropdown
+      .masked-text-field__wrapper
+        include ../../../blocks/masked-text-field/masked-text-field
+      .date-dropdown__wrapper
+        include ../../../blocks/date-dropdown/date-dropdown
+      .filter-date-dropdown__wrapper
+        include ../../../blocks/filter-date-dropdown/filter-date-dropdown
+      .subscription-text-field__wrapper
+        include ../../../blocks/subscription-text-field/subscription-text-field
+    .checkbox-radio-buttons__wrapper
+      .checkbox__wrapper 
+        include ../../../blocks/checkbox-buttons/checkbox-buttons
+      .radio__wrapper 
+        include ../../../blocks/radio-buttons/radio-buttons
+    .slider-buttons__wrapper    
