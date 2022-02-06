@@ -19,6 +19,7 @@ block variables
   - var rateButton = 'rate button'
   - var rangeSlider = 'range slider'
   - var buttons = 'buttons'
+  - var textButton = 'click me' 
   - var pagination = 'pagination'
 
 block style       
@@ -33,6 +34,11 @@ block style
   include ../../../blocks/subscription-text-field/subscription-text-field.css
   include ../../../blocks/checkbox-buttons/checkbox-buttons.css
   include ../../../blocks/radio-buttons/radio-buttons.css
+  include ../../../blocks/toogle/toogle.css
+  include ../../../blocks/like-buttons/like-buttons.css
+  include ../../../blocks/rate-buttons/rate-buttons.css
+  include ../../../blocks/slider/slider.css
+  include ../../../blocks/buttons/buttons.css
 block content
   .logo__wrapper
     include ../../../blocks/logo/logo
@@ -57,4 +63,17 @@ block content
         include ../../../blocks/checkbox-buttons/checkbox-buttons
       .radio__wrapper 
         include ../../../blocks/radio-buttons/radio-buttons
-    .slider-buttons__wrapper    
+      .toogle__wrapper 
+        include ../../../blocks/toogle/toogle
+      .like-buttons__wrapper 
+        include ../../../blocks/like-buttons/like-buttons
+      .rate-buttons__wrapper 
+        include ../../../blocks/rate-buttons/rate-buttons
+    .slider-buttons__wrapper
+      .slider__wrapper 
+        include ../../../blocks/slider/slider
+      .buttons__wrapper
+        include ../../../blocks/buttons/buttons
+block scripts
+  script 
+    include ../../../blocks/slider/slider.js
