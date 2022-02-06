@@ -15,23 +15,15 @@ height : 1853px;
 .text-fields__wrapper{
   display: flex;
   flex-direction: column;
-  
   margin: 62px 0 0 141px;
-  border: 1px solid;
+  
 }
 
 .checkbox-radio-buttons__wrapper{
   display: flex;
   flex-direction: column;
   margin: 62px 132px 0 126px;
-  border: 1px solid;
-}
-
-.slider-buttons__wrapper{
-display: flex;
-max-width: 320px;
-border: 1px solid;
-margin: 62px 141px 0 0
+  
 }
 
 .text-field-default__wrapper  {
@@ -54,4 +46,20 @@ margin: 62px 141px 0 0
   margin-bottom: 40px;
 }
 
+.toogle__wrapper{
+  margin-top: 35px;
+}
+
+.slider-buttons__wrapper{
+  display: flex;
+  max-width: 320px;
+  border: 1px solid;
+  margin-top: 62px;
+  margin-right: 141px;
+  flex-direction: column;
+}
+
+.buttons__wrapper{
+  display: flex;
+}
 
