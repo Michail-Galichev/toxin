@@ -9,7 +9,6 @@ block variables
   - var dateDropdown = 'date dropdown'
   - var filterDateDropdown = 'filter date dropdown'
   - var subscriptionTextField = 'subscription text field'
-  - var expandet = 'expandet text field'
   - var expandableCheckboxList = 'expandable checkbox list'
   - var richCheckboxButtons = 'rich checkbox buttons'
   - var checkboxButtons = 'checkbox buttons'
@@ -21,6 +20,10 @@ block variables
   - var buttons = 'buttons'
   - var textButton = 'click me' 
   - var pagination = 'pagination'
+  - var expanded = 'expanded'
+  - var expCheckList = 'expandable checkbox list'
+  - var richCheckbox = 'rich checkbox buttons'
+  - var bulletList = 'bullet list' 
 
 block style       
   include form-elements.css
@@ -39,6 +42,18 @@ block style
   include ../../../blocks/rate-buttons/rate-buttons.css
   include ../../../blocks/slider/slider.css
   include ../../../blocks/buttons/buttons.css
+  include ../../../blocks/pagination/pagination.css
+  include ../../../blocks/dropdown-comfort-default/dropdown-comfort-default.css
+  include ../../../blocks/dropdown-comfort-expanded/dropdown-comfort-expanded.css
+  include ../../../styles/dropdown/dropdown.css
+  include ../../../blocks/dropdown-guests-empty/dropdown-guests-empty.css
+  include ../../../blocks/dropdown-guests-filled-in/dropdown-guests-filled-in.css
+  include ../../../blocks/checkbox-list-advanced/checkbox-list-advanced.css
+  include ../../../blocks/checkbox-list-closed/checkbox-list-closed.css
+  include ../../../blocks/rich-checkbox/rich-checkbox.css
+  include ../../../blocks/bullet-list/bullet-list.css
+  include ../../../blocks/comfort-indicators/comfort-indicators.css
+  include ../../../blocks/comments/comments.css
 block content
   .logo__wrapper
     include ../../../blocks/logo/logo
@@ -74,6 +89,35 @@ block content
         include ../../../blocks/slider/slider
       .buttons__wrapper
         include ../../../blocks/buttons/buttons
+      .pagination__wrapper 
+        include ../../../blocks/pagination/pagination
+    .dropdowns__wrapper 
+      .dropdown-comfort__wrapper
+        .dropdown-comfort-default__wrapper
+          include ../../../blocks/dropdown-comfort-default/dropdown-comfort-default
+        .dropdown-comfort-expanded__wrapper
+          include ../../../blocks/dropdown-comfort-expanded/dropdown-comfort-expanded
+      .dropdown-guests-empty__wrapper
+        include ../../../blocks/dropdown-guests-empty/dropdown-guests-empty
+      .dropdown-guests-filled-in__wrapper
+        include ../../../blocks/dropdown-guests-filled-in/dropdown-guests-filled-in
+    .lists__wrapper 
+      .checkbox-lists__wrapper
+        .checkbox-list-closed__wrapper
+          include ../../../blocks/checkbox-list-closed/checkbox-list-closed
+        .checkbox-list-advanced__wrapper
+          include ../../../blocks/checkbox-list-advanced/checkbox-list-advanced
+      .rich-checkbox__wrapper
+        include ../../../blocks/rich-checkbox/rich-checkbox
+      .bullet-list__wrapper
+        include ../../../blocks/bullet-list/bullet-list
+    .user-reviews__wrapper
+      .advantages__wrapper
+        include ../../../blocks/comfort-indicators/comfort-indicators
+      .comments__wrapper
+        include ../../../blocks/comments/comments
 block scripts
   script 
     include ../../../blocks/slider/slider.js
+    include ../../../blocks/dropdown-guests-filled-in/dropdown-guests-filled-in.js
+    
