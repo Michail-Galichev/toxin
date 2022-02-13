@@ -1,10 +1,6 @@
 .like
   .like__header #{likeButton}
   .like__buttons 
-    .like--none-checked
-      .like__favorite--none-checked
-      .like__count--none-checked 2 
-    .like--checked
-      .like__favorite--checked
-      .like__count--checked 12
-
+    include like-none-checked 
+    include like-checked   
+    
