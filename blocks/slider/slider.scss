@@ -1,13 +1,11 @@
 .js--range-slider{
   display: flex;
   flex-direction: column;
-  border: 1px solid;
   margin-bottom: 40px;
 }
 
 .range-slider__text{
   display: flex;
-  justify-content: space-between;
   margin-bottom: 20px;
 }
 
@@ -20,6 +18,7 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041; 
+  margin-right: 69px;
 }
 
 .js--range-slider__price {
