@@ -1,0 +1,21 @@
+mixin dropdown-comfort(nameOne,nameTwo,nameThree, inputFirst, inputAverage, inputLast)
+  .dropdown__counting-block
+    .dropdown__names 
+      .dropdown__name #{nameOne}
+      .dropdown__name #{nameTwo}
+      .dropdown__name #{nameThree}
+    .dropdown__count-buttons--minus
+      .dropdown__minus.js--com-minus--first -
+      .dropdown__minus.js--com-minus--average -
+      .dropdown__minus.js--com-minus--last -
+    .dropdown__counters  
+      input(type="text" class="dropdown__input js--com-count--first" placeholder=inputFirst) 
+      input(type="text" class="dropdown__input js--com-count--average" placeholder=inputAverage) 
+      input(type="text" class="dropdown__input js--com-count-last" placeholder=inputLast)
+    .dropdown__count-buttons--plus
+      .dropdown__plus.js--com-plus--first +
+      .dropdown__plus.js--com-plus--average +
+      .dropdown__plus.js--com-plus--last +
+  
+
+
