@@ -1,0 +1,61 @@
+@mixin text-link {
+  height: 15px;
+  top: 131px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}
+
+
+@mixin counter {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1f2041;
+  display: flex;
+  height: 13px;
+  width: 84px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+/*миксин кнопок дропдауна +*/
+
+@mixin circle-plus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  font-family: Montserrat;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+ }
+
+/*миксин кнопок дропдауна -*/
+
+@mixin circle-minus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+ }

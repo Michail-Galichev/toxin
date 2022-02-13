@@ -1,0 +1,102 @@
+@import "dropdown-mixins.scss";
+
+.dropdown__counting-block{
+  display: flex;
+  position:relative;
+  margin-bottom: 10px;
+}
+
+.dropdown__names {
+  display: flex;
+  flex-direction: column;
+  margin: 13px 19px 17px 15px;
+}
+
+.dropdown__count-buttons--plus{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;  
+  top: 7px;
+  right: 7px;
+}
+
+.dropdown__count-buttons--minus{
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  top: 7px;
+  right: 69px;  
+}
+
+.dropdown__counters{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 13px;
+  right: 7px;
+
+} 
+
+.dropdown__plus {
+  @include circle-plus;
+  margin-bottom: 7px;
+}
+
+.dropdown__minus {
+  @include circle-minus;
+  margin-bottom: 7px;
+}
+
+.dropdown__name {
+  width: 83px;
+  height: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #1f2041;
+
+}
+
+.dropdown__name:not(:last-child){
+  margin-bottom: 22px;
+}
+
+.dropdown__input{
+  @include counter;
+}
+
+.dropdown__input:not(:last-child){
+  margin-bottom: 22px;
+}
+
+.dropdown__input::placeholder{
+  text-align: center;
+  color: #1f2041;
+  opacity: 1;
+}  
+
+.dropdown__action-buttons{
+  display: flex;
+  height: 15px;
+ position: relative;
+  }   
+
+.dropdown__clear{
+  @include text-link;
+  position:absolute;
+  left: 14px;
+  top: 4px;
+  
+}
+.dropdown__to-apply{
+  @include text-link;
+  position:absolute;
+  left: 229px;
+  top: 4px;
+}
