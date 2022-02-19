@@ -1,0 +1,67 @@
+@import "date-dropwomn-mixins.scss";
+
+.date-dropdown {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.date-dropdown__headers {
+  display: flex;
+  
+  
+}
+
+.date-dropdown__inputs {
+  display: flex;
+}
+
+.date-dropdown__header{
+width: 150px;
+height: 15px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+margin-bottom: 5px;
+}
+
+.date-dropdown__header:not(:last-child){
+  margin-right: 20px;
+}
+
+.date-dropdown__input{
+width: 150px;
+height: 44px;
+background: #FFFFFF;
+border: 1px solid rgba(31, 32, 65, 0.25);
+box-sizing: border-box;
+border-radius: 4px;
+padding-left: 15px;
+}
+
+.date-dropdown__input:not(:last-child){
+  margin-right: 20px;
+}
+
+.date-dropdown__input::placeholder{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.75);
+}
+
+.date-dropdown__expand-more--left{
+  left: 104px; 
+  @include expand-more;
+}
+
+.date-dropdown__expand-more--right{
+  left: 274px; 
+  @include expand-more;
+}

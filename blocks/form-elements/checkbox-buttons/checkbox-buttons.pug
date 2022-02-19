@@ -1,0 +1,15 @@
+.checkbox
+  .checkbox__header #{checkboxButtons}
+  label.checkbox__label 
+    input.checkbox__input(type="checkbox")
+    .checkbox__view    
+    | Можно курить
+  label.checkbox__label 
+    input.checkbox__input(type="checkbox" checked='') 
+    .checkbox__view
+    | Можно с питомцами
+  label.checkbox__label.checkbox__gast
+    input.checkbox__input(type="checkbox" checked="")
+    .checkbox__view 
+    | Можно пригласить гостей
+    |(до 10 человек)

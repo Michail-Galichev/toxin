@@ -1,0 +1,8 @@
+.dropdown-com-exp
+  .dropdown-com-exp__text
+    .dropdown-com-exp__header #{dropdown}
+    .dropdown-com-exp__condition #{expanded}
+  input(type="text" readonly class="dropdown-com-exp__input" placeholder="2 спальни, 2 кровати...")
+  .dropdown-com-exp__expand-more expand_more
+  .dropdown-com-exp__form
+    +dropdown-comfort("спальни", "кровати", "ванные комнаты", "0", "0","0")
