@@ -1,0 +1,44 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Cards'
+  - var dateDropdownIn = 'Прибытие'
+  - var dateDropdownOut = 'Выезд'
+  - var dropdown = 'гости'
+  - var mainText = 'подобрать номер'
+  - var masked = 'дата рождения'
+  - var textButton = 'войти'
+block style 
+  include cards.css
+  include ../../../blocks/colors-type/logo/logo.css
+  include ../../../styles/dropdown/dropdown.css
+  include ../../../blocks/cards/search-form/search-form.css
+  include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
+  include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/cards/registration-form/registration-form.css
+  include ../../../blocks/form-elements/text-field-default/text-field-default.css
+  include ../../../blocks/form-elements/radio-buttons/radio-buttons.css
+  include ../../../blocks/form-elements/masked-text-field/masked-text-field.css
+  include ../../../blocks/form-elements/toogle/toogle.css
+  include ../../../blocks/cards/booking-form/booking-form.css
+  include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
+  
+block content
+  .logo__wrapper
+    include ../../../blocks/colors-type/logo/logo
+  .container
+    .left__wrapper
+      .search-form__wrapper
+        include ../../../blocks/cards/search-form/search-form
+      .registration-form__wrapper 
+        include ../../../blocks/cards/registration-form/registration-form
+    .average__wrapper
+      .booking-form__wrapper
+        include ../../../blocks/cards/booking-form/booking-form
+      .entry-form__wrapper 
+    .right__wrapper
+block scripts
+  script 
+    include ../../../blocks/cards/search-form/search-form.js
+    include ../../../blocks/cards/registration-form/registration-form.js
+    include ../../../blocks/cards/booking-form/booking-form.js
