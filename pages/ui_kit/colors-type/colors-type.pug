@@ -2,17 +2,17 @@ extends ../../../templates/sample
 block variables 
   - var titlePage = 'Colors & Type'
 block style       
-  include ../../../blocks/squares/squares.css
-  include ../../../blocks/logo/logo.css
-  include ../../../blocks/text-examples/text-examples.css
+  include ../../../blocks/colors-type/squares/squares.css
+  include ../../../blocks/colors-type/logo/logo.css
+  include ../../../blocks/colors-type/text-examples/text-examples.css
   include colors-type.css
   
   
 block content
   .logo__wrapper
-    include ../../../blocks/logo/logo
+    include ../../../blocks/colors-type/logo/logo
   .container
     .content__wrapper
-      include ../../../blocks/squares/squares
-      include ../../../blocks/text-examples/text-examples
+      include ../../../blocks/colors-type/squares/squares
+      include ../../../blocks/colors-type/text-examples/text-examples
       
