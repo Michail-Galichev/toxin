@@ -1,0 +1,38 @@
+@import "squares-mixins.scss";
+
+.squares__group {
+  display: flex;
+}
+
+.square {
+  @include square;
+  margin: 0 40px 20px 0;
+}
+
+.square--darck-shade-100 {
+  background: #1f2041;
+}
+.square--darck-shade-75 {
+  background: rgba(31, 32, 65, 0.75);
+}
+.square--darck-shade-50 {
+  background: rgba(31, 32, 65, 0.5);
+}
+.square--darck-shade-25 {
+  background: rgba(31, 32, 65, 0.25);
+}
+.square--darck-shade-5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.square--purple {
+  background: #bc9cff;
+}
+.square--green {
+  background: #6fcf97;
+  margin-bottom: 0;
+}
+.square__header {
+  @include colors-text;
+  margin-top: 7px;
+}
+
