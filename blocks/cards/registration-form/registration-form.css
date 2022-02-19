@@ -18,7 +18,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #1F2041;
-  margin: 40px 30px 20px 30px;
+  margin: 35px 30px 10px 30px;
 }
 
 .text-field-default__input[placeholder='Имя'] {
@@ -57,7 +57,7 @@
 }
 
 .registration-form__button-wrapper {
-  margin: 24px 0 0 30px;
+  margin: 24px 0 30px 30px;
 }
 
 .registration-form__account-wrapper {
@@ -74,7 +74,7 @@
   margin: 0;
 }
 
-.account-text {
+.registration-form__account-text {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
