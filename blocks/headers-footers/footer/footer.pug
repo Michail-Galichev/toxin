@@ -1,0 +1,15 @@
+.footer
+  .footer__booking
+    .footer__logo 
+      img(class="footer__img--logo" src="../../../static/image/logo-gradient.svg", alt="")
+      img(class="footer__img--toxin" src="../../../static/image/toxin.svg", alt="")
+    .footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
+  .footer__menu
+    +menu-footer("footer__menu--nav", "Навигация", "О нас", "Новости", "Служба поддержки", "Услуги")
+    +menu-footer("footer__menu--about-us", "О нас", "О сервисе", "Наша команда", "Вакансии", "Инвесторы")
+    +menu-footer("footer__menu--support-service", "Служба поддержки", "Соглашения", "Сообщества", "Связь с нами" )
+  .footer__subscription
+    .subscription__header Подписка
+    .subscription__text Получайте специальные предложения и новости сервиса
+    input(class="subscription__input" type = "email" placeholder="Email")
+    .subscription__forvard arrow_forward

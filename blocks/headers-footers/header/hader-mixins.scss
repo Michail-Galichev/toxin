@@ -1,0 +1,33 @@
+@mixin expand_more {
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+@mixin button {
+  
+  
+  height: 32px;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(rgba(188, 156, 255, 1), rgba(139, 164, 249, 1)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+}
