@@ -1,29 +1,30 @@
 extends ../../../templates/sample
 block variables 
   - var titlePage = 'Headers & Footers'
+  - var userName = 'Галичев Михаил'
 block style       
-  include ../../../blocks/logo/logo.css
-  include headers-footers.css  
-  include ../../../blocks/header/header.css  
-  include ../../../blocks/header-account/header-account.css  
-  include ../../../blocks/footer/footer.css
-  include ../../../blocks/copyright/copyright.css
-  include ../../../blocks/footer-mobile/footer-mobile.css
+  include ../../../blocks/colors-type/logo/logo.css
+  include headers-footers.css
+  include ../../../blocks/headers-footers/header/header.css  
+  include ../../../blocks/headers-footers/header-account/header-account.css  
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
 block content
   .logo__wrapper
-    include ../../../blocks/logo/logo
+    include ../../../blocks/colors-type/logo/logo
   .container
     .header__wrapper  
-      include ../../../blocks/header/header  
+      include ../../../blocks/headers-footers/header/header  
   .container
     .header__wrapper--account  
-      include ../../../blocks/header-account/header-account
+      include ../../../blocks/headers-footers/header-account/header-account
   .container 
     .footer__wrapper 
-      include ../../../blocks/footer/footer   
+      include ../../../blocks/headers-footers/footer/footer   
   .container 
     .copyright__wrapper
-      include ../../../blocks/copyright/copyright
+      include ../../../blocks/headers-footers/copyright/copyright
   .container
     .footer-mobile__wrapper 
-      include ../../../blocks/footer-mobile/footer-mobile
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile
