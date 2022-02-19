@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "header-account-mixins.scss"
-    ],
-    "names": [],
-    "file": "header-account-mixins.css"
-}
