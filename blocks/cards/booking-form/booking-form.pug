@@ -1,0 +1,30 @@
+form.booking-form(action="#")
+  .booking-form__header 
+    .booking-form__number № 
+      span.booking-form__value 888 
+    .booking-form__luxury люкс
+    .booking-form__price 9 990₽ 
+      span.booking-form__per-day в сутки
+  .booking-form__date-wrapper 
+    include ../../form-elements/date-dropdown/date-dropdown
+  .booking-form__date-guests 
+    include ../../form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in
+  .booking-form__cost-calculation-wrapper
+    .booking-form__cost-of-accommodation
+      .booking-form__price-per-period 9 990₽ х 4 суток
+      .booking-form__total-cost 39 960₽
+    .booking-form__cost-of-services
+      .booking-form__service-fee Сбор за услуги: скидка 2 179₽
+      .booking-form__info-button
+        .booking-form__info-button--content i
+      .booking-form__amount-for-services 0₽
+    .booking-form__additional-services
+      .booking-form__additional-services-fee Сбор за дополнительные услуги
+      .booking-form__info-button
+        .booking-form__info-button--content i
+      .booking-form__amount-for-add-services 330₽
+    .booking-form__final-cost
+      .booking-form__total Итого
+      .booking-form__total 38 081₽
+  .booking-form__button-wrapper
+    include ../../form-elements/buttons/button-price

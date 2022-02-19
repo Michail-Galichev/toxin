@@ -1,0 +1,22 @@
+form(class="registration-form" action="#")
+  .registration-form__header Регистрация аккаунта
+  .registration-form__user-name-wrapper
+    include ../../form-elements/text-field-default/text-field-default
+    include ../../form-elements/text-field-default/text-field-default
+  .registration-form__radio-wrapper
+    include ../../form-elements/radio-buttons/radio-buttons
+  .registration-form__date-of-birth-wrapper
+    include ../../form-elements/masked-text-field/masked-text-field
+  .registration-form__data-service Данные для входа в сервис
+  .registration-form__data-service-wrapper 
+    include ../../form-elements/text-field-default/text-field-default
+    include ../../form-elements/text-field-default/text-field-default
+  .registration-form__toogle-wrapper 
+    include ../../form-elements/toogle/toogle-none-checked
+  .registration-form__button-wrapper 
+    include ../../form-elements/buttons/button-price  
+  .registration-form__account-wrapper
+    .registration-form__account-text 
+      p.account-text Уже есть аккаунт на Toxin
+    .registration-form__account-button-wrapper
+      include ../../form-elements/buttons/button-border

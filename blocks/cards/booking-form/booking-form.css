@@ -1,0 +1,170 @@
+.booking-form {
+  width: 380px;
+  height: 512px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.booking-form__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 40px 0 0 30px;
+}
+
+.booking-form__number {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+}
+
+.booking-form__value {
+  font-size: 24px;
+}
+
+.booking-form__luxury {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin: 5px 0 0 8px;
+}
+
+.booking-form__price {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  margin: 5px 0 0 102px;
+}
+
+.booking-form__per-day {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.booking-form__date-wrapper {
+  margin: 20px 0 0 30px;
+}
+
+.booking-form__date-guests {
+  margin: 20.56px 0 0 30px;
+}
+
+.booking-form__cost-calculation-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.booking-form__cost-of-accommodation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 30px 0 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.booking-form__cost-of-services,
+.booking-form__additional-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 30px 0 31px;
+}
+
+.booking-form__service-fee {
+  margin-right: 5px;
+  width: 214px;
+  white-space: pre;
+}
+
+.booking-form__additional-services-fee {
+  width: 214px;
+  margin-right: 5px;
+}
+
+.booking-form__final-cost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 30px 0 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.booking-form__button-wrapper {
+  margin: 20px 30px;
+}
+
+.booking-form__info-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.booking-form__amount-for-services {
+  margin-left: 60px;
+  width: 20px;
+  height: 24px;
+}
+
+.booking-form__amount-for-add-services {
+  margin-left: 43px;
+}
+
+.booking-form__info-button--content {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+/*# sourceMappingURL=booking-form.css.map */

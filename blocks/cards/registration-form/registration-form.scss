@@ -1,0 +1,81 @@
+.registration-form{
+width: 380px;
+height: 646px;
+background: #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.12);
+box-sizing: border-box;
+box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.registration-form__header{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+color: #1F2041;
+margin: 40px 30px 20px 30px;
+}
+
+.text-field-default__input[placeholder='Имя']{
+  margin-bottom: 5px;
+}
+
+.text-field-default__input{
+  margin-bottom: 5px;
+}
+
+.text-field-default__input{
+  margin-left: 30px;
+}
+
+.registration-form__radio-wrapper{
+  margin: 10.44px 0 23.56px 30px;
+  
+}
+
+.registration-form__date-of-birth-wrapper{
+  margin: 0px 30px 20px 30px;
+}
+
+.registration-form__toogle-wrapper {
+  margin-left: 30px;
+}
+
+.registration-form__data-service{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+margin-left: 30px;
+}
+
+.registration-form__button-wrapper {
+  margin: 24px 0 0 30px;
+}
+
+.registration-form__account-wrapper{
+display: flex;
+justify-content: space-between;
+margin: 30px;
+}
+
+.button__border{
+  margin: 0;
+}
+
+.account-text{
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+display: flex;
+align-items: center;
+text-align: center;
+color: #000000;
+}
