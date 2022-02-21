@@ -26,11 +26,14 @@
   display: flex;
 }
 
+.rate__buttons--left {
+  margin-right: 20px;
+}
+
 .rate__stars--left {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 20px;
 }
 
 .rate__stars--right {
@@ -59,5 +62,6 @@
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
+  cursor: pointer;
 }
 /*# sourceMappingURL=rate-buttons.css.map */
