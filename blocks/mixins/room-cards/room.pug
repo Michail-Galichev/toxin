@@ -1,0 +1,27 @@
+mixin room(path,number,price,reviews,first,luxury)  
+  form(action="#" class="room-card__form") 
+    .room-card__ellipces        
+      .room-card__ellipce
+      .room-card__ellipce
+      .room-card__ellipce
+      .room-card__ellipce
+    .room-card__expand-more
+      if(first)
+        .room-card__expand-more--left expand_more
+        .room-card__expand-more--right expand_more  
+    img.room-card__img(src=path)
+    .room-card__text
+      .room-card__header № 
+        span.room-card__number #{number}
+      if (luxury)
+        .room-card__luxury Люкс
+      .room-card__price #{price}&#8381;
+        span.room-card-per-day  в сутки
+    .room-cards__straight
+    .room-cards__estimation  
+      .room-card__rate-butttons
+        include ../../../blocks/form-elements/rate-buttons/rate-left
+      .room-card__quantity #{reviews} 
+          span.room-card__reviews Отзывов
+    
+    
