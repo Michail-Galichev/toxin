@@ -26,6 +26,12 @@ body{
     margin: 72px 0 0 40px;
   }
 
+  .right__wrapper{
+    display: flex;
+    flex-direction: column;
+    margin: 72px 0 0 40px;
+  }
+
   .registration-form__wrapper{
     margin-top: 40px;
   }
@@ -33,4 +39,8 @@ body{
 
   .entry-form__wrapper{
     margin-top: 40px;
+  }
+
+  .room-cards__wrapper {
+    margin-top: 40.5px
   }

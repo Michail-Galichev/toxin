@@ -7,10 +7,12 @@ block variables
   - var mainText = 'подобрать номер'
   - var masked = 'дата рождения'
   - var textButton = 'войти'
+  
 block style 
   include cards.css
   include ../../../blocks/colors-type/logo/logo.css
   include ../../../styles/dropdown/dropdown.css
+  include ../../../styles/room-cards/room.css
   include ../../../blocks/cards/search-form/search-form.css
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
   include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty.css
@@ -23,6 +25,9 @@ block style
   include ../../../blocks/cards/booking-form/booking-form.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
   include ../../../blocks/cards/entry-form/entry-form.css 
+  include ../../../blocks/cards/calendar/calendar.css
+  include ../../../blocks/form-elements/rate-buttons/rate-buttons.css
+  include ../../../blocks/cards/room-cards/room-cards.css
 block content
   .logo__wrapper
     include ../../../blocks/colors-type/logo/logo
@@ -38,9 +43,16 @@ block content
       .entry-form__wrapper
         include ../../../blocks/cards/entry-form/entry-form 
     .right__wrapper
+      .calendar__wrapper 
+        include ../../../blocks/cards/calendar/calendar
+      .room-cards__wrapper 
+        include ../../../blocks/cards/room-cards/room-cards
+        
 block scripts
   script 
     include ../../../blocks/cards/search-form/search-form.js
     include ../../../blocks/cards/registration-form/registration-form.js
     include ../../../blocks/cards/booking-form/booking-form.js
     include ../../../blocks/cards/entry-form/entry-form.js
+    include ../../../blocks/cards/calendar/calendar.js
+    include ../../../blocks/cards/room-cards/room-cards.js

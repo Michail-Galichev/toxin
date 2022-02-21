@@ -41,11 +41,26 @@ body {
   margin: 72px 0 0 40px;
 }
 
+.right__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 72px 0 0 40px;
+}
+
 .registration-form__wrapper {
   margin-top: 40px;
 }
 
 .entry-form__wrapper {
   margin-top: 40px;
+}
+
+.room-cards__wrapper {
+  margin-top: 40.5px;
 }
 /*# sourceMappingURL=cards.css.map */
