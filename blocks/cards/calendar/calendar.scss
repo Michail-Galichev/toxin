@@ -1,0 +1,198 @@
+.datepicker-inline {
+  width: 320px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+  z-index: 5;
+  flex-direction: column;
+}
+
+.datepicker--nav{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.datepicker--nav-title,
+.datepicker--nav-title i{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 23px;
+text-align: center;
+color: #1F2041;
+}
+
+.datepicker--cells {
+  flex-wrap: wrap;
+  display:flex;
+  margin: 0 20px 0 20px;
+}
+ 
+.arrov-prev{
+margin-left: 20px;
+font-family: Material Icons;
+transform: rotate(180deg);  
+font-size: 24px;
+cursor: pointer; 
+background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.arrov-next{
+margin-right: 20px;
+font-family: Material Icons;
+font-size: 24px;
+cursor: pointer;
+background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.datepicker--days-names{
+  display:flex;
+  margin: 21.2px 20px 0 19.88px;
+}
+
+.datepicker--day-name{
+  width: 40px;
+  height: 40px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #BC9CFF;
+}
+
+.datepicker--cell-day {
+  width: 39.88px;
+  height: 40px;
+  font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.-other-month- {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.-current- {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 22px;
+  color: #ffffff;
+}
+
+.-focus- {
+  background: linear-gradient(
+    180deg,
+    rgba(188, 156, 255, 0.25),
+    rgba(139, 164, 249, 0.25)
+  );
+  border-radius: 22px;
+  cursor: pointer;
+}
+
+.-selected- {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  color: #ffffff;
+  z-index: 6;
+}
+
+
+.-range-from-::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(188, 156, 255, 0.25),
+    rgba(139, 164, 249, 0.25)
+  );
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 50% 0 0 50%;
+  border-right: none;
+  z-index: -2;
+}
+
+.-range-to-::before {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(188, 156, 255, 0.25),
+    rgba(139, 164, 249, 0.25)
+  );
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  border-radius: 0 50% 50% 0;
+  border-left: none;
+  z-index: -6;
+}
+
+.-in-range- {
+  background: linear-gradient(
+    180deg,
+    rgba(188, 156, 255, 0.25),
+    rgba(139, 164, 249, 0.25)
+  );
+
+}
+
+.-in-range-.-focus- {
+  border-radius: 0px;
+}
+
+.-focus-.-range-to-{
+  border-radius: 0 50% 50% 0;
+}
+
+.-focus-.-range-from-{
+  border-radius: 50% 0 0 50%;
+}
+
+.-selected-.-focus-.-range-to-{
+  border-radius: 50%;
+}
+.-selected-.-focus-.-range-from-{
+  border-radius: 50%;
+}
+
+.-range-to-::before.-selected- {
+  color: #fff;
+  border-radius: 50%;
+}
+
+.datepicker__buttons{
+  display:flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+
+.datepicker__button{
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #bc9cff;
+}
