@@ -91,10 +91,10 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: left;
+  position: relative;
 }
 
 .subscription__header {
-  position: relative;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -189,8 +189,8 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  top: 574px;
-  left: 1256px;
   cursor: pointer;
+  top: 106px;
+  left: 214px;
 }
 /*# sourceMappingURL=footer.css.map */
