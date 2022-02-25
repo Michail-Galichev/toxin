@@ -190,6 +190,7 @@
   position: absolute;
   left: 14px;
   top: 4px;
+  display: none;
 }
 
 .dropdown__to-apply {
