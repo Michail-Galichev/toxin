@@ -1,0 +1,31 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Landing page/Guests dropdown'
+  - var mainText = 'Подобрать номер'
+  - var dropdown = 'гости'
+block style 
+  include ../../../styles/dropdown/dropdown.css
+  include landing-page-guests-dropdown.css
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/cards/search-form/search-form.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
+  include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+  
+block content 
+  .container
+    .guests-dropdown__header-wrapper
+      include ../../../blocks/headers-footers/header/header
+    .guests-dropdown__background-wrapper
+      .guests-dropdown__search-form-wrapper
+        include ../../../blocks/cards/search-form/search-form
+    .guests-dropdown__footer-wrapper
+      include ../../../blocks/headers-footers/footer/footer
+    .guests-dropdown__copyright-wrapper
+      include ../../../blocks/headers-footers/copyright/copyright
+block scripts
+  script 
+    include landing-page-guests-dropdown.js
+    

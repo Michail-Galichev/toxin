@@ -1,0 +1,33 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Landing page/Date dropdown'
+  - var mainText = 'Подобрать номер'
+  - var dropdown = 'гости'
+block style 
+  include ../../../styles/dropdown/dropdown.css
+  include landing-page-date-dropdown.css
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/cards/search-form/search-form.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
+  include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+  include ../../../blocks/cards/calendar/calendar.css
+block content 
+  .container
+    .date-dropdown__header-wrapper
+      include ../../../blocks/headers-footers/header/header
+    .date-dropdown__background-wrapper
+      .date-dropdown__search-form-wrapper
+        include ../../../blocks/cards/search-form/search-form
+        .date-dropdown__calendar-wrapper
+          include ../../../blocks/cards/calendar/calendar
+    .date-dropdown__footer-wrapper
+      include ../../../blocks/headers-footers/footer/footer
+    .date-dropdown__copyright-wrapper
+      include ../../../blocks/headers-footers/copyright/copyright
+block scripts
+  script 
+    include landing-page-date-dropdown.js
+    include ../../../blocks/cards/calendar/calendar.js

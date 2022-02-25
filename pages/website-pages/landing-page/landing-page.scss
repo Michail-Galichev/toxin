@@ -1,0 +1,32 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  max-width : 1440px;
+  height : 1343px;
+  }
+  
+  .container{
+    width: 1440px;
+    min-width: 320px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .landing-page__background-wrapper{
+   height: 900px;
+   width: 100%;
+   background-image: url(../../../static/image/landing-page.png);
+  }
+
+  .landing-page__search-form-wrapper{
+    margin: 70px 0 0 140px;
+    position: relative;
+
+  }
+
+  .landing-page__calendar-wrapper{
+    position: absolute;
+    top: 190px;
+    left: 30px;
+  }
