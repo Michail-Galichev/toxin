@@ -1,0 +1,24 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Registration'
+  - var mainText = 'зарегистрироваться'
+  - var textButton = 'войти'
+
+block style 
+  include ../../../styles/dropdown/dropdown.css
+  include registration.css
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/cards/registration-form/registration-form.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/form-elements/radio-buttons/radio-buttons.css
+  include ../../../blocks/form-elements/toogle/toogle.css
+  include ../../../blocks/form-elements/masked-text-field/masked-text-field.css
+  include ../../../blocks/form-elements/text-field-default/text-field-default.css
+block content
+  .container
+    .registartion__header-wrapper 
+      include ../../../blocks/headers-footers/header/header
+    .registartion__background-wrapper
+      .registration__form-wrapper 
+        include ../../../blocks/cards/registration-form/registration-form
+block scripts
