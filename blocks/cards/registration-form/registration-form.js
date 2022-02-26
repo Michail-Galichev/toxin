@@ -20,7 +20,7 @@ $ ( function(){
     'margin-bottom' : '0'
   });
 
-  $('.button__border').css({
+  $('.registration-form__account-button-wrapper .button__border').css({
     'margin-right' : '0'
   });
 

@@ -68,10 +68,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 30px;
-}
-
-.button__border {
-  margin: 0;
+  border: 1px solid;
 }
 
 .registration-form__account-text {
@@ -86,7 +83,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #000000;
 }
 /*# sourceMappingURL=registration-form.css.map */
