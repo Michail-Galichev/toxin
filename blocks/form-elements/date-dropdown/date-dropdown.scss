@@ -41,6 +41,14 @@ border: 1px solid rgba(31, 32, 65, 0.25);
 box-sizing: border-box;
 border-radius: 4px;
 padding-left: 15px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+color: rgba(31, 32, 65, 0.75);
+cursor: pointer;
+outline: none;
 }
 
 .date-dropdown__input:not(:last-child){
