@@ -19,12 +19,13 @@
   width: 320px;
   height: 44px;
   background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding-left: 15px;
   outline: none;
+  position: relative;
 }
 
 .dropdown-guests-filled-in__input::placeholder {
@@ -65,5 +66,8 @@
   width: 320px;
   background: #ffffff;
   border-top: none;
+  z-index: 5;
+  position:absolute;
+  top:64px;
 }
 

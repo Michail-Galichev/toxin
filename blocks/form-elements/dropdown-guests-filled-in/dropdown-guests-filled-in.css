@@ -24,13 +24,14 @@
   width: 320px;
   height: 44px;
   background: #ffffff;
-  border: 1px solid rgba(31, 32, 65, 0.5);
+  border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   padding-left: 15px;
   outline: none;
+  position: relative;
 }
 
 .dropdown-guests-filled-in__input::-webkit-input-placeholder {
@@ -108,5 +109,8 @@
   width: 320px;
   background: #ffffff;
   border-top: none;
+  z-index: 5;
+  position: absolute;
+  top: 64px;
 }
 /*# sourceMappingURL=dropdown-guests-filled-in.css.map */
