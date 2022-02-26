@@ -2,7 +2,7 @@ body{
   margin: 0px;
   padding: 0px;
   max-width : 1440px;
-  height : 1343px;
+  height : 100%;
   }
   
   .container{
@@ -13,6 +13,18 @@ body{
     flex-direction: column;
   }
 
+  .registartion__header-wrapper {
+    z-index: 5;
+  }
+
   .registartion__background-wrapper{
     background-image: url('../../../static/image/registration.png');
+    height: 100%;
+    width: 100%;
+    //position: relative;
+  }
+
+  .registration__form-wrapper {
+  z-index: 5;   
+    margin: 19px 577px;
   }

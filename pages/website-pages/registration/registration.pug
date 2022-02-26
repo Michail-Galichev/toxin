@@ -14,11 +14,17 @@ block style
   include ../../../blocks/form-elements/toogle/toogle.css
   include ../../../blocks/form-elements/masked-text-field/masked-text-field.css
   include ../../../blocks/form-elements/text-field-default/text-field-default.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
 block content
   .container
-    .registartion__header-wrapper 
-      include ../../../blocks/headers-footers/header/header
     .registartion__background-wrapper
+      .registartion__header-wrapper 
+        include ../../../blocks/headers-footers/header/header
       .registration__form-wrapper 
         include ../../../blocks/cards/registration-form/registration-form
+    .registration__footer-wrapper 
+      include ../../../blocks/headers-footers/footer/footer
+    .registration__copyright-wrapper
+      include ../../../blocks/headers-footers/copyright/copyright
 block scripts
