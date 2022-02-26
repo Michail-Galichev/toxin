@@ -2,13 +2,19 @@
   .buttons__header #{buttons}
   .buttons__block
     .buttons__background
-      include button-background
-      include button-background-opacity
+      .buttons__background-wrapper
+        include button-background
+      .buttons__background-wrapper-opacity  
+        include button-background-opacity
     .buttons__border
-      include button-border
-      include button-border-opacity
+      .buttons__border-wrapper
+        include button-border
+      .buttons__border-wrapper-opacity  
+        include button-border-opacity
     .buttons__text
-      include button-text
-      include button-text-opacity
+      .buttons__text-wrapper
+        include button-text
+      .buttons__text-wrapper-opacity
+        include button-text-opacity
     .buttons__price-wrapper 
       include button-price

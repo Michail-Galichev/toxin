@@ -75,7 +75,7 @@
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 
-.button__backgroung:first-child {
+.buttons__background-wrapper {
   margin-right: 19px;
 }
 
@@ -106,39 +106,33 @@
   margin-bottom: 17px;
 }
 
-.button__border:first-child {
+.buttons__border-wrapper {
   margin-right: 20px;
 }
 
 .button__text {
-  width: 95px;
-  height: 40px;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
-  border: 2px solid transparent;
-  border-radius: 22px;
   text-transform: uppercase;
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   color: #bc9cff;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  border: 0;
-  margin-right: 20px;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+}
+
+.buttons__text-wrapper {
+  margin-right: 20px;
+}
+
+.buttons__text-wrapper-opacity {
+  opacity: .5;
 }
 
 .buttons__price-wrapper {
