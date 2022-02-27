@@ -3,6 +3,7 @@ block variables
   - var titlePage = 'Registration'
   - var mainText = 'зарегистрироваться'
   - var textButton = 'войти'
+  - var masked = 'дата рождения'
 
 block style 
   include ../../../styles/dropdown/dropdown.css
@@ -28,3 +29,5 @@ block content
     .registration__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts
+  script 
+    include registration.js 
