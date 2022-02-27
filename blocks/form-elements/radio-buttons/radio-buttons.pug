@@ -1,13 +1,8 @@
-.radio
-  .radio__header #{radioButtons}
-  .radio__buttons
-    label.radio__label
-      input.radio__input(type='radio' name='sex' value='men' checked='')
-      .radio__custom--men
-      |         Мужчина      
-    label.radio__label
-      input.radio__input(type='radio' name='sex' value='women')
-      .radio__custom--women
-      |         Женщина
-      
-
+label.radio__label
+  input.radio__input(type='radio' name='sex' value='men' checked='')
+  .radio__custom--men
+  | Мужчина      
+label.radio__label
+  input.radio__input(type='radio' name='sex' value='women')
+  .radio__custom--women
+  | Женщина

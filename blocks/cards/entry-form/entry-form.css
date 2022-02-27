@@ -17,11 +17,15 @@
   font-size: 24px;
   line-height: 29px;
   color: #1F2041;
-  margin: 40px 0 0 30px;
+  margin: 40px 30px 0 30px;
 }
 
-.entry-form__login-details-wrapper {
-  margin: 15px 0 5px 30px;
+.entry-form__email-wrapper {
+  margin: 15px 30px 10px 30px;
+}
+
+.entry-form__password-wrapper {
+  margin: 0px 30px 20px 30px;
 }
 
 .entry-form__button-wrapper {
@@ -50,7 +54,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
   color: #000000;
+  height: 42px;
 }
 /*# sourceMappingURL=entry-form.css.map */
