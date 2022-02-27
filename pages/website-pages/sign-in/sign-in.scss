@@ -1,0 +1,25 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  max-width : 1440px;
+  height : 100%;
+  }
+  
+  .container{
+    width: 1440px;
+    min-width: 320px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+
+  .sign-in__background-wrapper{
+    background-image: url('../../../static/image/registration.png');
+    height: 100%;
+    width: 100%;
+  }
+
+  .sign-in__form-wrapper{
+    margin: 172px 530px;
+  }

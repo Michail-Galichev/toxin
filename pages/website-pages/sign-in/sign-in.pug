@@ -1,0 +1,29 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Sign in'
+  - var mainText = 'войти'
+  - var textButton = 'создать'
+
+block style 
+  include ../../../styles/dropdown/dropdown.css
+  include sign-in.css
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/cards/entry-form/entry-form.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/form-elements/text-field-default/text-field-default.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+block content
+  .container
+    .sign-in__background-wrapper
+      .sign-in__header-wrapper 
+        include ../../../blocks/headers-footers/header/header
+      .sign-in__form-wrapper 
+        include ../../../blocks/cards/entry-form/entry-form
+    .sign-in__footer-wrapper 
+      include ../../../blocks/headers-footers/footer/footer
+    .sign-in__copyright-wrapper
+      include ../../../blocks/headers-footers/copyright/copyright
+block scripts
+  script 
+    include sign-in.js
