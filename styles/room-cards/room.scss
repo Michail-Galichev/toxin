@@ -14,6 +14,7 @@ position:relative;
 .room-card__text{
   display: flex;
   margin: 20px 17px 0 20px;
+  justify-content: space-between;
 }
 
 .room-card__header{
@@ -23,7 +24,7 @@ font-weight: bold;
 font-size: 14px;
 line-height: 17px;
 color: #1F2041;
-
+white-space: nowrap;
 }
 
 .room-card__number{
@@ -51,6 +52,7 @@ font-size: 14px;
 line-height: 18px;
 color: rgba(31, 32, 65, 0.5);
 margin-left: 32px;
+white-space: nowrap;
 }
 
 .room-card-per-day{
@@ -104,7 +106,6 @@ margin-left: 32px;
 
   .room-card__expand-more{
     display:flex;
-    
     position: absolute;
     top: 53px;
   }
@@ -131,7 +132,7 @@ margin-left: 32px;
     margin-right: 184px;
   }
 
-  .room-cards__straight{
+.room-cards__straight{
 width: 230px;
 height: 1px;
 background: rgba(31, 32, 65, 0.1);
