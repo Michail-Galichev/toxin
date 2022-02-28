@@ -1,0 +1,119 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  max-width: 1440px;
+  height: 100%;
+  background: white;
+}
+
+.container {
+  width: 1440px;
+  min-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__header-wrapper {
+  margin-bottom: 30px;
+}
+
+.filter__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filter__cards-room-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 140px;
+  width: 974px;
+}
+
+.filter__title {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin-bottom: 21px;
+}
+
+.filter__room-row-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.filter__room-row-wrapper:not(:last-child) {
+  margin-bottom: 20.5px;
+}
+
+.filter__side-bare-form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 466px;
+  margin: 30px 60px 0 140px;
+}
+
+.filter__guests-dropdown-wrapper {
+  margin-top: 20.44px;
+}
+
+.filter__slider-wrapper {
+  margin-top: 30.44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.filter__text-wrapper {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 10.56px;
+}
+
+.filter__house-rules-wrapper {
+  margin-top: 30px;
+}
+
+.filter__availability-form__wrapper {
+  margin-top: 12px;
+}
+
+.filter__comfort-wrapper {
+  margin-top: 30.44px;
+}
+
+.filter__additional-amenities-wrapper {
+  margin-top: 15px;
+}
+/*# sourceMappingURL=search-room-filter.css.map */
