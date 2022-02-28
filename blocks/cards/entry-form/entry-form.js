@@ -1,17 +1,10 @@
 $(function(){
-  $('.entry-form__login-details-wrapper')
-  .find('.text-field-default__input')
-  .css({'margin' : '0px'});
 
-  $('.entry-form__login-details-wrapper')
-  .find('.text-field-default__input:last')
-  .css({'margin-bottom' : '15px'})
+  $('.entry-form__password-wrapper .text-field-default__input')
   .attr('placeholder', 'Пароль')
   .attr('type', 'password');
 
-  $('.entry-form__login-details-wrapper')
-  .find('.text-field-default__input:first')
-  .css({'margin-bottom' : '5px'})
+  $('.entry-form__email-wrapper .text-field-default__input')
   .attr('type', 'email');
 
   $('.entry-form__button-wrapper  .button__price')
