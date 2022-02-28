@@ -15,27 +15,24 @@ font-weight: bold;
 font-size: 24px;
 line-height: 29px;
 color: #1F2041;
-margin: 35px 30px 15px 30px;
+margin: 40px 30px 20px 30px;
+
 }
 
-.text-field-default__input[placeholder='Имя']{
-  margin-bottom: 5px;
+.registration-form__first-name-wrapper{
+  margin: 0 30px 10px 30px;
 }
 
-.text-field-default__input[placeholder='Фамилия']{
-  margin-bottom: 10px;
+.registration-form__last-name-wrapper{
+  margin: 0 30px 10px 30px;
 }
 
-.text-field-default__input[placeholder='Email']{
-  margin-bottom: 5px;
+.registration-form__email-wrapper {
+  margin: 5px 30px 10px 30px;
 }
 
-.text-field-default__input[placeholder='Пароль']{
-  margin-bottom: 10px;
-}
-
-.text-field-default__input{
-  margin:0 30px;
+.registration-form__password-wrapper{
+  margin: 0 30px 10px 30px;
 }
 
 .registration-form__radio-wrapper{

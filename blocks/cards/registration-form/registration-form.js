@@ -1,18 +1,18 @@
 $ ( function(){
 
-  $('.registration-form__user-name-wrapper')
+  $('.registration-form__first-name-wrapper')
   .find('.text-field-default__input:first')
   .attr('placeholder', 'Имя');
 
-  $('.registration-form__user-name-wrapper')
+  $('.registration-form__last-name-wrapper')
   .find('.text-field-default__input:last')
   .attr('placeholder', 'Фамилия');
 
-  $('.registration-form__data-service-wrapper ')
+  $('.registration-form__email-wrapper ')
   .find('.text-field-default__input:first')
   .attr('placeholder', 'Email').attr('type', 'email');
 
-  $('.registration-form__data-service-wrapper ')
+  $('.registration-form__password-wrapper ')
   .find('.text-field-default__input:last')
   .attr('placeholder', 'Пароль').attr('type', 'password');
 
