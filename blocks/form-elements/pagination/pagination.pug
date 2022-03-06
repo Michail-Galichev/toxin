@@ -1,10 +1,4 @@
 .pagination
   .pagination__header #{pagination}
-  .pagination__block 
-    a(href="" class="pagination__start-page pagination__current-page") 1
-    a(href="" class="pagination__page") 2
-    a(href="" class="pagination__page") 3
-    .pagination__ellipsis  ...
-    a(href="" class="pagination__page") 15
-    a(href="" class="pagination__next") arrow_forward
-  .rental-options 1 – 12 из 100+ вариантов аренды 
+  .pagination__block-wrapper
+    include pagination-block

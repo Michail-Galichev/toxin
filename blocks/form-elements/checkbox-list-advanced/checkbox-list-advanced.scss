@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+.checkbox-list-advanced__title{
+  position: relative;
+  margin-bottom: 5px;
+}
 
 .checkbox-list-advanced__header{
 margin: 14px 30px 0 0;
@@ -16,6 +20,8 @@ color: #1F2041;
 }
 
 .checkbox-list-advanced__expand-more{
+  position: absolute;
+  left: 220px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;

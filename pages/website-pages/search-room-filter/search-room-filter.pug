@@ -21,6 +21,9 @@ block style
   include ../../../blocks/form-elements/dropdown-comfort-expanded/dropdown-comfort-expanded.css
   include ../../../blocks/form-elements/checkbox-list-advanced/checkbox-list-advanced.css
   include ../../../blocks/form-elements/rate-buttons/rate-buttons.css
+  include ../../../blocks/form-elements/pagination/pagination.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
 block content
   .container
     .filter__header-wrapper 
@@ -29,6 +32,7 @@ block content
       .filter__side-bare-form-wrapper
         .filter__masked-field-wrapper 
           include ../../../blocks/form-elements/masked-text-field/masked-text-field
+          .filter__masked-field-expand-more expand_more
         .filter__guests-dropdown-wrapper 
           include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty
         .filter__slider-wrapper 
@@ -72,6 +76,12 @@ block content
             +room('../../../static/image/room444.png','444','5000','15', false, false)
           .room-card--840  
             +room('../../../static/image/room352.png','352','5000','55', false, false)  
+        .filter__pagination-wrapper 
+          include ../../../blocks/form-elements/pagination/pagination-block
+    .filter__footer-wrapper 
+      include ../../../blocks/headers-footers/footer/footer 
+    .filter__copyright-wrapper 
+      include ../../../blocks/headers-footers/copyright/copyright
 block scripts
   script 
     include search-room-filter.js

@@ -46,7 +46,7 @@ margin-bottom: 21px;
     justify-content: space-between;
   }
 
-  .filter__room-row-wrapper:not(:last-child){
+  .filter__room-row-wrapper{
     margin-bottom: 20.5px;
   }
 
@@ -90,4 +90,31 @@ margin-bottom: 21px;
 
 .filter__additional-amenities-wrapper{
   margin-top:15px;
+}
+
+.filter__pagination-wrapper{
+  margin: 40px 0 70px 287px;
+  width: 241px;
+}
+
+.filter__masked-field-wrapper{
+  position: relative;
+}
+
+.filter__masked-field-expand-more{
+  position: absolute;
+  top: 19px;
+  left: 222px;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
 }

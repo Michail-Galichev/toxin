@@ -37,6 +37,11 @@ $(function(){
   .find('.room-card__luxury')
   .css({
     'margin-left' : '8px'
-  })
+  });
+
+  $('.filter__cards-room-wrapper .filter__room-row-wrapper:last')
+  .css({
+    'margin-bottom' : '0'
+  });
 
 });

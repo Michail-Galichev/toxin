@@ -43,6 +43,10 @@ body {
   margin-left: 126px;
 }
 
+.checkbox__wrapper {
+  margin-bottom: 35px;
+}
+
 .slider-buttons__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;

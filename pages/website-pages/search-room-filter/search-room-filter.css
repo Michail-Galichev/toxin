@@ -60,7 +60,7 @@ body {
           justify-content: space-between;
 }
 
-.filter__room-row-wrapper:not(:last-child) {
+.filter__room-row-wrapper {
   margin-bottom: 20.5px;
 }
 
@@ -115,5 +115,38 @@ body {
 
 .filter__additional-amenities-wrapper {
   margin-top: 15px;
+}
+
+.filter__pagination-wrapper {
+  margin: 40px 0 70px 287px;
+  width: 241px;
+}
+
+.filter__masked-field-wrapper {
+  position: relative;
+}
+
+.filter__masked-field-expand-more {
+  position: absolute;
+  top: 19px;
+  left: 222px;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
 }
 /*# sourceMappingURL=search-room-filter.css.map */
