@@ -9,25 +9,27 @@
 }
 
 .checkbox-list-advanced__title {
-  position: relative;
-  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .checkbox-list-advanced__header {
-  margin: 14px 30px 0 0;
+  margin: 14px 11px 0 0;
   font-family: Montserrat;
   font-style: normal;
+  width: 209px;
+  height: 15px;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
+  word-spacing: pre-wrap;
   text-transform: uppercase;
   color: #1F2041;
 }
 
 .checkbox-list-advanced__expand-more {
-  position: absolute;
-  left: 220px;
-  width: 44px;
+  width: 42px;
   height: 44px;
   font-family: Material Icons;
   font-style: normal;

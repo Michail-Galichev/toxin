@@ -3,26 +3,29 @@
   flex-direction: column;
 }
 
+
+
 .checkbox-list-advanced__title{
-  position: relative;
-  margin-bottom: 5px;
-}
+  display: flex;
+  }
 
 .checkbox-list-advanced__header{
-margin: 14px 30px 0 0;
+margin: 14px 11px 0 0;
 font-family: Montserrat;
 font-style: normal;
+width: 209px;
+height: 15px;
 font-weight: bold;
 font-size: 12px;
 line-height: 15px;
+word-spacing: pre-wrap;
 text-transform: uppercase;
 color: #1F2041;
+
 }
 
 .checkbox-list-advanced__expand-more{
-  position: absolute;
-  left: 220px;
-  width: 44px;
+  width: 42px;
   height: 44px;
   font-family: Material Icons;
   font-style: normal;
@@ -35,14 +38,14 @@ color: #1F2041;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
   transform: rotate(180deg);
-}
+ }
 
 .checkbox-list-advanced__title{
   display: flex;
 }
 
 .checkbox-list-advanced__label{
-  font-family: Montserrat;
+font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 14px;
