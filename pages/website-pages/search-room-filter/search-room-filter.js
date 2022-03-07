@@ -44,4 +44,14 @@ $(function(){
     'margin-bottom' : '0'
   });
 
+  $('.filter__additional-amenities-wrapper .checkbox-list-advanced__check ')
+  .css({
+    'display' : 'none'
+  });
+
+  $('.filter__additional-amenities-wrapper .checkbox-list-advanced__expand-more ')
+  .css({
+    'transform' : 'rotate(0deg)'
+  });
+
 });
