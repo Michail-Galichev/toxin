@@ -1,0 +1,88 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Search room/Preferences Dropdown'
+  - var masked = 'даты пребывания в отеле'
+  - var dropdown = 'гости'
+  - var rangeSlider = 'диапазон цены'
+  - var checkboxButtons = 'правила дома'
+  - var richCheckbox = 'доступность'
+  - var expCheckList = 'дополнительные удобства'
+
+block style 
+  include preferences-dropdown.css
+  include ../../../styles/dropdown/dropdown.css
+  include ../../../styles/room-cards/room.css
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/form-elements/masked-text-field/masked-text-field.css
+  include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty.css
+  include ../../../blocks/form-elements/slider/slider.css
+  include ../../../blocks/form-elements/checkbox-buttons/checkbox-buttons.css
+  include ../../../blocks/form-elements/rich-checkbox/rich-checkbox.css
+  include ../../../blocks/form-elements/dropdown-comfort-expanded/dropdown-comfort-expanded.css
+  include ../../../blocks/form-elements/checkbox-list-advanced/checkbox-list-advanced.css
+  include ../../../blocks/form-elements/rate-buttons/rate-buttons.css
+  include ../../../blocks/form-elements/pagination/pagination.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+block content
+  .container
+    .preferences__header-wrapper 
+      include ../../../blocks/headers-footers/header/header
+    .preferences__content-wrapper
+      .preferences__side-bare-form-wrapper
+        .js--pref__masked-field.preferences__masked-field-wrapper 
+          include ../../../blocks/form-elements/masked-text-field/masked-text-field
+          .preferences__masked-field-expand-more expand_more
+        .js--pref__guest-dropdown.preferences__guests-dropdown-wrapper 
+          include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty
+        .preferences__slider-wrapper 
+          include ../../../blocks/form-elements/slider/slider
+          .preferences__text-wrapper Стоимость за сутки пребывания в номере
+        .preferences__house-rules-wrapper
+          include ../../../blocks/form-elements/checkbox-buttons/checkbox-buttons  
+        .preferences__availability-form__wrapper
+          include ../../../blocks/form-elements/rich-checkbox/rich-checkbox
+        .js--pref__comfort.preferences__comfort-wrapper 
+          include ../../../blocks/form-elements/dropdown-comfort-expanded/dropdown-comfort-expanded
+        .js--pref__additional-amenities.preferences__additional-amenities-wrapper
+          include ../../../blocks/form-elements/checkbox-list-advanced/checkbox-list-advanced
+      .js--pref__cards-room.preferences__cards-room-wrapper 
+        .preferences__title Номера, которые мы для вас подобрали
+        .js--pref__room-row.preferences__room-row-wrapper
+          .room-card--888
+            +room('../../../static/image/room888.png','888','9900','145', true, true)
+          .room-card--840  
+            +room('../../../static/image/room840.png','840','9900','65', false, false)  
+          .room-card--888
+            +room('../../../static/image/room980.png','980','8500','35', false, true)
+        .js--pref__room-row.preferences__room-row-wrapper  
+          .room-card--840  
+            +room('../../../static/image/room856.png','856','7300','19', false, false)  
+          .room-card--888
+            +room('../../../static/image/room740.png','740','6000','44', false, false)
+          .room-card--840  
+            +room('../../../static/image/room982.png','982','5800','56', false, false)  
+        .js--pref__room-row.preferences__room-row-wrapper  
+          .room-card--888
+            +room('../../../static/image/room678.png','678','5500','45', false, false)
+          .room-card--840  
+            +room('../../../static/image/room450.png','450','5300','39', false, false)  
+          .room-card--888
+            +room('../../../static/image/room350.png','350','5000','77', false, false)
+        .js--pref__room-row.preferences__room-row-wrapper  
+          .room-card--840  
+            +room('../../../static/image/room666.png','666','5000','25', false, false)  
+          .room-card--888
+            +room('../../../static/image/room444.png','444','5000','15', false, false)
+          .room-card--840  
+            +room('../../../static/image/room352.png','352','5000','55', false, false)  
+        .preferences__pagination-wrapper 
+          include ../../../blocks/form-elements/pagination/pagination-block
+    .preferences__footer-wrapper 
+      include ../../../blocks/headers-footers/footer/footer 
+    .preferences__copyright-wrapper 
+      include ../../../blocks/headers-footers/copyright/copyright
+block scripts
+  script 
+    include preferences-dropdown.js
+    include ../../../blocks/form-elements/slider/slider.js

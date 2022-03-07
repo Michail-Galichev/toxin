@@ -1,55 +1,54 @@
 $(function(){
-  $('.filter__masked-field-wrapper .masked-text-field__input')
+  $('.js--filter__masked-field .js--mask-text-field__input')
   .css({
     'width' : '266px'
   });
 
-  $('.filter__guests-dropdown-wrapper .dropdown-guests-empty__input')
+  $('.js--filter__guests-dropdown .js--drop-guests-emp__input')
   .css({
     'width' : '266px',
     'border' : '1px solid rgba(31, 32, 65, 0.25)',
     'border-radius' : '4px'
   });
 
-  $('.filter__guests-dropdown-wrapper .dropdown-guests-empty__expand-more')
+  $('.js--filter__guests-dropdown .js--guests-emp__expand-more')
   .css({
     'left' : '220px'
   });
 
-  $('.filter__comfort-wrapper .dropdown-com-exp__form')
+  $('.js--filter__comfort .js--com-exp__form')
   .css({
     'display' : 'none'
   });
 
-  $('.filter__comfort-wrapper .dropdown-com-exp__input')
+  $('.js--filter__comfort  .js--drop-com-exp__input')
   .css({
     'border-radius' : '4px',
     'border' : '1px solid rgba(31, 32, 65, 0.25)'
-  })
+  });
 
-  $('.filter__room-row-wrapper') 
-  .find('.room-card__form:not(:last)')
+  $('.js--filter__room-row .js--room-card__form:not(:last)')
   .css({
     'margin-right' : '12px'
   });
 
-  $('.filter__room-row-wrapper') 
-  .find('.room-card__luxury')
+  $('.js--filter__room-row') 
+  .find('.js--room-card__luxury')
   .css({
     'margin-left' : '8px'
   });
 
-  $('.filter__cards-room-wrapper .filter__room-row-wrapper:last')
+  $('.js--filter__cards-room .js--filter__room-row:last')
   .css({
     'margin-bottom' : '0'
   });
 
-  $('.filter__additional-amenities-wrapper .checkbox-list-advanced__check ')
+  $('.js--filter__additional-amenities .js--checkbox-list-advanced')
   .css({
     'display' : 'none'
   });
 
-  $('.filter__additional-amenities-wrapper .checkbox-list-advanced__expand-more ')
+  $('.js--filter__additional-amenities .js--checkbox-list-advanced__expand-more ')
   .css({
     'transform' : 'rotate(0deg)'
   });

@@ -114,6 +114,8 @@
 }
 
 .dropdown-com-exp__form {
+  position: absolute;
+  top: 64px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,5 +132,6 @@
   border-bottom-right-radius: 2px;
   max-height: 119px;
   background: #ffffff;
+  z-index: 5;
 }
 /*# sourceMappingURL=dropdown-comfort-expanded.css.map */

@@ -2,9 +2,10 @@ $(function(){
 
 function openCloseDropdown(){
 
-  const $btnOpenClose = $('.dropdown-guests-filled-in__expand-more, .dropdown-guests-filled-in__input');
-  const $dropdownGuests = $('.dropdown-guests-filled-in__form');
-  const $guestInput = $('.dropdown-guests-filled-in__input');
+  const $btnOpenClose = $('.js--guests-filled-in__expand-more, .js--guests-filled-in__input');
+  const $dropdownGuests = $('.js--dropdown-guests-filled-in__form');
+  const $guestInput = $('.js--guests-filled-in__input');
+  const $dropdownExpand = $('.js--guests-filled-in__expand-more');
 
 /*открыть/закрыть dropdown */    
  
@@ -39,7 +40,7 @@ function openCloseDropdown(){
   });
 
   /*кнопка применить*/     
-$('.dropdown__to-apply').click(function(){
+$('.js--dropdown__to-apply').click(function(){
   $dropdownGuests.hide();       
   $guestInput.css({'border-radius' : '2px'});
 });
@@ -49,7 +50,7 @@ $('.dropdown__to-apply').click(function(){
 
 
 function counterGuests (){
-  const $guestInputVal = $('.dropdown-guests-filled-in__input');
+  const $guestInputVal = $('.js--guests-filled-in__input');
   let $countFirst = 0;
   let $countAverage = 0;
   let $countLast = 0;
@@ -122,7 +123,7 @@ function counterGuests (){
   });
 
   /* кнопка очистить*/   
-  $('.dropdown__clear').click(function(){
+  $('.js--dropdown__clear').click(function(){
       $(this).hide();
       $('.js--count--first').val(0);
       $countFirst = 0;
@@ -144,10 +145,10 @@ function counterGuests (){
  .js--plus--first,.js--plus--average,.js--plus--last`).click(function(){
   $sumGuests = (+$countFirst) + (+$countAverage) + (+$countLast);
   if ($sumGuests === 0){
-    $('.dropdown__clear').hide();
+    $('.js--dropdown__clear').hide();
         
   } else {
-    $('.dropdown__clear').show();
+    $('.js--dropdown__clear').show();
     $guestInputVal.css({
         'color' : 'rgba(31, 32, 65, 0.75)',
         'font-family' : 'Montserrat',
@@ -166,22 +167,22 @@ function counterGuests (){
     $guestInputVal.attr('value', 'Сколько гостей' ).css({
         'color' : 'rgba(31, 32, 65, 0.5)'
     });
-      $('.dropdown__clear').hide();
+      $('.js--dropdown__clear').hide();
   }
 });
   
 }
  
-  $('.landing-page__search-form-wrapper')
-  .find('.dropdown-guests-filled-in__input')
+  $('.js--landing-page__search-form')
+  .find('.js--guests-filled-in__input')
   .css({
     'border' : '1px solid rgba(31, 32, 65, 0.25)',
     'border-radius' : '2px'
   })
   .attr('placeholder', 'Сколько гостей');
 
-  $('.landing-page__search-form-wrapper')
-  .find('.date-dropdown__input:last')
+  $('.js--landing-page__search-form')
+  .find('.js--date-dropdown__input:last')
   .attr('placeholder', 'ДД.ММ.ГГГГ')
   
 counterGuests ();
