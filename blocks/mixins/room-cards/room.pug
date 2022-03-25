@@ -1,5 +1,5 @@
 mixin room(path,number,price,reviews,first,luxury)  
-  form(action="#" class="room-card__form js--room-card__form") 
+  form(action="#" class="room-card__form js-room-card__form") 
     .room-card__ellipces        
       .room-card__ellipce
       .room-card__ellipce
@@ -14,7 +14,7 @@ mixin room(path,number,price,reviews,first,luxury)
       .room-card__header № 
         span.room-card__number #{number}
       if (luxury)
-        .room-card__luxury.js--room-card__luxury Люкс
+        .room-card__luxury.js-room-card__luxury Люкс
       .room-card__price #{price}&#8381;
         span.room-card-per-day  в сутки
     .room-cards__straight

@@ -1,11 +1,13 @@
 .header 
-  .header__logo 
-    img(class="header__img--logo" src="../../../static/image/logo-gradient.svg", alt="")
-    img(class="header__img--toxin" src="../../../static/image/toxin.svg", alt="")
+  .header__logo
+    a(href="../../../pages/website-pages/landing-page/landing-page.pug")
+      img(class="header__img--logo" src="../../../static/image/logo-gradient.svg")
+    a(href="../../../pages/website-pages/landing-page/landing-page.pug")  
+      img(class="header__img--toxin" src="../../../static/image/toxin.svg")
 
   .header__menu
     +menu-header("header__menu--link", "О нас", "Услуги", "Вакансии", "Новости", "Соглашения") 
     
   .header__buttons
-    a(class="header__buttons--to-come-in" href="") Войти
-    a(class="header__buttons--registration" href="") Зарегистрироваться
+    a(class="header__buttons--to-come-in js-buttons--to-come-in" href="../../../pages/website-pages/sign-in/sign-in.pug") Войти
+    a(class="header__buttons--registration js-buttons--registration" href="../../../pages/website-pages/registration/registration.pug") Зарегистрироваться

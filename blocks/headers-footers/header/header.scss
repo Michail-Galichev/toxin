@@ -1,4 +1,4 @@
-@import "header-mixins.scss";
+@import "hader-mixins.scss";
 
 .header {
   display: flex;
@@ -9,16 +9,24 @@
 }
 
 .header__logo {
+  height: 40px;
+  width: 106px;
   display: flex;
-  margin-left: 140px;
-  margin-right: 244px;
+  align-items: center;
+  margin: 15px 244px 0 140px;
   cursor: pointer;
 }
 
 .header__img--logo {
+  width: 40px;
+  height: 40px;
   margin-right: 12.5px;
 }
 
+.header__img--toxin{
+  height: 13px;
+  width: 53px;
+}
 
 .header__menu {
   display: flex;

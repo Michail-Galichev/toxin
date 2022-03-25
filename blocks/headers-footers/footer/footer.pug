@@ -1,8 +1,10 @@
 .footer
   .footer__booking
     .footer__logo 
-      img(class="footer__img--logo" src="../../../static/image/logo-gradient.svg", alt="")
-      img(class="footer__img--toxin" src="../../../static/image/toxin.svg", alt="")
+      a(href="../../../pages/website-pages/landing-page/landing-page.pug")
+        img(class="footer__img--logo" src="../../../static/image/logo-gradient.svg", alt="")
+      a(href="../../../pages/website-pages/landing-page/landing-page.pug")  
+        img(class="footer__img--toxin" src="../../../static/image/toxin.svg", alt="")
     .footer__text Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»
   .footer__menu
     +menu-footer("footer__menu--nav", "Навигация", "О нас", "Новости", "Служба поддержки", "Услуги")

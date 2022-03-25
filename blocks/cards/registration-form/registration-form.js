@@ -1,30 +1,31 @@
 $ ( function(){
 
-  $('.registration-form__first-name-wrapper')
-  .find('.text-field-default__input:first')
+  $('.js-reg-form__first-name')
+  .find('.js-text-field-default__input')
   .attr('placeholder', 'Имя');
 
-  $('.registration-form__last-name-wrapper')
-  .find('.text-field-default__input:last')
+  $('.js-reg-form__last-name')
+  .find('.js-text-field-default__input')
   .attr('placeholder', 'Фамилия');
 
-  $('.registration-form__email-wrapper ')
-  .find('.text-field-default__input:first')
+  $('.js-reg-form__email')
+  .find('.js-text-field-default__input')
   .attr('placeholder', 'Email').attr('type', 'email');
 
-  $('.registration-form__password-wrapper ')
-  .find('.text-field-default__input:last')
+  $('.js-reg-form__password ')
+  .find('.js-text-field-default__input')
   .attr('placeholder', 'Пароль').attr('type', 'password');
 
-  $('.radio__header').css({
+  $('.js-radio__header').css({
     'margin-bottom' : '0'
   });
 
-  $('.registration-form__account-button-wrapper .button__border').css({
+  $('.js-reg-form__account-button .js-button__border').css({
     'margin-right' : '0'
-  });
+  })
+  .attr('href', '/__/sign-in/sign-in.html');
 
 
-  $('.registration-form__button-wrapper  .button__price').html('перейти к оплате');
+  $('.js-reg-form__button  .js-button__price').html('перейти к оплате');
 
 });

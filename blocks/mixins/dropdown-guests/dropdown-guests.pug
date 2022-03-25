@@ -5,22 +5,22 @@ mixin dropdown-guests(nameOne,nameTwo,nameThree,clear,toApply, inputFirst, input
       .dropdown__name #{nameTwo}
       .dropdown__name #{nameThree}
     .dropdown__count-buttons--minus
-      .dropdown__minus.js--minus--first -
-      .dropdown__minus.js--minus--average -
-      .dropdown__minus.js--minus--last -
+      .dropdown__minus.js-minus--first -
+      .dropdown__minus.js-minus--average -
+      .dropdown__minus.js-minus--last -
     .dropdown__counters  
-      input(type="text" class="dropdown__input js--count--first" placeholder=inputFirst) 
-      input(type="text" class="dropdown__input js--count--average" placeholder=inputAverage) 
-      input(type="text" class="dropdown__input js--count--last" placeholder=inputLast)
+      input(type="text" class="dropdown__input js-count--first" placeholder=inputFirst) 
+      input(type="text" class="dropdown__input js-count--average" placeholder=inputAverage) 
+      input(type="text" class="dropdown__input js-count--last" placeholder=inputLast)
     .dropdown__count-buttons--plus
-      .dropdown__plus.js--plus--first +
-      .dropdown__plus.js--plus--average +
-      .dropdown__plus.js--plus--last +
+      .dropdown__plus.js-plus--first +
+      .dropdown__plus.js-plus--average +
+      .dropdown__plus.js-plus--last +
   .dropdown__action-buttons    
     if (clear) 
-      .dropdown__clear.js--dropdown__clear #{clear}
+      .dropdown__clear.js-dropdown__clear #{clear}
     if (toApply)
-      .dropdown__to-apply.js--dropdown__to-apply #{toApply}
+      .dropdown__to-apply.js-dropdown__to-apply #{toApply}
 
 
 

@@ -10,8 +10,12 @@
 }
 
 .footer__logo{
- display: flex;
+height: 40px;
+width: 106px;
+display: flex;
+align-items: center;
 margin: 100px 0 0 140px;  
+cursor: pointer;
 }
 
 .footer__img--logo{

@@ -2,7 +2,7 @@ extends ../../../templates/sample
 block variables
   - var titlePage = 'Landing page/Guests dropdown'
   - var mainText = 'Подобрать номер'
-  - var dropdown = 'гости'
+  - var dropdownGuests = 'гости'
 block style 
   include ../../../styles/dropdown/dropdown.css
   include landing-page-guests-dropdown.css
@@ -17,10 +17,10 @@ block style
 block content 
   .container
     .guests-dropdown__background-wrapper
-      .guests-dropdown__search-form-wrapper.js--guests-dropdown__search-form
-        include ../../../blocks/cards/search-form/search-form
       .guests-dropdown__header-wrapper
-      include ../../../blocks/headers-footers/header/header
+        include ../../../blocks/headers-footers/header/header
+      .guests-dropdown__search-form-wrapper.js-guests-dropdown__search-form
+        include ../../../blocks/cards/search-form/search-form
     .guests-dropdown__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
     .guests-dropdown__copyright-wrapper

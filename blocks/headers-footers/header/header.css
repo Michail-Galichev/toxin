@@ -5,19 +5,32 @@
   height: 70px;
   max-width: 1440px;
   background: white;
+  -webkit-box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+          box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
 }
 
 .header__logo {
+  height: 40px;
+  width: 106px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 140px;
-  margin-right: 244px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px 244px 0 140px;
   cursor: pointer;
 }
 
 .header__img--logo {
+  width: 40px;
+  height: 40px;
   margin-right: 12.5px;
+}
+
+.header__img--toxin {
+  height: 13px;
+  width: 53px;
 }
 
 .header__menu {

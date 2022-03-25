@@ -1,5 +1,5 @@
 $(function(){
-  $('.js--pref__masked-field .js--mask-text-field__input')
+  $('.js-pref__masked-field .js-mask-text-field__input')
   .attr('placeholder', '')
   .val('19 авг - 23 авг')
   .css({
@@ -13,7 +13,7 @@ $(function(){
   });
 
   
-  $('.js--pref__guest-dropdown .js--drop-guests-emp__input')
+  $('.js-pref__guest-dropdown .js-drop-guests-emp__input')
   .attr('placeholder', '')
   .val('3 гостя, 1 младенец')
   .css({
@@ -28,17 +28,17 @@ $(function(){
     'color' : 'rgba(31, 32, 65, 0.75)'
   });
 
-  $('.js--pref__guest-dropdown .js--guests-emp__expand-more')
+  $('.js-pref__guest-dropdown .js-guests-emp__expand-more')
   .css({
     'left' : '220px'
   });
 
-  $('.js--pref__comfort .js--drop-com-exp__form')
+  $('.js-pref__comfort .js-drop-com-exp__form')
   .css({
     'display' : 'block'
   });
 
-  $('.js--pref__comfort .js--drop-com-exp__input')
+  $('.js-pref__comfort .js-drop-com-exp__input')
   .attr('placeholder', '')
   .val('2 спальни, 2 кровати... ')
   .css({
@@ -51,35 +51,35 @@ $(function(){
     'color' : 'rgba(31, 32, 65, 0.75)'
   });
 
-  $('.js--pref__room-row') 
-  .find('.js--room-card__form:not(:last)')
+  $('.js-pref__room-row') 
+  .find('.js-room-card__form:not(:last)')
   .css({
     'margin-right' : '12px'
   });
 
-  $('.js--pref__room-row') 
-  .find('.js--room-card__luxury')
+  $('.js-pref__room-row') 
+  .find('.js-room-card__luxury')
   .css({
     'margin-left' : '8px'
   });
 
-  $('.js--pref__cards-room .js--pref__room-row:last')
+  $('.js-pref__cards-room .js-pref__room-row:last')
   .css({
     'margin-bottom' : '0'
   });
 
-  $('.js--pref__additional-amenities .js--checkbox-list-advanced')
+  $('.js-pref__additional-amenities .js-checkbox-list-advanced')
   .css({
     'display' : 'none'
   });
 
-  $('.js--pref__additional-amenities .js--checkbox-list-advanced__expand-more')
+  $('.js-pref__additional-amenities .js-checkbox-list-advanced__expand-more')
   .css({
     'transform' : 'rotate(0deg)'
   });
 
-  $('.js--pref__comfort')
-  .find('.js--com-count--first, .js--com-count--average')
+  $('.js-pref__comfort')
+  .find('.js-com-count--first, .js-com-count--average')
   .attr('placeholder', '2');
   
 

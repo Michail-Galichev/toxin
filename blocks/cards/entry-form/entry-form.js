@@ -1,12 +1,14 @@
 $(function(){
 
-  $('.entry-form__password-wrapper .text-field-default__input')
+  $('.js-entry-form__password .js-text-field-default__input')
   .attr('placeholder', 'Пароль')
   .attr('type', 'password');
 
-  $('.entry-form__email-wrapper .text-field-default__input')
+  $('.js-entry-form__email .js-text-field-default__input')
   .attr('type', 'email');
 
-  $('.entry-form__button-wrapper  .button__price')
+  $('.js-entry-form__button-wrapper  .js-button__price')
   .html('войти');
+  $('.entry-form__account-wrapper .js-button__border')
+  .attr('href', '/__/registration/registration.html');
 });

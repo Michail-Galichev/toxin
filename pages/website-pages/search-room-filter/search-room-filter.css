@@ -126,6 +126,13 @@ body {
   position: relative;
 }
 
+.filter__calendar-wrapper {
+  position: absolute;
+  z-index: 5;
+  top: 74px;
+  left: -27px;
+}
+
 .filter__masked-field-expand-more {
   position: absolute;
   top: 19px;

@@ -18,7 +18,7 @@ block content
     .sign-in__background-wrapper
       .sign-in__header-wrapper 
         include ../../../blocks/headers-footers/header/header
-      .sign-in__form-wrapper 
+      .sign-in__form-wrapper.js-sign-in__form 
         include ../../../blocks/cards/entry-form/entry-form
     .sign-in__footer-wrapper 
       include ../../../blocks/headers-footers/footer/footer
@@ -27,3 +27,4 @@ block content
 block scripts
   script 
     include sign-in.js
+    include ../../../blocks/cards/entry-form/entry-form.js

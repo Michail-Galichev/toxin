@@ -1,4 +1,4 @@
-.js--range-slider {
+.js-range-slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +30,7 @@
   white-space: pre;
 }
 
-.js--range-slider__price {
+.js-range-slider__price {
   border: 0;
   padding: 0;
   white-space: nowrap;
@@ -46,7 +46,7 @@
   color: rgba(31, 32, 65, 0.5);
 }
 
-.js--range-slider__guide {
+.js-range-slider__guide {
   width: 266px;
   height: 6px;
   background: #ffffff;
@@ -56,7 +56,7 @@
   border-radius: 3px;
 }
 
-.js--range-slider__body .js--range-slider__circle {
+.js-range-slider__body .js-range-slider__circle {
   width: 12px;
   height: 12px;
   background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
@@ -65,7 +65,7 @@
   border-radius: 10px;
 }
 
-.js--range-slider__illumination {
+.js-range-slider__illumination {
   background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
 }

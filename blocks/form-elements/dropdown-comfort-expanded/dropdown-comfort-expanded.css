@@ -51,6 +51,7 @@
   border-bottom-right-radius: 0;
   padding-left: 15px;
   cursor: pointer;
+  outline: none;
 }
 
 .dropdown-com-exp__input::-webkit-input-placeholder {

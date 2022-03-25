@@ -1,23 +1,23 @@
 form(class="registration-form" action="#")
   .registration-form__header Регистрация аккаунта
-  .registration-form__first-name-wrapper
+  .registration-form__first-name-wrapper.js-reg-form__first-name
     include ../../form-elements/text-field-default/text-field-input
-  .registration-form__last-name-wrapper
+  .registration-form__last-name-wrapper.js-reg-form__last-name
     include ../../form-elements/text-field-default/text-field-input
   .registration-form__radio-wrapper
     include ../../form-elements/radio-buttons/radio-buttons
   .registration-form__date-of-birth-wrapper
     include ../../form-elements/masked-text-field/masked-text-field
   .registration-form__data-service Данные для входа в сервис
-  .registration-form__email-wrapper 
+  .registration-form__email-wrapper.js-reg-form__email 
     include ../../form-elements/text-field-default/text-field-input
-  .registration-form__password-wrapper
+  .registration-form__password-wrapper.js-reg-form__password
     include ../../form-elements/text-field-default/text-field-input
   .registration-form__toogle-wrapper 
     include ../../form-elements/toogle/toogle-none-checked
-  .registration-form__button-wrapper 
+  .registration-form__button-wrapper.js-reg-form__button
     include ../../form-elements/buttons/button-price  
   .registration-form__account-wrapper
     .registration-form__account-text  Уже есть аккаунт на Toxin
-    .registration-form__account-button-wrapper
+    .registration-form__account-button-wrapper.js-reg-form__account-button
       include ../../form-elements/buttons/button-border
