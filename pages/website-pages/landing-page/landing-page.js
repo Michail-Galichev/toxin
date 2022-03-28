@@ -232,8 +232,8 @@ $(`.js-minus--first,.js-minus--average,.js-minus--last,
   $('.js-landing-page__search-form')
   .find('.js-date-dropdown__input:last')
   .attr('placeholder', 'ДД.ММ.ГГГГ');
-   
   
+    
 counterGuests ();
 openCloseDropdown();
 

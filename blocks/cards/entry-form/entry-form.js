@@ -9,6 +9,5 @@ $(function(){
 
   $('.js-entry-form__button-wrapper  .js-button__price')
   .html('войти');
-  $('.entry-form__account-wrapper .js-button__border')
-  .attr('href', '/__/registration/registration.html');
+  
 });

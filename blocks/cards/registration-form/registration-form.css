@@ -65,6 +65,7 @@
 
 .registration-form__button-wrapper {
   margin: 24px 0 30px 30px;
+  cursor: pointer;
 }
 
 .registration-form__account-wrapper {

@@ -41,6 +41,11 @@ $(function(){
     'left' : '173px'
   });
 
+  $('.js-footer')
+  .css({
+    'border-top' : '1px solid rgba(31, 32, 65, 0.25)'
+  });  
+
   
 
   function openCheckboxList(){
@@ -82,8 +87,9 @@ function openDropComfort(){
   $dropdownComfort.css({
     'display' : 'none'
   });
-
+  let clickOnOff = false;
   $openElemComfort.click(function(){
+    clickOnOff = true;
     let display = $dropdownComfort.css('display');
     $dropdownComfort.fadeToggle();
     if (display == 'none'){
@@ -94,14 +100,35 @@ function openDropComfort(){
         
       });
     } else {
-      $('.js-drop-com-exp__input').css({
+      clickOnOff = false;
+      $inputDropComfort.css({
         'border' : '1px solid rgba(31, 32, 65, 0.25)'
-        
-  });
+        });
     }
   });
 
-    /*клик по странице*/
+  $openElemComfort.hover(
+    function(){
+      $inputDropComfort.css({
+        'border': '1px solid rgba(31, 32, 65, 0.5)'
+       });
+    }, function(){
+      if (clickOnOff == true){
+        $inputDropComfort.css({
+        'border': '1px solid rgba(31, 32, 65, 0.5)'
+       });
+      } else {  
+        $inputDropComfort.css({
+          'border': '1px solid rgba(31, 32, 65, 0.25)'
+         });
+      }  
+    }
+  );
+
+
+
+
+  /*клик по странице*/
 
     $(document).mouseup(function(e){
       if (! $openElemComfort.is(e.target) &&

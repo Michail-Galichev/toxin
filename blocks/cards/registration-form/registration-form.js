@@ -22,8 +22,7 @@ $ ( function(){
 
   $('.js-reg-form__account-button .js-button__border').css({
     'margin-right' : '0'
-  })
-  .attr('href', '/__/sign-in/sign-in.html');
+  });
 
 
   $('.js-reg-form__button  .js-button__price').html('перейти к оплате');

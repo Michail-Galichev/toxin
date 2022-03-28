@@ -68,12 +68,12 @@ $(function(){
     'margin-bottom' : '0'
   });
 
-  $('.js-pref__additional-amenities .js-checkbox-list-advanced')
+  $('.js-pref__additional-amenities .js-preferences-advanced')
   .css({
     'display' : 'none'
   });
 
-  $('.js-pref__additional-amenities .js-checkbox-list-advanced__expand-more')
+  $('.js-pref__additional-amenities .js-preferences__expand-more')
   .css({
     'transform' : 'rotate(0deg)'
   });

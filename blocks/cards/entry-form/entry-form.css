@@ -39,6 +39,7 @@
 
 .entry-form__button-wrapper {
   margin: 0 30px 30px 30px;
+  cursor: pointer;
 }
 
 .entry-form__account-wrapper {

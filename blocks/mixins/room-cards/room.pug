@@ -7,8 +7,8 @@ mixin room(path,number,price,reviews,first,luxury)
       .room-card__ellipce
     .room-card__expand-more
       if(first)
-        .room-card__expand-more--left expand_more
-        .room-card__expand-more--right expand_more  
+        .room-card__expand-more--left.js-expand-more--left expand_more
+        .room-card__expand-more--right.js-expand-more--right expand_more  
     img.room-card__img(src=path)
     .room-card__text
       .room-card__header № 
