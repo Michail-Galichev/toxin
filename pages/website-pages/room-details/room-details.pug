@@ -1,0 +1,94 @@
+extends ../../../templates/sample
+block variables
+  - var titlePage = 'Room details'
+  - var mainText = 'забронировать'
+  - var dropdownGuests = 'гости'
+  - var dateDropdownIn = 'дата прибытия'
+  - var dateDropdownOut = 'дата отъезда'
+  
+
+block style 
+  include room-details.css
+  include ../../../blocks/form-elements/like-buttons/like-buttons.css 
+  include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/copyright/copyright.css
+  include ../../../blocks/cards/booking-form/booking-form.css
+  include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
+  include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
+  include ../../../blocks/form-elements/text-field-dropdown/text-field-dropdown.css
+  include ../../../blocks/form-elements/buttons/buttons.css
+block content
+  .container
+    .room-details__header-wrapper
+      include ../../../blocks/headers-footers/header/header
+    .room-details__images-wrapper
+      .room-details__main-image
+      .room-details__additional-images
+        .room-details__additional-image--top
+        .room-details__additional-image--bottom
+    .room-details__content-wrapper
+      .room-details__text-wrapper
+        .room-details__impression-intelligence
+          .room-details__intelligence
+            
+            .room-details__title Сведения о номере
+            
+            .room-details__icon-wrapper
+              .material-icons-outlined.fa-gradient mood
+              .room-details__comfort
+                p.room-details__description
+                  span.room-details__description--title Комфорт                                 
+                  | Шумопоглощающие стены
+            
+            .room-details__icon-wrapper
+              .material-icons-outlined.fa-gradient location_city
+              .room-details__convenience
+                p.room-details__description 
+                  span.room-details__description--title Удобство                                                       
+                  | Окно в каждой из спален
+            
+            .room-details__icon-wrapper
+              .material-icons-outlined.fa-gradient whatshot
+              .room-details__cosiness
+                p.room-details__description 
+                  span.room-details__description--title Уют                                               
+                  | Номер оснащён камином
+                  
+          .room-details__impression
+            .room-details__impression--title Впечатления от номера
+            .room-details__impression--diagramm
+              .diagramm-block 
+                .diagramm-block__great
+                .diagramm-block--right
+                  .diagramm-block__satisfactorily 
+                  .diagramm-block__ok
+                .diagramm-block__circle  
+              ul.impressions__ul 
+                li.impressions-ul__li1  Великолепно
+                li.impressions-ul__li2 Хорошо
+                li.impressions-ul__li3 Удовлетворительно
+                li.impressions-ul__li4 Разочарован
+              
+                
+        .room-details__visitor-reviews
+          .room-details__review--title Отзывы посетителей номера  
+          .room-details__review--men
+            +reviews('../../../static/image/room-details/men.svg','12','Мурад Сарафанов','5 дней назад')
+            .room-details__review--text  Великолепный матрас на кровати в основной спальне! 
+              | А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. 
+              | Выкрикивал комплименты повару — никто не жаловался из соседей.
+          .room-details__review--women
+            +reviews('../../../static/image/room-details/women.svg','2','Патрисия Стёклышкова','Неделю    назад')  
+            .room-details__review--text Обслуживание на высоте! Всё аккуратно, чисто. 
+              | Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
+      .room-details__rules-cansel
+          .room-details__rules
+          .room-details__cansel
+      .room-details__form__wrapper
+        include ../../../blocks/cards/booking-form/booking-form
+    .room-details__footer-wrapper
+      include ../../../blocks/headers-footers/footer/footer
+    .room-details__copyright-wrapper
+      include ../../../blocks/headers-footers/copyright/copyright
+block scripts 

@@ -1,0 +1,224 @@
+@charset "UTF-8";
+body {
+  margin: 0px;
+  padding: 0px;
+  max-width: 1440px;
+  height: 100%;
+  background: white;
+}
+
+.room-details__images-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room-details__main-image {
+  background-image: url(../../../static/image/room-details/888.png);
+  height: 485px;
+  width: 981px;
+  background-repeat: no-repeat;
+}
+
+.room-details__additional-images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.room-details__additional-image--top {
+  background-image: url(../../../static/image/room-details/888-top.png);
+  height: 243px;
+  width: 461px;
+  background-repeat: no-repeat;
+}
+
+.room-details__additional-image--bottom {
+  background-image: url(../../../static/image/room-details/888-bottom.png);
+  height: 243px;
+  width: 461px;
+  background-repeat: no-repeat;
+}
+
+.room-details__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.material-icons-outlined {
+  width: 48px;
+  height: 48px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 41px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.room-details__icon-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.room-details__title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.room-details__description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 223px;
+  height: 48px;
+}
+
+.room-details__description--title {
+  font-weight: 700;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+.room-details__impression-intelligence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.room-details__impression--diagramm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.diagramm-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+/*подзаголовок блока*/
+.room-details__impression--title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+/*свойст списка оценок*/
+.impressions__ul {
+  line-height: 24px;
+  list-style-type: none;
+}
+
+.impressions-ul__li1 {
+  list-style-image: url(../../../static/image/room-details/orange.svg);
+}
+
+.impressions-ul__li2 {
+  list-style-image: url(../../../static/image/room-details/green.svg);
+}
+
+.impressions-ul__li3 {
+  list-style-image: url(../../../static/image/room-details/blue.svg);
+}
+
+.impressions-ul__li4 {
+  list-style-image: url(../../../static/image/room-details/grey.svg);
+}
+
+/*блок диаграммы*/
+/*свойства сектора отлично*/
+.diagramm-block__great {
+  width: 59px;
+  height: 120px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffe39c), to(#ffba9c));
+  background: linear-gradient(180deg, #ffe39c 0%, #ffba9c 100%);
+  border-radius: 100% 0 0 100% / 50% 0 0 50%;
+  border-right: 2px solid #fff;
+  cursor: pointer;
+}
+
+.diagramm-block__great:hover {
+  width: 70px;
+  height: 130px;
+}
+
+/*свойства сектора удовлетворительно*/
+.diagramm-block__satisfactorily {
+  width: 59px;
+  height: 58px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 0 100% 100% 0 / 50% 100% 0 50%;
+  border-bottom: 1px solid #fff;
+  cursor: pointer;
+}
+
+/*свойства сектора хорошо*/
+.diagramm-block__ok {
+  width: 59px;
+  height: 60px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6fcf97), to(#66d2ea));
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 0 100% 100% 0 / 50% 0 100% 50%;
+  border-top: 1px solid #fff;
+  cursor: pointer;
+}
+
+.diagramm-block__circle {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+/*.impressions-block-circle__of-votes {
+  width: 64px;
+  height: 15px;
+  text-transform: uppercase;
+}
+.impressions-block-circle__number {
+  width: 46px;
+  height: 30px;
+  color: #bc9cff;
+}
+ */
+/*# sourceMappingURL=room-details.css.map */
