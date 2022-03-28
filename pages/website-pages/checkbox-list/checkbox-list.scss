@@ -1,0 +1,126 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  max-width : 1440px;
+  height : 100%;
+  background: rgba(255, 255, 255, 1);
+
+  }
+  
+  .container{
+    width: 1440px;
+    min-width: 320px;
+    display: flex;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .checkbox-list__header-wrapper {
+     margin-bottom: 30px;
+  }
+
+  .checkbox-list__content-wrapper{
+    display: flex;
+  }
+
+  .checkbox-list__cards-room-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-right: 140px;
+    width: 974px;
+  }
+
+.checkbox-list__title{
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+color: #1F2041;
+margin-bottom: 21px;
+}
+
+
+  .checkbox-list__room-row-wrapper{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .checkbox-list__room-row-wrapper{
+    margin-bottom: 20.5px;
+  }
+
+  .checkbox-list__side-bare-form-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 466px;
+    margin: 30px 60px 0 140px;
+  }
+  .checkbox-list__guests-dropdown-wrapper{
+    margin-top: 20.44px;
+  } 
+  
+  .checkbox-list__slider-wrapper{
+    margin-top: 30.44px; 
+    display: flex;
+    flex-direction: column;
+  }
+
+  .checkbox-list__text-wrapper{  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 10.56px;
+}
+
+.checkbox-list__house-rules-wrapper{
+  margin-top: 30px;
+}
+
+.checkbox-list__availability-form__wrapper{
+  margin-top: 12px;
+}
+
+.checkbox-list__comfort-wrapper {
+  margin-top: 30.44px;
+}
+
+.checkbox-list__additional-amenities-wrapper{
+  margin-top:15px;
+}
+
+.checkbox-list__pagination-wrapper{
+  margin: 40px 0 70px 287px;
+  width: 241px;
+}
+
+.checkbox-list__masked-field-wrapper{
+  position: relative;
+}
+
+.checkbox-list__masked-field-expand-more{
+  position: absolute;
+  top: 19px;
+  left: 222px;
+  width: 44px;
+  height: 44px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.checkbox-list__footer-wrapper,
+.checkbox-list__copyright-wrapper  {
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+}
+
