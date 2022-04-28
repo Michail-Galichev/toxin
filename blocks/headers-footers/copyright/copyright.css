@@ -1,5 +1,5 @@
 .copyright {
-  height: 70px;
+  height: 68px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,7 +17,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 140px;
+  margin-right: 139px;
 }
 
 .fa:not(:last-child) {

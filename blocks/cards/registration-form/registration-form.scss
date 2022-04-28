@@ -15,16 +15,15 @@ font-weight: bold;
 font-size: 24px;
 line-height: 29px;
 color: #1F2041;
-margin: 40px 30px 20px 30px;
-
+margin: 40px 30px 0px 30px;
 }
 
 .registration-form__first-name-wrapper{
-  margin: 0 30px 10px 30px;
+  margin: 20px 30px 10px 29px;
 }
 
 .registration-form__last-name-wrapper{
-  margin: 0 30px 10px 30px;
+  margin: 8px 30px 10px 29px;
 }
 
 .registration-form__email-wrapper {
@@ -32,13 +31,13 @@ margin: 40px 30px 20px 30px;
 }
 
 .registration-form__password-wrapper{
-  margin: 0 30px 10px 30px;
+  margin: 0 30px 6px 30px;
 }
 
 .registration-form__radio-wrapper{
-  margin: 0 129.26px 19.56px 30px;
+  margin: 0px 129.26px 22px 30px;
   display: flex;
-  position: relative;
+  position:relative;
 }
 
 .registration-form__date-of-birth-wrapper{
@@ -46,6 +45,7 @@ margin: 40px 30px 20px 30px;
 }
 
 .registration-form__toogle-wrapper {
+  
   margin-left: 30px;
 }
 
@@ -61,14 +61,14 @@ margin-left: 30px;
 }
 
 .registration-form__button-wrapper {
-  margin: 24px 0 30px 30px;
+  margin: 23px 30px 30px 30px;
   cursor: pointer;
 }
 
 .registration-form__account-wrapper{
 display: flex;
 justify-content: space-between;
-margin: 30px;
+margin: 30px 28px 30px 30px;
 }
 
 
@@ -84,3 +84,6 @@ color: #000000;
 height: 42px;
 }
 
+.js-reg-form__account-button{
+  margin-left: 3px;
+}

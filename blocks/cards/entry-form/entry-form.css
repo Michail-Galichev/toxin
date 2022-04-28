@@ -26,7 +26,7 @@
   font-size: 24px;
   line-height: 29px;
   color: #1F2041;
-  margin: 40px 30px 20px 30px;
+  margin: 38px 30px 21px 30px;
 }
 
 .entry-form__email-wrapper {
@@ -38,7 +38,7 @@
 }
 
 .entry-form__button-wrapper {
-  margin: 0 30px 30px 30px;
+  margin: 0 30px 30px 29px;
   cursor: pointer;
 }
 

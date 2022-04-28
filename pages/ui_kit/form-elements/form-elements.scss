@@ -17,14 +17,14 @@ height : 1853px;
 .text-fields__wrapper{
   display: flex;
   flex-direction: column;
-  margin-top: 62px;
+  margin-top: 64px;
   margin-left: 141px;
 }
 
 .checkbox-radio-buttons__wrapper{
   display: flex;
   flex-direction: column;
-  margin-top: 62px;
+  margin-top: 65px;
   margin-left: 126px;
 }
 
@@ -35,25 +35,25 @@ height : 1853px;
 .slider-buttons__wrapper{
   display: flex;
   flex-direction: column;
-  margin-top: 62px;
+  margin-top: 65px;
   margin-right: 141px;
   margin-left: 132px;
 }
 
 .dropdowns__wrapper{
   display: flex;
-  margin-top:58px;
+  margin-top:61px;
 }
 
 .lists__wrapper {
   display: flex;
-  margin-left:141px;
+  margin-left:140px;
   margin-top: 40px;
 }
 
 .user-reviews__wrapper{
   display:flex;
-  margin: 100px 0 0 140px;
+  margin: 96px 0 0 140px;
 }
 
 .text-field-default__wrapper  {
@@ -86,7 +86,7 @@ height : 1853px;
 .dropdown-comfort__wrapper{
   display: flex;
   flex-direction: column;
-  margin-left: 141px;
+  margin-left: 139px;
 }
 
 .dropdown-comfort-default__wrapper{
@@ -128,4 +128,8 @@ height : 1853px;
 
 .bullet-list__wrapper{
   margin-left: 126px;
+}
+
+.comments__wrapper{
+  margin-top: 10px;
 }

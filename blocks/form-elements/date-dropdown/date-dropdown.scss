@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  margin-top: 20px;
 }
 
 .date-dropdown__headers {
@@ -40,7 +41,8 @@ background: #FFFFFF;
 border: 1px solid rgba(31, 32, 65, 0.25);
 box-sizing: border-box;
 border-radius: 4px;
-padding-left: 15px;
+padding-left: 14px;
+padding-bottom: 4px;
 font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
@@ -65,11 +67,11 @@ color: rgba(31, 32, 65, 0.75);
 }
 
 .date-dropdown__expand-more--left{
-  left: 104px; 
+  left: 106px; 
   @include expand-more;
 }
 
 .date-dropdown__expand-more--right{
-  left: 274px; 
+  left: 276px; 
   @include expand-more;
 }

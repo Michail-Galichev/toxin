@@ -9,6 +9,7 @@ block variables
 
 block style 
   include room-details.css
+  include ../../../styles/dropdown/dropdown.css
   include ../../../blocks/form-elements/like-buttons/like-buttons.css 
   include ../../../blocks/headers-footers/header/header.css
   include ../../../blocks/headers-footers/footer/footer.css
@@ -16,8 +17,8 @@ block style
   include ../../../blocks/cards/booking-form/booking-form.css
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
-  include ../../../blocks/form-elements/text-field-dropdown/text-field-dropdown.css
   include ../../../blocks/form-elements/buttons/buttons.css
+  include ../../../blocks/cards/calendar/calendar.css
 block content
   .container
     .room-details__header-wrapper
@@ -34,61 +35,94 @@ block content
             
             .room-details__title Сведения о номере
             
-            .room-details__icon-wrapper
-              .material-icons-outlined.fa-gradient mood
-              .room-details__comfort
-                p.room-details__description
-                  span.room-details__description--title Комфорт                                 
-                  | Шумопоглощающие стены
-            
-            .room-details__icon-wrapper
-              .material-icons-outlined.fa-gradient location_city
-              .room-details__convenience
-                p.room-details__description 
-                  span.room-details__description--title Удобство                                                       
-                  | Окно в каждой из спален
-            
-            .room-details__icon-wrapper
-              .material-icons-outlined.fa-gradient whatshot
-              .room-details__cosiness
-                p.room-details__description 
-                  span.room-details__description--title Уют                                               
-                  | Номер оснащён камином
+            .room-details__icons-wrapper
+              .room-details__icon-wrapper
+                .material-icons-outlined.fa-gradient mood
+                .room-details__comfort
+                  p.room-details__description
+                    span.room-details__description--title Комфорт                                 
+                    | Шумопоглощающие стены
+              .room-details__gorizont-line
+              
+              .room-details__icon-wrapper
+                .material-icons-outlined.fa-gradient location_city
+                .room-details__convenience
+                  p.room-details__description 
+                    span.room-details__description--title Удобство                                                       
+                    | Окно в каждой из спален
+              .room-details__gorizont-line
+              
+              .room-details__icon-wrapper
+                .material-icons-outlined.fa-gradient whatshot
+                .room-details__cosiness
+                  p.room-details__description 
+                    span.room-details__description--title Уют                                               
+                    | Номер оснащён камином
+              
                   
           .room-details__impression
             .room-details__impression--title Впечатления от номера
             .room-details__impression--diagramm
-              .diagramm-block 
-                .diagramm-block__great
-                .diagramm-block--right
-                  .diagramm-block__satisfactorily 
-                  .diagramm-block__ok
-                .diagramm-block__circle  
-              ul.impressions__ul 
-                li.impressions-ul__li1  Великолепно
-                li.impressions-ul__li2 Хорошо
-                li.impressions-ul__li3 Удовлетворительно
-                li.impressions-ul__li4 Разочарован
+              div(id="chart" class="noselect" style="position: relative;")
+                canvas(id="myChart" height="120" width="120")
+              div(id="chartjs-legend" class="noselect")
+              .room-details__impression--votes голосов
+                  
               
                 
         .room-details__visitor-reviews
-          .room-details__review--title Отзывы посетителей номера  
-          .room-details__review--men
-            +reviews('../../../static/image/room-details/men.svg','12','Мурад Сарафанов','5 дней назад')
-            .room-details__review--text  Великолепный матрас на кровати в основной спальне! 
-              | А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. 
-              | Выкрикивал комплименты повару — никто не жаловался из соседей.
-          .room-details__review--women
-            +reviews('../../../static/image/room-details/women.svg','2','Патрисия Стёклышкова','Неделю    назад')  
-            .room-details__review--text Обслуживание на высоте! Всё аккуратно, чисто. 
-              | Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент
-      .room-details__rules-cansel
-          .room-details__rules
-          .room-details__cansel
+          .room-details__review--title Отзывы посетителей номера
+            span.room-details__review--number 2 отзыва  
+          .room-details__reviews-wrapper
+            .room-details__review-elements 
+              .room-details__review
+                .room-details__review-img.img--men
+                .room-details__review-like.js-review-like--men
+                  include ../../../blocks/form-elements/like-buttons/like-none-checked
+              .room-details__review               
+                .room-details__review-img.img--women
+                .room-details__review-like.js-review-like--women
+                  include ../../../blocks/form-elements/like-buttons/like-none-checked
+            .room-details__reviews-content-wrapper
+              .room-details__review-content
+                .room-details__review-user Мурад Сарафанов
+                  br
+                  span.room-details__review-time  
+                      | 5 дней назад
+                .room-details__review-text Великолепный матрас на кровати в основной спальне! 
+                  | А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. 
+                  | Выкрикивал комплименты повару — никто не жаловался из соседей.
+
+              .room-details__review-content 
+                .room-details__review-user Патрисия Стёклышкова
+                  span.room-details__review-time 
+                    | Неделю назад
+                .room-details__review-text Обслуживание на высоте! Всё аккуратно, чисто. 
+                  | Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент.
+            
+        .room-details__rules-cansel
+            .room-details__rules       
+              .room-details__rules-title Правила
+              ul.room-details__rules-ul 
+                li(class = "room-details__rules-li") Нельзя с питомцами
+                li(class = "room-details__rules-li") Без вечеринок 
+                li(class = "room-details__rules-li") Время прибытия - после 13:00, а выезд до 12:00
+
+            .room-details__cansel
+              .room-details__cansel-title Отмена
+              .room-details__cansel-content Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. 
+                | до прибытия вы получите полный возврат за вычетом сбора за услуги.  
       .room-details__form__wrapper
         include ../../../blocks/cards/booking-form/booking-form
+        .room-details__calendar-wrapper.js-search-room__calendar
+          include ../../../blocks/cards/calendar/calendar
     .room-details__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
     .room-details__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts 
+  script
+    include room-details.js
+    include diagramm.js
+    include ../landing-page/landing-page.js
+    include ../../../blocks/cards/calendar/calendar.js

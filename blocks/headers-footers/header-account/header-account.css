@@ -20,13 +20,14 @@
   margin-right: 12.5px;
 }
 
-.header__menu {
+.header__menu--account {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 182px;
 }
 
 .header__ul {
@@ -49,6 +50,7 @@
 
 .header__menu--link:hover {
   color: rgba(31, 32, 65, 0.75);
+  font-weight: bold;
 }
 
 .header__menu--img {

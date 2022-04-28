@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  margin-top: 20px;
 }
 
 .date-dropdown__headers {
@@ -46,7 +47,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 15px;
+  padding-left: 14px;
+  padding-bottom: 4px;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -98,9 +100,9 @@
 }
 
 .date-dropdown__expand-more--left {
-  left: 104px;
+  left: 106px;
   position: absolute;
-  top: 19px;
+  top: 20px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -122,9 +124,9 @@
 }
 
 .date-dropdown__expand-more--right {
-  left: 274px;
+  left: 276px;
   position: absolute;
-  top: 19px;
+  top: 20px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;

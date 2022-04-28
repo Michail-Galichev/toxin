@@ -1,5 +1,9 @@
+.rich-checkbox {
+  margin-top: 1px;
+}
+
 .rich-checkbox__header {
-  margin: 14px 0 16px 0;
+  margin: 15px 0 16px 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
@@ -60,13 +64,16 @@
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
   white-space: wrap;
-  width: 236px;
   height: 28px;
-  margin-top: 5px;
+  margin-top: 6px;
 }
 
-.rich-checkbox__explanation:not(:last-child) {
+.corridor {
   width: 203px;
+}
+
+.helper {
+  width: 226px;
 }
 
 .rich-checkbox__input:checked ~ .rich-checkbox__custom {

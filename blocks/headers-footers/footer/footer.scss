@@ -2,7 +2,7 @@
 
 .footer{
   max-width: 1440px;
-  height: 372px;
+  height: 371px;
   background: #ffffff;
   display: flex;
   align-items: flex-start;
@@ -23,7 +23,7 @@ cursor: pointer;
 }
 
 .footer__text{
-  margin: 20px 0 0 140px; 
+  margin: 16px 0 0 140px; 
   width: 260px;
   height: 72px;
   @include footer-text;
@@ -32,8 +32,8 @@ cursor: pointer;
 
 .footer__menu{
   display: flex;
-  margin-top: 104px;
-  } 
+  margin-top: 102px;
+} 
 
 .footer__menu--nav,
 .footer__menu--about-us,
@@ -45,38 +45,38 @@ cursor: pointer;
 
 
 .footer__menu--nav{
-  margin-right: 57px;
-  margin-left: 40px;
+  margin-right: 58px;
+  margin-left: 39px;
 }
 
 .footer__menu--about-us{
-  margin-right: 92px;
+  margin-right: 93px;
 }
 
 
 .footer__menu--support-service{
-  margin-right: 51px;
+  margin-right: 53px;
 }
 
 .footer__menu--link{
   display:block;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding:0px;
-  
-  
 }
+
 
 .footer__menu--first{
   color: #1F2041;
   font-weight: bold;
-  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__subscription{
@@ -85,30 +85,32 @@ cursor: pointer;
   width:260px; 
   flex-direction: column;
   text-align: left;
-  position: relative;
-  
-  }
+  position: relative; 
+}
+
+
 
 .subscription__header{
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: rgba(31, 32, 65, 1);
-  text-decoration: none;
-  margin-bottom: 21px; 
-  }
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 12px;
+line-height: 15px;
+text-transform: uppercase;
+color: #1F2041;
+position: absolute;
+top: -2px;
+}
 
 .subscription__text{
   @include footer-text;
   padding: 0px;
-  margin-bottom: 21px; 
+  margin-top: 31px; 
 }
 
 .subscription__input{
   @include input-medium;
-  
+  margin-top: 23px; 
 }
 
 .subscription__input::placeholder{
@@ -130,7 +132,7 @@ cursor: pointer;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor:pointer;
- top: 106px;
- left: 214px;
+ top: 102px;
+ left: 215px;
  
 }

@@ -1,6 +1,6 @@
 .footer {
   max-width: 1440px;
-  height: 372px;
+  height: 371px;
   background: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,7 +28,7 @@
 }
 
 .footer__text {
-  margin: 20px 0 0 140px;
+  margin: 16px 0 0 140px;
   width: 260px;
   height: 72px;
   font-family: Montserrat;
@@ -43,7 +43,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 104px;
+  margin-top: 102px;
 }
 
 .footer__menu--nav,
@@ -55,35 +55,36 @@
 }
 
 .footer__menu--nav {
-  margin-right: 57px;
-  margin-left: 40px;
+  margin-right: 58px;
+  margin-left: 39px;
 }
 
 .footer__menu--about-us {
-  margin-right: 92px;
+  margin-right: 93px;
 }
 
 .footer__menu--support-service {
-  margin-right: 51px;
+  margin-right: 53px;
 }
 
 .footer__menu--link {
   display: block;
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.5);
   text-decoration: none;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   padding: 0px;
 }
 
 .footer__menu--first {
   color: #1F2041;
   font-weight: bold;
-  margin-bottom: 21px;
+  font-size: 12px;
+  line-height: 15px;
 }
 
 .footer__subscription {
@@ -101,14 +102,15 @@
 }
 
 .subscription__header {
-  font-family: Montserrat;
+  font-family: 'Montserrat';
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1f2041;
-  text-decoration: none;
-  margin-bottom: 21px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  position: absolute;
+  top: -2px;
 }
 
 .subscription__text {
@@ -119,7 +121,7 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   padding: 0px;
-  margin-bottom: 21px;
+  margin-top: 31px;
 }
 
 .subscription__input {
@@ -130,7 +132,8 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  padding-left: 15px;
+  padding-left: 13px;
+  margin-top: 23px;
 }
 
 .subscription__input::-webkit-input-placeholder {
@@ -196,7 +199,7 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  top: 106px;
-  left: 214px;
+  top: 102px;
+  left: 215px;
 }
 /*# sourceMappingURL=footer.css.map */

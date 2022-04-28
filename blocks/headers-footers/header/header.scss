@@ -13,7 +13,7 @@
   width: 106px;
   display: flex;
   align-items: center;
-  margin: 15px 244px 0 140px;
+  margin: 14px 244px 0 140px;
   cursor: pointer;
 }
 
@@ -26,6 +26,7 @@
 .header__img--toxin{
   height: 13px;
   width: 53px;
+  padding-left: -2px;
 }
 
 .header__menu {
@@ -59,11 +60,12 @@
   height: 21px;
   display: flex;
   justify-content: flex-start;
-  margin-right: 20px;
+  padding-left: 1px;
 }
 
-.header__menu--img:hover{
-  color: rgba(31, 32, 65, 0.75);
+.header__ul--about-us{
+  padding-right: 2px;
+  
 }
 
 .header__ul--service {
@@ -77,19 +79,25 @@
 .header__buttons{
   display: flex;
   align-items: center;
-  
+ position: relative; 
 }
 
 
 .header__buttons--to-come-in{
-  margin-right:20px;
+  position: absolute;
+  top: 15px;
   @include button;
-  width: 95px;  
+  width: 87px;
+  left: -2px;
+  
 }
 
 .header__buttons--registration{
+  position: absolute;
   @include button;
   width: 196px;
+  top: 15px;
+  left: 105px;
   background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
   color:#ffffff;
 }

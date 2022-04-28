@@ -27,7 +27,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 62px;
+  margin-top: 64px;
   margin-left: 141px;
 }
 
@@ -39,7 +39,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 62px;
+  margin-top: 65px;
   margin-left: 126px;
 }
 
@@ -55,7 +55,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 62px;
+  margin-top: 65px;
   margin-right: 141px;
   margin-left: 132px;
 }
@@ -64,14 +64,14 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 58px;
+  margin-top: 61px;
 }
 
 .lists__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 141px;
+  margin-left: 140px;
   margin-top: 40px;
 }
 
@@ -79,7 +79,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 100px 0 0 140px;
+  margin: 96px 0 0 140px;
 }
 
 .text-field-default__wrapper {
@@ -125,7 +125,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 141px;
+  margin-left: 139px;
 }
 
 .dropdown-comfort-default__wrapper {
@@ -181,5 +181,9 @@ body {
 
 .bullet-list__wrapper {
   margin-left: 126px;
+}
+
+.comments__wrapper {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=form-elements.css.map */

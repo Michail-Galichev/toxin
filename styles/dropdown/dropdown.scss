@@ -17,8 +17,8 @@
   flex-direction: column;
   z-index: 1;
   position: absolute;  
-  top: 7px;
-  right: 7px;
+  top: 6px;
+  right: 6px;
 }
 
 .dropdown__count-buttons--minus{
@@ -26,8 +26,8 @@
   flex-direction: column;
   z-index: 1;
   position: absolute;
-  top: 7px;
-  right: 69px;  
+  top: 6px;
+  right: 68px;  
 }
 
 .dropdown__counters{
@@ -91,7 +91,7 @@
   @include text-link;
   position:absolute;
   left: 14px;
-  top: 4px;
+  top: 2px;
   display: none;
   
 }
@@ -99,5 +99,5 @@
   @include text-link;
   position:absolute;
   left: 229px;
-  top: 4px;
+  top: 2px;
 }

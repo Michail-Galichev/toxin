@@ -3,7 +3,7 @@
 .like{
   display: flex;
   flex-direction: column;
-  margin-top: 40.44px;
+  margin-top: 44px;
 }
 
 .like__header{
@@ -27,6 +27,7 @@ margin-bottom: 16px;
   cursor: pointer;
   margin-right: 10px;
   display: flex;
+  position:relative;
  }
 
 .like--checked {
@@ -50,8 +51,9 @@ margin-bottom: 16px;
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-    
   }
+
+  
 
 .like__count--none-checked{
   @include like-count;
@@ -61,13 +63,13 @@ margin-bottom: 16px;
   height: 13px;
   top: 3px;
   left: 22px;
-  z-index: 1;
+  z-index: -1;
   
 }
 
 .like__count--checked {
   @include like-count;
-  color: #bc9cff;
+  color:#bc9cff;
   position: absolute;
   width: 6px;
   height: 13px;
@@ -77,11 +79,10 @@ margin-bottom: 16px;
 }
 
 .like--none-checked:hover{
-  border: 1px solid rgba(188, 156, 255, 1)
+  border: 1px solid rgba(188, 156, 255, 1);
 }
 
-.like--none-checked:hover .like__count--none-checked
- {
+.like--none-checked:hover .like__count--none-checked{
   color: #bc9cff;
 }
 
@@ -109,4 +110,14 @@ margin-bottom: 16px;
   -webkit-text-fill-color: transparent;
 }
 
+.js-favorite{
+  @include favorite;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
 
+.js-like--none-checked{
+  border: 1px solid rgba(188, 156, 255, 1);
+}

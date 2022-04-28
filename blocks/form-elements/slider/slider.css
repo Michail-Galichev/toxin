@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 266px;
+  position: relative;
 }
 
 .range-slider__text {
@@ -14,9 +15,6 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .range-slider__header {
@@ -28,6 +26,7 @@
   text-transform: uppercase;
   color: #1F2041;
   white-space: pre;
+  margin-right: 63px;
 }
 
 .js-range-slider__price {
@@ -78,5 +77,11 @@
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
   margin-top: 10.56px;
+}
+
+.js-range-slider__body {
+  position: absolute;
+  top: 38px;
+  left: -2px;
 }
 /*# sourceMappingURL=slider.css.map */

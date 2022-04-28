@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40.44px;
+  margin-top: 44px;
 }
 
 .like__header {
@@ -40,6 +40,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
 }
 
 .like--checked {
@@ -126,7 +127,7 @@
   height: 13px;
   top: 3px;
   left: 22px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .like__count--checked {
@@ -178,5 +179,37 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.js-favorite {
+  width: 18px;
+  height: 18px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+  position: absolute;
+  z-index: 1;
+  left: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.js-like--none-checked {
+  border: 1px solid #bc9cff;
 }
 /*# sourceMappingURL=like-buttons.css.map */

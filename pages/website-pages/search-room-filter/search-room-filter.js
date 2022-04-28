@@ -146,7 +146,7 @@ function openDropComfort(){
   
 
 
-function counterComfort ($array, $elemComfort){ 
+function $counterComfort ($array, $elemComfort){ 
   if ($elemComfort === 1){
     return $elemAndDescription = $elemComfort + $array[0];
   }  else if ($elemComfort > 1 && $elemComfort < 5){
@@ -188,7 +188,7 @@ function counterComfort ($array, $elemComfort){
 .val('');
   $(document).click(function(e){
     var $elemTarget = $(e.target);
-    var $elemTargetAtr = $elemTarget.attr("class")
+    var $elemTargetAtr = $elemTarget.attr("class");
     
     
     if ($elemTargetAtr.includes('js-com-plus--first')){
@@ -255,9 +255,9 @@ function counterComfort ($array, $elemComfort){
         $countLast=0;
       }  
     }
-    $inputDropComfort.val(counterComfort ($arrayBadRoom, $countFirst) + 
-    counterComfort ($arrayBad, $countAverage) +
-    counterComfort ($arrayBathRoom, $countLast) );
+    $inputDropComfort.val($counterComfort ($arrayBadRoom, $countFirst) + 
+    $counterComfort ($arrayBad, $countAverage) +
+    $counterComfort ($arrayBathRoom, $countLast) );
   });
 
     

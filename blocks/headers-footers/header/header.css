@@ -18,7 +18,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 15px 244px 0 140px;
+  margin: 14px 244px 0 140px;
   cursor: pointer;
 }
 
@@ -31,6 +31,7 @@
 .header__img--toxin {
   height: 13px;
   width: 53px;
+  padding-left: -2px;
 }
 
 .header__menu {
@@ -85,11 +86,11 @@
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-right: 20px;
+  padding-left: 1px;
 }
 
-.header__menu--img:hover {
-  color: rgba(31, 32, 65, 0.75);
+.header__ul--about-us {
+  padding-right: 2px;
 }
 
 .header__ul--service {
@@ -107,10 +108,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__buttons--to-come-in {
-  margin-right: 20px;
+  position: absolute;
+  top: 15px;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -133,10 +136,12 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  width: 95px;
+  width: 87px;
+  left: -2px;
 }
 
 .header__buttons--registration {
+  position: absolute;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -160,6 +165,8 @@
   font-size: 12px;
   line-height: 15px;
   width: 196px;
+  top: 15px;
+  left: 105px;
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;

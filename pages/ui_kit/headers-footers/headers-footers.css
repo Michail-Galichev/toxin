@@ -6,6 +6,11 @@ body {
   background: #F4F4F6;
 }
 
+.logo__wrapper {
+  width: 48px;
+  height: 48px;
+}
+
 .container {
   max-width: 1440px;
   min-width: 320px;
@@ -13,7 +18,7 @@ body {
 }
 
 .header__wrapper {
-  margin-top: 67px;
+  margin-top: 64px;
 }
 
 .header__wrapper--account {
@@ -24,10 +29,9 @@ body {
   margin-top: 40px;
 }
 
-.copyright__wrapper {
-  margin-top: 1px;
-}
-
+/* .copyright__wrapper{
+  margin-top: px;
+} */
 .footer-mobile__wrapper {
   margin-top: 40px;
 }

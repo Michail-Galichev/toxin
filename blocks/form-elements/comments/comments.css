@@ -13,7 +13,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-right: 10px;
+  margin-right: 11px;
 }
 
 .coments__like-wrapper {
@@ -55,5 +55,6 @@
   font-weight: normal;
   height: 72px;
   width: 653px;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=comments.css.map */

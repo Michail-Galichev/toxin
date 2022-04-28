@@ -6,7 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 40px;
+  margin-top: 53px;
 }
 
 .buttons__header {
@@ -109,6 +109,7 @@
 
 .buttons__border-wrapper {
   margin-right: 20px;
+  margin-bottom: 15px;
 }
 
 .button__text {
@@ -130,6 +131,7 @@
 
 .buttons__text-wrapper {
   margin-right: 20px;
+  margin-bottom: 14px;
 }
 
 .buttons__text-wrapper-opacity {
@@ -142,6 +144,7 @@
 
 .button {
   position: relative;
+  cursor: pointer;
 }
 
 .button__price {
@@ -177,7 +180,7 @@
 .button__arrow {
   position: absolute;
   color: #ffffff;
-  left: 276px;
+  left: 277px;
   cursor: pointer;
   font-family: "Material Icons";
   font-style: normal;
@@ -195,6 +198,14 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.button__arrow:hover + .button__price {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.5)), to(rgba(139, 164, 249, 0.5))) border-box;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(188, 156, 255, 0.5)), to(rgba(139, 164, 249, 0.5)));
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 
 .button__price:hover {

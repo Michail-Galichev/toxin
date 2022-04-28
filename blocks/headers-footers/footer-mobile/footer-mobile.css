@@ -16,12 +16,20 @@
       -ms-flex-pack: center;
           justify-content: center;
   margin: auto;
+  position: relative;
 }
 
 .footer-mobile__logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: absolute;
+  top: 120px;
+  left: 331px;
+}
+
+.footer-mob__img--logo {
+  margin-right: 12px;
 }
 
 .footer-mobile__icon {
@@ -31,7 +39,7 @@
 }
 
 .footer-mobile__text {
-  margin: 20px 0 25px 0;
+  margin: 60px 0 26px 0;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -54,7 +62,6 @@
 .fa {
   width: 24px;
   height: 24px;
-  top: 23px;
   font-style: normal;
   font-weight: normal;
   font-size: 24px;

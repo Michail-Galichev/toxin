@@ -6,6 +6,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-top: 6px;
 }
 
 .radio__header {
@@ -16,7 +17,7 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #1F2041;
-  margin-bottom: 16.56px;
+  margin-bottom: 15px;
 }
 
 .radio__buttons {
