@@ -29,7 +29,7 @@
 
 .footer__text {
   margin: 16px 0 0 140px;
-  width: 260px;
+  max-width: 260px;
   height: 72px;
   font-family: Montserrat;
   font-style: normal;
@@ -92,7 +92,7 @@
   display: -ms-flexbox;
   display: flex;
   margin-top: 104px;
-  width: 260px;
+  max-width: 260px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -125,7 +125,7 @@
 }
 
 .subscription__input {
-  width: 260px;
+  max-width: 260px;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -200,6 +200,30 @@
   -webkit-text-fill-color: transparent;
   cursor: pointer;
   top: 102px;
-  left: 215px;
+  right: 1px;
+}
+
+@media (max-width: 1320px) {
+  .footer__logo, .footer__text {
+    margin-left: 35px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .footer__subscription {
+    margin-right: 35px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header__logo {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 961px) {
+  .subscription__forvard {
+    top: 126px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

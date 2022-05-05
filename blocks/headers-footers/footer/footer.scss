@@ -24,7 +24,7 @@ cursor: pointer;
 
 .footer__text{
   margin: 16px 0 0 140px; 
-  width: 260px;
+  max-width: 260px;
   height: 72px;
   @include footer-text;
   
@@ -82,7 +82,7 @@ cursor: pointer;
 .footer__subscription{
   display: flex;
   margin-top: 104px;
-  width:260px; 
+  max-width:260px; 
   flex-direction: column;
   text-align: left;
   position: relative; 
@@ -133,6 +133,32 @@ top: -2px;
   -webkit-text-fill-color: transparent;
   cursor:pointer;
  top: 102px;
- left: 215px;
- 
+ right: 1px;
+
 }
+
+@media (max-width: 1320px){
+  .footer__logo,.footer__text{
+    margin-left: 35px;  
+  }
+  
+}
+
+@media (max-width:1210px){
+  .footer__subscription{
+    margin-right: 35px;
+  }  
+}
+
+@media (max-width: 1080px){
+  .header__logo{
+    margin-right: 10px;
+  }
+} 
+
+@media (max-width:961px){
+  .subscription__forvard{
+    top: 126px;
+  } 
+}
+
