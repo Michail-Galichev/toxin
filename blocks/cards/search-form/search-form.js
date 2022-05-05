@@ -5,5 +5,7 @@ $( function(){
     'border' : '1px solid  rgba(31, 32, 65, 0.25)'
   });
   $('.search-form__guests-wrapper .js-guests-filled-in__input')
-  .attr('placeholder','Сколько гостей')
+  .attr('placeholder','Сколько гостей');
+  $('.js-search-form__button .js-button__price')
+  .html('подобрать номер');
 });

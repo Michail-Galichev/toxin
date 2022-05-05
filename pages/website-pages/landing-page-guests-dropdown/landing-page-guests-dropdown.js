@@ -11,4 +11,13 @@ $(function(){
     'border' : '1px solid rgba(31, 32, 65, 0.5)'
   });
 
+  $('.js-header-wrapper .js-header__buttons')
+  .css({
+    'margin-top' : '2px'
+  });
+  $('.js-header-wrapper .js-header__logo')
+  .css({
+    'margin-top' : '16px'
+  });
+
 });

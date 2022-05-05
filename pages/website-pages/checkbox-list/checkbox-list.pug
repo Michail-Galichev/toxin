@@ -3,7 +3,7 @@ block variables
   - var titlePage = 'Search room/checkbox-list Expandable Checkbox list'
   - var masked = 'даты пребывания в отеле'
   - var dropdownGuests = 'гости'
-  - var dropdownComfort = 'Удобства'
+  - var dropdownComfort = 'удобства номера'
   - var rangeSlider = 'диапазон цены'
   - var checkboxButtons = 'правила дома'
   - var richCheckbox = 'доступность'
@@ -27,7 +27,7 @@ block style
   include ../../../blocks/headers-footers/copyright/copyright.css
 block content
   .container
-    .checkbox-list__header-wrapper 
+    .checkbox-list__header-wrapper.js-header-wrapper
       include ../../../blocks/headers-footers/header/header
     .checkbox-list__content-wrapper
       .checkbox-list__side-bare-form-wrapper
@@ -86,4 +86,5 @@ block content
 block scripts
   script 
     include checkbox-list.js
+    include ../landing-page-date-dropdown/landing-page-date-dropdown.js
     include ../../../blocks/form-elements/slider/slider.js

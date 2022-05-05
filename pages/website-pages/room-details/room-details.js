@@ -2,6 +2,16 @@ $(function(){
 $('.js-arrival-date').attr('placeholder', '19.08.2019');
 $('.js-departure-date').attr('placeholder', '23.08.2019');
 $('.js-review-like--men .like__count--none-checked').text('12');
+$('.js-form-wrapper .js-button__price')
+.html('забронировать');
+$('.js-header-wrapper .js-header__buttons')
+  .css({
+    'margin-top' : '2px'
+  });
+  $('.js-header-wrapper .js-header__logo')
+  .css({
+    'margin-top' : '16px'
+  });
 
   function getLikeMen (){
     var $numOffClicks = 0;

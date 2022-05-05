@@ -1,7 +1,6 @@
 extends ../../../templates/sample
 block variables
   - var titlePage = 'Sign in'
-  - var mainText = 'войти'
   - var textButton = 'создать'
   - var hrefButtonBorder = '../../../pages/website-pages/registration/registration.pug'
 
@@ -17,7 +16,7 @@ block style
 block content
   .container
     .sign-in__background-wrapper
-      .sign-in__header-wrapper 
+      .sign-in__header-wrapper.js-header-wrapper 
         include ../../../blocks/headers-footers/header/header
       .sign-in__form-wrapper.js-sign-in__form 
         include ../../../blocks/cards/entry-form/entry-form

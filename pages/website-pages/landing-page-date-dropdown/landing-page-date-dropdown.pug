@@ -7,6 +7,7 @@ block style
   include ../../../styles/dropdown/dropdown.css
   include landing-page-date-dropdown.css
   include ../../../blocks/headers-footers/header/header.css
+  
   include ../../../blocks/cards/search-form/search-form.css
   include ../../../blocks/form-elements/buttons/buttons.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
@@ -17,8 +18,8 @@ block style
 block content 
   .container
     .date-dropdown__background-wrapper
-      .date-dropdown__header-wrapper
-      include ../../../blocks/headers-footers/header/header
+      .date-dropdown__header-wrapper.js-header-wrapper
+        include ../../../blocks/headers-footers/header/header
       .date-dropdown__search-form-wrapper
         include ../../../blocks/cards/search-form/search-form
         .date-dropdown__calendar-wrapper

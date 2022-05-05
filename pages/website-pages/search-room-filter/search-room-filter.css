@@ -20,13 +20,14 @@ body {
 }
 
 .filter__header-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .filter__content-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 5px;
 }
 
 .filter__cards-room-wrapper {
@@ -49,19 +50,17 @@ body {
   line-height: 29px;
   color: #1F2041;
   margin-bottom: 21px;
+  margin-top: 5px;
 }
 
 .filter__room-row-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .filter__room-row-wrapper {
-  margin-bottom: 20.5px;
+  margin-bottom: 21px;
 }
 
 .filter__side-bare-form-wrapper {
@@ -73,7 +72,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 466px;
-  margin: 30px 60px 0 140px;
+  margin: 0 60px 0 140px;
 }
 
 .filter__guests-dropdown-wrapper {
@@ -98,7 +97,7 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
-  margin-top: 10.56px;
+  margin-top: 22px;
 }
 
 .filter__house-rules-wrapper {
@@ -106,7 +105,7 @@ body {
 }
 
 .filter__availability-form__wrapper {
-  margin-top: 12px;
+  margin-top: 17px;
 }
 
 .filter__comfort-wrapper {
@@ -118,7 +117,7 @@ body {
 }
 
 .filter__pagination-wrapper {
-  margin: 40px 0 70px 287px;
+  margin: 41px 0 70px 289px;
   width: 241px;
 }
 
@@ -135,7 +134,7 @@ body {
 
 .filter__masked-field-expand-more {
   position: absolute;
-  top: 19px;
+  top: 25px;
   left: 222px;
   width: 44px;
   height: 44px;

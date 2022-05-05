@@ -30,7 +30,7 @@ $(function(){
 
   $('.js-pref__guest-dropdown .js-guests-emp__expand-more')
   .css({
-    'left' : '220px'
+    'left' : '222px'
   });
 
   $('.js-pref__comfort .js-drop-com-exp__form')

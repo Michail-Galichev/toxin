@@ -36,7 +36,7 @@ $(function(){
             "Разочарован"
           ],
           datasets: [{
-            data: [0, 0, 0, 0],
+            data: [260, 0, 0, 0],
             backgroundColor: arrayColors,
             hoverOffset: 1,
             hoverBackgroundColor: arrayColors,
@@ -54,7 +54,7 @@ $(function(){
           },
           
           showTooltips : true,
-          cutoutPercentage: 85,
+          cutoutPercentage: 90,
           legend: false,
           legendCallback: function(chart) {
             var text = [];
@@ -105,7 +105,7 @@ $(function(){
   
             var text = total,
                 textX = Math.round((width - ctx.measureText(text).width) / 2),
-                textY = (height / 2)+7;
+                textY = (height / 2)+5;
             ctx.fillStyle= '#BC9CFF';
             ctx.fontWeight = 700
             ctx.fillText(text, textX, textY);
@@ -118,8 +118,8 @@ $(function(){
           data: data,
           options: options
         });
-        $("#chartjs-legend").html(chart.generateLegend());
-        $("#chartjs-legend").on('click', "li", function() {
+        $(".js-diagramm--legend").html(chart.generateLegend());
+        $(".js-diagramm--legend").on('click', "li", function() {
           chart.data.datasets[0].data[$(this).index()] += 1;
           chart.update();
           console.log('legend: ' + data.datasets[0].data[$(this).index()]);

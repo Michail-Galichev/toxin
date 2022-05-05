@@ -2,10 +2,11 @@ $(function(){
   $('.js-mask-text-field__input')
   .css({
     'width' : '266px'
-  });
+  })
+  .attr('placeholder', '19 авг - 23 авг');
 
   $('.js-guests-filled-in__input')
-  .attr('placeholder', 'Сколько гостей')
+  .attr('placeholder', '3 гостя, 1 младенец')
   .css({
     'width' : '266px',
     'border' : '1px solid rgba(31, 32, 65, 0.25)',
@@ -14,7 +15,7 @@ $(function(){
 
   $('.js-guests-filled-in__expand-more')
   .css({
-    'left' : '220px'
+    'left' : '222px'
   });
 
   $('.js-room-card__form:not(:last)')
@@ -46,7 +47,10 @@ $(function(){
     'border-top' : '1px solid rgba(31, 32, 65, 0.25)'
   });  
 
-  
+  $('.js-room-card--888 .js-room-card__luxury')
+  .css({
+    'margin-right' : '0px'
+  })  
 
   function openCheckboxList(){
     const $checkboxList = $('.js-checkbox-list-advanced');

@@ -1,10 +1,9 @@
 extends ../../../templates/sample
 block variables
   - var titlePage = 'Room details'
-  - var mainText = 'забронировать'
   - var dropdownGuests = 'гости'
-  - var dateDropdownIn = 'дата прибытия'
-  - var dateDropdownOut = 'дата отъезда'
+  - var dateDropdownIn = 'прибытие'
+  - var dateDropdownOut = 'выезда'
   
 
 block style 
@@ -21,7 +20,7 @@ block style
   include ../../../blocks/cards/calendar/calendar.css
 block content
   .container
-    .room-details__header-wrapper
+    .room-details__header-wrapper.js-header-wrapper
       include ../../../blocks/headers-footers/header/header
     .room-details__images-wrapper
       .room-details__main-image
@@ -63,9 +62,9 @@ block content
           .room-details__impression
             .room-details__impression--title Впечатления от номера
             .room-details__impression--diagramm
-              div(id="chart" class="noselect" style="position: relative;")
-                canvas(id="myChart" height="120" width="120")
-              div(id="chartjs-legend" class="noselect")
+              .room-details__diagramm
+                canvas(id="myChart" height="125" width="122")
+              .room-details__diagramm--legend.js-diagramm--legend
               .room-details__impression--votes голосов
                   
               
@@ -103,16 +102,22 @@ block content
         .room-details__rules-cansel
             .room-details__rules       
               .room-details__rules-title Правила
-              ul.room-details__rules-ul 
-                li(class = "room-details__rules-li") Нельзя с питомцами
-                li(class = "room-details__rules-li") Без вечеринок 
-                li(class = "room-details__rules-li") Время прибытия - после 13:00, а выезд до 12:00
+              .room-details__rules-content  
+                .room-details__rules-marker 
+                  .room-details__marker  
+                  .room-details__marker
+                  .room-details__marker
+                ul.room-details__rules-ul 
+                  li(class = "room-details__rules-li") Нельзя с питомцами
+                  li(class = "room-details__rules-li") Без вечеринок и мероприятий
+                  li(class = "room-details__rules-li") Время прибытия &mdash; после 13:00, а выезд до 12:00
+                
 
             .room-details__cansel
               .room-details__cansel-title Отмена
               .room-details__cansel-content Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. 
                 | до прибытия вы получите полный возврат за вычетом сбора за услуги.  
-      .room-details__form__wrapper
+      .room-details__form-wrapper.js-form-wrapper
         include ../../../blocks/cards/booking-form/booking-form
         .room-details__calendar-wrapper.js-search-room__calendar
           include ../../../blocks/cards/calendar/calendar

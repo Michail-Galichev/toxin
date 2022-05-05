@@ -6,8 +6,7 @@ body {
 }
 
 .container {
-  width: 1440px;
-  min-width: 320px;
+  max-width: 1440px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

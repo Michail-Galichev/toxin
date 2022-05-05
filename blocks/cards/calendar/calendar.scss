@@ -11,7 +11,7 @@
 .datepicker--nav{
   display: flex;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .datepicker--nav-title,
@@ -23,6 +23,7 @@ font-size: 19px;
 line-height: 23px;
 text-align: center;
 color: #1F2041;
+margin-top: 2px;
 }
 
 .datepicker--cells {
@@ -56,7 +57,7 @@ background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 
 .datepicker--days-names{
   display:flex;
-  margin: 30px 20px 0 19.88px;
+  margin: 29px 20px 0 19.88px;
 }
 
 .datepicker--day-name{

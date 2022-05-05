@@ -15,6 +15,9 @@
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .range-slider__header {
@@ -26,7 +29,6 @@
   text-transform: uppercase;
   color: #1F2041;
   white-space: pre;
-  margin-right: 63px;
 }
 
 .js-range-slider__price {

@@ -1,7 +1,6 @@
 extends ../../../templates/sample
 block variables
   - var titlePage = 'Registration'
-  - var mainText = 'зарегистрироваться'
   - var textButton = 'войти'
   - var masked = 'дата рождения'
   - var hrefButtonBorder = '../../../pages/website-pages/sign-in/sign-in.pug'
@@ -21,7 +20,7 @@ block style
 block content
   .container
     .registartion__background-wrapper
-      .registartion__header-wrapper 
+      .registartion__header-wrapper.js-header-wrapper 
         include ../../../blocks/headers-footers/header/header
       .registration__form-wrapper 
         include ../../../blocks/cards/registration-form/registration-form
