@@ -8,24 +8,27 @@ block style
   include ../../../styles/dropdown/dropdown.css
   include landing-page.css
   include ../../../blocks/headers-footers/header/header.css
+  include ../../../blocks/headers-footers/header-account/header-account.css
   include ../../../blocks/cards/search-form/search-form.css
   include ../../../blocks/form-elements/buttons/buttons.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
   include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
   include ../../../blocks/headers-footers/copyright/copyright.css
   include ../../../blocks/cards/calendar/calendar.css
 block content 
   .container
-    
     .landing-page__background-wrapper
-      .landing-page__header-wrapper
-      include ../../../blocks/headers-footers/header/header  
+      .landing-page__header-wrapper.js-header-wrapper
+        include ../../../blocks/headers-footers/header/header  
       .landing-page__search-form-wrapper.js-landing-page__search-form
         include ../../../blocks/cards/search-form/search-form
         
     .landing-page__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
+    .landing-page__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile  
     .landing-page__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts
