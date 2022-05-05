@@ -8,14 +8,14 @@
 
 }
 
-.header__logo {
+.header__account-logo {
   display: flex;
   margin-left: 140px;
   margin-right: 244px;
   cursor: pointer;
 }
 
-.header__img--logo {
+.header__account-img--logo {
   margin-right: 12.5px;
 }
 
@@ -24,7 +24,7 @@
   align-items: center;
   margin-left: 182px;
 }
-.header__ul {
+.header__account-ul {
   display: flex;
   list-style-type: none;
 }
