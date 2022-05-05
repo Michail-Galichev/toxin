@@ -1,6 +1,11 @@
 .copyright {
   height: 68px;
   background: #ffffff;
+  border-top: 1px solid rgba(31, 32, 65, 0.25);
+}
+
+.copyright-wrapper {
+  margin: 23px 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,14 +15,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid rgba(31, 32, 65, 0.25);
 }
 
 .copyright__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 139px;
 }
 
 .fa:not(:last-child) {
@@ -31,7 +34,6 @@
   font-size: 14px;
   line-height: 17px;
   color: rgba(31, 32, 65, 0.75);
-  margin-left: 140px;
 }
 
 .fa--gradient {
