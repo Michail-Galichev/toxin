@@ -37,6 +37,13 @@
   list-style-type: none;
 }
 
+.header__account-ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
 .header__menu--link {
   text-decoration: none;
   font-family: Montserrat;

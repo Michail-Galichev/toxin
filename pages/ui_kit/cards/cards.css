@@ -60,11 +60,12 @@ body {
   margin-top: 42px;
 }
 
-.room-cards__wrapper {
-  margin-top: 38px;
+.adaptive-wrapper {
+  margin-top: 37px;
+  margin-left: 140px;
 }
 
-.booking-form__wrapper {
-  margin-top: 0px;
+.room-cards__wrapper {
+  margin-top: 38px;
 }
 /*# sourceMappingURL=cards.css.map */

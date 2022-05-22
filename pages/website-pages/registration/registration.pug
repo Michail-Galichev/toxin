@@ -1,5 +1,6 @@
 extends ../../../templates/sample
 block variables
+  - var labelText = 'Получать спецпредложения'
   - var titlePage = 'Registration'
   - var textButton = 'войти'
   - var masked = 'дата рождения'
@@ -8,6 +9,7 @@ block variables
 block style 
   include ../../../styles/dropdown/dropdown.css
   include registration.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
   include ../../../blocks/headers-footers/header/header.css
   include ../../../blocks/cards/registration-form/registration-form.css
   include ../../../blocks/form-elements/buttons/buttons.css
@@ -17,6 +19,7 @@ block style
   include ../../../blocks/form-elements/text-field-default/text-field-default.css
   include ../../../blocks/headers-footers/footer/footer.css
   include ../../../blocks/headers-footers/copyright/copyright.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
 block content
   .container
     .registartion__background-wrapper
@@ -24,6 +27,8 @@ block content
         include ../../../blocks/headers-footers/header/header
       .registration__form-wrapper 
         include ../../../blocks/cards/registration-form/registration-form
+    .registration__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile   
     .registration__footer-wrapper 
       include ../../../blocks/headers-footers/footer/footer
     .registration__copyright-wrapper
@@ -32,3 +37,4 @@ block scripts
   script 
     include registration.js
     include ../../../blocks/cards/registration-form/registration-form.js 
+    include ../../../blocks/headers-footers/header/header.js

@@ -8,4 +8,5 @@ $( function(){
   .attr('placeholder','Сколько гостей');
   $('.js-search-form__button .js-button__price')
   .html('подобрать номер');
+  
 });

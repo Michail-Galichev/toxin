@@ -1,4 +1,5 @@
 .dropdown-com-def {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,6 +18,10 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 5px;
+}
+
+.dropdown-com-def__header {
+  margin-right: 128px;
 }
 
 .dropdown-com-def__header {
@@ -40,7 +45,7 @@
 }
 
 .dropdown-com-def__input {
-  width: 266px;
+  width: 100%;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -92,7 +97,7 @@
 .dropdown-com-def__expand-more {
   position: absolute;
   top: 20px;
-  left: 222px;
+  right: 0;
   width: 42px;
   height: 42px;
   font-family: Material Icons;

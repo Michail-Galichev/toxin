@@ -1,12 +1,10 @@
 body{
 margin: 0px;
 padding: 0px;
-max-width : 1440px;
-height : 1853px;
 }
 
 .container{
-  width: 1440px;
+  max-width: 1440px;
   min-width: 320px;
   display: flex;
   margin: 0 auto;
@@ -14,18 +12,24 @@ height : 1853px;
   justify-content: flex-start;  
 }
 
+.section__fields-buttons{
+  width: 100%;
+  display: flex;
+  margin: 64px 141px 0 140px;
+}
+
 .text-fields__wrapper{
+  max-width: 320px;
   display: flex;
   flex-direction: column;
-  margin-top: 64px;
-  margin-left: 141px;
+  margin-right: 126px;
 }
 
 .checkbox-radio-buttons__wrapper{
+  width: 266px;
   display: flex;
   flex-direction: column;
-  margin-top: 65px;
-  margin-left: 126px;
+  margin-right: 127px;
 }
 
 .checkbox__wrapper{
@@ -33,16 +37,23 @@ height : 1853px;
 }
 
 .slider-buttons__wrapper{
+  width: 320px;
   display: flex;
   flex-direction: column;
-  margin-top: 65px;
-  margin-right: 141px;
-  margin-left: 132px;
+  margin-top: 2px;
+}
+
+.buttons__wrapper{
+  margin-top: 42px;
+  margin-right: 5px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .dropdowns__wrapper{
   display: flex;
-  margin-top:61px;
+  margin:100px 141px 54px 140px;
 }
 
 .lists__wrapper {
@@ -53,14 +64,10 @@ height : 1853px;
 
 .user-reviews__wrapper{
   display:flex;
-  margin: 96px 0 0 140px;
+  margin: 488px 0 0 140px;
 }
 
-.text-field-default__wrapper  {
-  display:flex;
-  margin-bottom: 20px ;
-}
-
+.text-field-default__wrapper,
 .text-field-hover-focus__wrapper,
 .masked-text-field__wrapper, 
 .text-field-dropdown__wrapper{
@@ -72,21 +79,24 @@ height : 1853px;
 .filter-date-dropdown__wrapper,
 .subscription-text-field__wrapper{
   display:flex;
-  margin-bottom: 40px;
+}
+
+.date-dropdown__wrapper{
+  margin-top: 10px;
+}
+.subscription-text-field__wrapper,
+.filter-date-dropdown__wrapper{
+  margin-top: 40px;
 }
 
 .toogle__wrapper{
   margin-top: 35px;
 }
 
-.buttons__wrapper{
-  display: flex;
-}
-
 .dropdown-comfort__wrapper{
   display: flex;
   flex-direction: column;
-  margin-left: 139px;
+  max-width: 266px;
 }
 
 .dropdown-comfort-default__wrapper{
@@ -101,14 +111,19 @@ height : 1853px;
 }
 
 .dropdown-guests-empty__wrapper{
+  width: 320px;
   display: flex;
   margin-left: 181px;
+  
 }
 
 .dropdown-guests-filled-in__wrapper{
+  width: 320px;
   display: flex;
   margin-left: 72px;
+  box-sizing: border-box;
 }
+
 
 .checkbox-lists__wrapper,
 .bullet-list__wrapper,

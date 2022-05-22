@@ -1,4 +1,5 @@
 .dropdown-guests-filled-in {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,8 +22,8 @@
 }
 
 .dropdown-guests-filled-in__input {
-  width: 320px;
   height: 44px;
+  width: 100%;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
@@ -74,7 +75,7 @@
 .dropdown-guests-filled-in__expand-more {
   position: absolute;
   top: 21px;
-  left: 277px;
+  right: 0px;
   width: 42px;
   height: 42px;
   font-family: Material Icons;
@@ -107,7 +108,7 @@
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   height: 159px;
-  width: 320px;
+  width: 100%;
   background: #ffffff;
   border-top: none;
   z-index: 5;

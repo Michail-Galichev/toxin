@@ -6,7 +6,10 @@ form.booking-form(action="#")
     .booking-form__price 9 990₽ 
       span.booking-form__per-day в сутки
   .booking-form__date-wrapper 
-    include ../../form-elements/date-dropdown/date-dropdown
+    .booking-form__arrival-wrapper
+      include ../../form-elements/date-dropdown/arrival
+    .booking-form__departure-wrapper
+      include ../../form-elements/date-dropdown/departure
   .booking-form__guests-wrapper 
     include ../../form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in
   .booking-form__cost-calculation-wrapper

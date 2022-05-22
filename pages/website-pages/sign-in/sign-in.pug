@@ -7,12 +7,15 @@ block variables
 block style 
   include ../../../styles/dropdown/dropdown.css
   include sign-in.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
   include ../../../blocks/headers-footers/header/header.css
   include ../../../blocks/cards/entry-form/entry-form.css
   include ../../../blocks/form-elements/buttons/buttons.css
   include ../../../blocks/form-elements/text-field-default/text-field-default.css
   include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
   include ../../../blocks/headers-footers/copyright/copyright.css
+  
 block content
   .container
     .sign-in__background-wrapper
@@ -22,9 +25,12 @@ block content
         include ../../../blocks/cards/entry-form/entry-form
     .sign-in__footer-wrapper 
       include ../../../blocks/headers-footers/footer/footer
+    .sign-in__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile   
     .sign-in__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts
   script 
     include sign-in.js
     include ../../../blocks/cards/entry-form/entry-form.js
+    include ../../../blocks/headers-footers/header/header.js

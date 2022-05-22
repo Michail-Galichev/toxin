@@ -116,4 +116,22 @@
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
+
+@media (max-width: 360px) {
+  .toogle__label {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .toogle--none-checked::before {
+    top: 4px;
+  }
+  .toogle__input--none-checked:checked ~ .toogle--none-checked::before {
+    top: 4px;
+  }
+}
 /*# sourceMappingURL=toogle.css.map */

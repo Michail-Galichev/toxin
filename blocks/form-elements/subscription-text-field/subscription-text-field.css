@@ -69,8 +69,8 @@
 
 .subscription-text-field__expand-more {
   position: absolute;
-  top: 19.5px;
-  left: 221px;
+  top: 20px;
+  right: 1px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -89,5 +89,9 @@
           align-items: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
+  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 /*# sourceMappingURL=subscription-text-field.css.map */

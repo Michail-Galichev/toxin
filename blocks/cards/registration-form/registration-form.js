@@ -25,6 +25,6 @@ $ ( function(){
   });
 
 
-  $('.js-reg-form__button  .js-button__price').html('зарегистрироваться');
+  $('.js-reg-form__button  .js-button__price').html('перейти к оплате');
 
 });

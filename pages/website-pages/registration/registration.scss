@@ -1,29 +1,55 @@
 body{
   margin: 0px;
   padding: 0px;
-  max-width : 1440px;
-  height : 100%;
+  font-family: Montserrat;
   }
   
   .container{
-    width: 1440px;
+    max-width: 1440px;
     min-width: 320px;
     display: flex;
     margin: 0 auto;
     flex-direction: column;
   }
 
-  .registartion__header-wrapper {
-    z-index: 5;
-  }
-
+  
   .registartion__background-wrapper{
     background-image: url('../../../static/image/registration.png');
-    height: 100%;
-    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .registration__form-wrapper {
     z-index: 5;   
-    margin: 18px 526px 21px 532px;
+    margin: 18px 0 21px 532px;
   }
+
+  .registration__footer-mobile-wrapper{
+    display: none;
+  }
+
+  @media (max-width:900px){
+    .registration__footer-wrapper,
+    .registration__copyright-wrapper{
+      display: none;
+    }
+    
+    .registration__footer-mobile-wrapper{
+      display: block;
+    } 
+  }
+
+@media (max-width:930px){
+  .registration__form-wrapper{
+    margin-left: 30px;
+  }
+}
+
+
+
+@media (max-width:420px){
+  .registration__form-wrapper{
+    margin: 70px 20px 386px 20px;
+  }
+}

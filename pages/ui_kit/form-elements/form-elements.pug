@@ -12,6 +12,7 @@ block variables
   - var filterDateDropdown = 'filter date dropdown'
   - var subscriptionTextField = 'subscription text field'
   - var expandableCheckboxList = 'expandable checkbox list'
+  - var labelText = 'Получать спецпредложения'
   - var richCheckboxButtons = 'rich checkbox buttons'
   - var checkboxButtons = 'checkbox buttons'
   - var radioButtons = 'radio buttons'
@@ -61,39 +62,40 @@ block content
   .logo__wrapper
     include ../../../blocks/colors-type/logo/logo
   .container
-    .text-fields__wrapper
-      .text-field-default__wrapper 
-        include ../../../blocks/form-elements/text-field-default/text-field-default  
-      .text-field-hover-focus__wrapper 
-        include ../../../blocks/form-elements/text-field-hover-focus/text-field-hover-focus
-      .text-field-dropdown__wrapper 
-        include ../../../blocks/form-elements/text-field-dropdown/text-field-dropdown
-      .masked-text-field__wrapper
-        include ../../../blocks/form-elements/masked-text-field/masked-text-field
-      .date-dropdown__wrapper
-        include ../../../blocks/form-elements/date-dropdown/date-dropdown
-      .filter-date-dropdown__wrapper
-        include ../../../blocks/form-elements/filter-date-dropdown/filter-date-dropdown
-      .subscription-text-field__wrapper
-        include ../../../blocks/form-elements/subscription-text-field/subscription-text-field
-    .checkbox-radio-buttons__wrapper
-      .checkbox__wrapper 
-        include ../../../blocks/form-elements/checkbox-buttons/checkbox-buttons
-      .radio__wrapper 
-        include ../../../blocks/form-elements/radio-buttons/radio-buttons-block
-      .toogle__wrapper 
-        include ../../../blocks/form-elements/toogle/toogle
-      .like-buttons__wrapper 
-        include ../../../blocks/form-elements/like-buttons/like-buttons
-      .rate-buttons__wrapper 
-        include ../../../blocks/form-elements/rate-buttons/rate-buttons
-    .slider-buttons__wrapper
-      .slider__wrapper 
-        include ../../../blocks/form-elements/slider/slider
-      .buttons__wrapper
-        include ../../../blocks/form-elements/buttons/buttons
-      .pagination__wrapper 
-        include ../../../blocks/form-elements/pagination/pagination
+    .section__fields-buttons
+      .text-fields__wrapper
+        .text-field-default__wrapper 
+          include ../../../blocks/form-elements/text-field-default/text-field-default  
+        .text-field-hover-focus__wrapper 
+          include ../../../blocks/form-elements/text-field-hover-focus/text-field-hover-focus
+        .text-field-dropdown__wrapper 
+          include ../../../blocks/form-elements/text-field-dropdown/text-field-dropdown
+        .masked-text-field__wrapper
+          include ../../../blocks/form-elements/masked-text-field/masked-text-field
+        .date-dropdown__wrapper
+          include ../../../blocks/form-elements/date-dropdown/date-dropdown
+        .filter-date-dropdown__wrapper
+          include ../../../blocks/form-elements/filter-date-dropdown/filter-date-dropdown
+        .subscription-text-field__wrapper
+          include ../../../blocks/form-elements/subscription-text-field/subscription-text-field
+      .checkbox-radio-buttons__wrapper
+        .checkbox__wrapper 
+          include ../../../blocks/form-elements/checkbox-buttons/checkbox-buttons
+        .radio__wrapper 
+          include ../../../blocks/form-elements/radio-buttons/radio-buttons-block
+        .toogle__wrapper 
+          include ../../../blocks/form-elements/toogle/toogle
+        .like-buttons__wrapper 
+          include ../../../blocks/form-elements/like-buttons/like-buttons
+        .rate-buttons__wrapper 
+          include ../../../blocks/form-elements/rate-buttons/rate-buttons
+      .slider-buttons__wrapper
+        .slider__wrapper 
+          include ../../../blocks/form-elements/slider/slider
+        .buttons__wrapper
+          include ../../../blocks/form-elements/buttons/buttons
+        .pagination__wrapper 
+          include ../../../blocks/form-elements/pagination/pagination
     .dropdowns__wrapper 
       .dropdown-comfort__wrapper
         .dropdown-comfort-default__wrapper
@@ -104,21 +106,12 @@ block content
         include ../../../blocks/form-elements/dropdown-guests-empty/dropdown-guests-empty
       .dropdown-guests-filled-in__wrapper
         include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in
-    .lists__wrapper 
-      .checkbox-lists__wrapper
-        .checkbox-list-closed__wrapper
-          include ../../../blocks/form-elements/checkbox-list-closed/checkbox-list-closed
-        .checkbox-list-advanced__wrapper
-          include ../../../blocks/form-elements/checkbox-list-advanced/checkbox-list-advanced
-      .rich-checkbox__wrapper
-        include ../../../blocks/form-elements/rich-checkbox/rich-checkbox
-      .bullet-list__wrapper
-        include ../../../blocks/form-elements/bullet-list/bullet-list
     .user-reviews__wrapper
       .advantages__wrapper
         include ../../../blocks/form-elements/comfort-indicators/comfort-indicators
       .comments__wrapper
         include ../../../blocks/form-elements/comments/comments
+      
 block scripts
   script 
     include ../../../blocks/form-elements/slider/slider.js

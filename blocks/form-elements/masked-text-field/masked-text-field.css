@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   margin-top: 5px;
+  width: 100%;
 }
 
 .masked-text-field__header {
@@ -21,7 +22,6 @@
 }
 
 .masked-text-field__input {
-  width: 320px;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.25);

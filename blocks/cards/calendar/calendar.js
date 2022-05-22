@@ -26,7 +26,7 @@ $(function(){
 
   function calendarDropdown(){
   
-  const $dropdownCalendar = $('.js-search-room__calendar');
+  const $dropdownCalendar = $('.js-date-dropdown__calendar');
   const $elementsOpenClose = $(`.js-arrival-date,
   .js-expand-more--arrival-date,
   .js-departure-date, 

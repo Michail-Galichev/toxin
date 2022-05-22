@@ -36,8 +36,8 @@ color: rgba(31, 32, 65, 0.25);
 
 .subscription-text-field__expand-more{
   position: absolute;
-  top: 19.5px;
-  left: 221px;
+  top: 20px;
+  right: 1px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -50,4 +50,15 @@ color: rgba(31, 32, 65, 0.25);
   align-items: center;
   color: rgba(31, 32, 65, 0.5);
   cursor: pointer;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(188, 156, 255, 1)),
+    to(rgba(139, 164, 249, 1))
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
 }

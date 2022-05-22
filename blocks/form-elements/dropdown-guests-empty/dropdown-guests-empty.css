@@ -1,4 +1,5 @@
 .dropdown-guests-empty {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +22,6 @@
 }
 
 .dropdown-guests-empty__input {
-  width: 320px;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.5);
@@ -73,8 +73,8 @@
 
 .dropdown-guests-empty__expand-more {
   position: absolute;
-  top: 19px;
-  left: 275px;
+  top: 20px;
+  right: 0;
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -107,7 +107,7 @@
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;
   height: 159px;
-  width: 320px;
+  width: 100%;
   background: #ffffff;
   border-top: none;
   z-index: 5;

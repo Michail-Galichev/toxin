@@ -1,29 +1,21 @@
-.date-dropdown {
+.date-dropdown__wrapper {
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+}
+
+.date-dropdown__arrival-wrapper,
+.date-dropdown__departure-wrapper {
+  max-width: 150px;
   position: relative;
-  margin-top: 20px;
 }
 
-.date-dropdown__headers {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.date-dropdown__inputs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.date-dropdown__arrival-wrapper {
+  margin-right: 20px;
 }
 
 .date-dropdown__header {
-  width: 150px;
   height: 15px;
   font-family: Montserrat;
   font-style: normal;
@@ -35,32 +27,21 @@
   margin-bottom: 5px;
 }
 
-.date-dropdown__header:not(:last-child) {
-  margin-right: 20px;
-}
-
 .date-dropdown__input {
-  width: 150px;
+  width: 100%;
   height: 44px;
   background: #FFFFFF;
+  font-family: Montserrat;
   border: 1px solid rgba(31, 32, 65, 0.25);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
   padding-left: 14px;
   padding-bottom: 4px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 18px;
   color: rgba(31, 32, 65, 0.75);
   cursor: pointer;
   outline: none;
-}
-
-.date-dropdown__input:not(:last-child) {
-  margin-right: 20px;
+  position: relative;
 }
 
 .date-dropdown__input::-webkit-input-placeholder {
@@ -99,10 +80,10 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
-.date-dropdown__expand-more--left {
-  left: 106px;
+.date-dropdown__expand-more {
   position: absolute;
   top: 20px;
+  right: 0px;
   width: 44px;
   height: 44px;
   font-family: Material Icons;
@@ -123,27 +104,11 @@
   cursor: pointer;
 }
 
-.date-dropdown__expand-more--right {
-  left: 276px;
+.date-dropdown__calendar-wrapper {
+  max-width: 320px;
+  display: none;
   position: absolute;
-  top: 20px;
-  width: 44px;
-  height: 44px;
-  font-family: Material Icons;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
+  top: 75px;
+  z-index: 5;
 }
 /*# sourceMappingURL=date-dropdown.css.map */

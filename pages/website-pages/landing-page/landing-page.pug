@@ -1,15 +1,18 @@
 extends ../../../templates/sample
 block variables
   - var titlePage = 'Landing page'
-  - var mainText = 'Подобрать номер'
+  - var dateDropdownIn = 'прибытие'
+  - var dateDropdownOut = 'выезд'
   - var dropdownGuests = 'гости'
   - var hrefButtonPrice = '../../../pages/website-pages/search-room-filter/search-room-filter.pug'
 block style 
   include ../../../styles/dropdown/dropdown.css
   include landing-page.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
   include ../../../blocks/headers-footers/header/header.css
   include ../../../blocks/headers-footers/header-account/header-account.css
   include ../../../blocks/cards/search-form/search-form.css
+  include ../../../blocks/cards/search-form-adaptive/search-form-adaptive.css
   include ../../../blocks/form-elements/buttons/buttons.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
@@ -22,9 +25,11 @@ block content
     .landing-page__background-wrapper
       .landing-page__header-wrapper.js-header-wrapper
         include ../../../blocks/headers-footers/header/header  
+      
       .landing-page__search-form-wrapper.js-landing-page__search-form
         include ../../../blocks/cards/search-form/search-form
-        
+      .landing-page__search-form-adaptive-wrapper.js-landing-page__search-form--adaptive
+        include ../../../blocks/cards/search-form-adaptive/search-form-adaptive  
     .landing-page__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
     .landing-page__footer-mobile-wrapper
@@ -34,5 +39,8 @@ block content
 block scripts
   script 
     include landing-page.js
+    include ../../../blocks/headers-footers/header/header.js
+    include ../../../blocks/cards/search-form/search-form.js
+    include ../../../blocks/cards/search-form-adaptive/search-form-adaptive.js
     include ../../../blocks/cards/calendar/calendar.js
     

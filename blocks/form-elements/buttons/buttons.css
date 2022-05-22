@@ -1,4 +1,5 @@
 .buttons {
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6,7 +7,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 53px;
+  margin-top: 10px;
 }
 
 .buttons__header {
@@ -21,6 +22,7 @@
 }
 
 .buttons__block {
+  max-width: 320px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,8 +40,14 @@
   display: flex;
 }
 
-.button__backgroung {
-  width: 95px;
+.buttons__background-wrapper,
+.buttons__border-wrapper {
+  width: 97px;
+  margin-right: 19px;
+}
+
+.button__background--link {
+  width: 100%;
   height: 40px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -76,12 +84,8 @@
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 
-.buttons__background-wrapper {
-  margin-right: 19px;
-}
-
 .button__border {
-  width: 95px;
+  width: 100%;
   height: 40px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -139,7 +143,7 @@
 }
 
 .buttons__price-wrapper {
-  margin-top: 15px;
+  margin: 15px 0 0 0;
 }
 
 .button {
@@ -148,7 +152,7 @@
 }
 
 .button__price {
-  width: 95px;
+  width: 100%;
   height: 40px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -171,7 +175,6 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  width: 316px;
   color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -180,7 +183,7 @@
 .button__arrow {
   position: absolute;
   color: #ffffff;
-  left: 277px;
+  right: -3px;
   cursor: pointer;
   font-family: "Material Icons";
   font-style: normal;

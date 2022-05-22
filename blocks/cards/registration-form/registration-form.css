@@ -1,6 +1,5 @@
 .registration-form {
-  width: 380px;
-  height: 646px;
+  max-width: 380px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   -webkit-box-sizing: border-box;
@@ -49,7 +48,7 @@
 }
 
 .registration-form__toogle-wrapper {
-  margin-left: 30px;
+  margin: 0 30px 0 30px;
 }
 
 .registration-form__data-service {
@@ -64,7 +63,7 @@
 }
 
 .registration-form__button-wrapper {
-  margin: 23px 30px 30px 30px;
+  margin: 20px 32px 30px 28px;
   cursor: pointer;
 }
 
@@ -94,7 +93,17 @@
   height: 42px;
 }
 
-.js-reg-form__account-button {
+.js-reg-form__account-button.registration-form__account-button-wrapper {
   margin-left: 3px;
+  width: 99px;
+}
+
+@media (max-width: 370px) {
+  .registration-form__account-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=registration-form.css.map */

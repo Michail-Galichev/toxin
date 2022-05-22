@@ -1,5 +1,5 @@
-.datepicker-inline {
-  width: 320px;
+.datepicker-inline{
+  display: flex;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
@@ -26,12 +26,7 @@ color: #1F2041;
 margin-top: 2px;
 }
 
-.datepicker--cells {
-  flex-wrap: wrap;
-  display:flex;
-  margin: 0 20px 0 20px;
-}
- 
+
 .arrov-prev{
 margin-left: 20px;
 font-family: Material Icons;
@@ -56,13 +51,14 @@ background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
 }
 
 .datepicker--days-names{
+  max-width: 279px;
   display:flex;
-  margin: 29px 20px 0 19.88px;
+  margin: 40px 20px 0 20px;
 }
 
 .datepicker--day-name{
-  width: 40px;
-  height: 40px;
+width: 100%;  
+height: 100%;
 font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
@@ -74,10 +70,16 @@ justify-content: center;
 color: #BC9CFF;
 }
 
+.datepicker--cells {
+  flex-wrap: wrap;
+  display:flex;
+  margin: 11px 18px 0 19px;  
+}
+
 .datepicker--cell-day {
-  width: 39.88px;
-  height: 40px;
-  font-family: Montserrat;
+width: 40px;
+height:40px;  
+font-family: Montserrat;
 font-style: normal;
 font-weight: normal;
 font-size: 12px;
@@ -87,10 +89,11 @@ justify-content: center;
 align-items: center;
 text-align: center;
 color: rgba(31, 32, 65, 0.5);
-  cursor: pointer;
+  cursor: pointer;  
 }
 
-.-other-month- {
+
+ .-other-month- {
   color: rgba(31, 32, 65, 0.25);
 }
 
@@ -196,4 +199,109 @@ color: rgba(31, 32, 65, 0.5);
   text-transform: uppercase;
   cursor: pointer;
   color: #bc9cff;
+} 
+
+ @media (min-width: 420px){
+  .datepicker-inline{
+    width: 318px;
+  }
+}
+
+@media (max-width: 419px) {
+  .datepicker--cell-day{
+    width: 39px;
+  }
+  .datepicker--cells{
+    margin: 11px 17px 0 18px;  
+  }
+}
+ @media (max-width: 412px) {
+  .datepicker--cell-day{
+    width: 38px;
+  }
+}
+
+
+@media (max-width: 405px) {
+  .datepicker--cell-day{
+    width: 37px;
+  }
+  
+}
+
+@media (max-width: 398px) {
+  .datepicker--cell-day{
+    width: 36px;
+  }
+     
+}
+@media (max-width: 390px) {
+  .datepicker--cell-day{
+    width: 35px;
+  } 
+}
+@media (max-width: 383px) {
+  .datepicker--cell-day{
+    width: 34px;
+  } 
+}
+
+@media (max-width: 376px) {
+  .datepicker--cell-day{
+    width: 33px;
+  } 
+  
+}
+
+@media (max-width: 369px) {
+  .datepicker--cell-day{
+    width: 32px;
+  }
+}
+@media (max-width: 362px) {
+  .datepicker--cell-day{
+    width: 31px;
+  }
+  
+} 
+
+@media (max-width: 355px) {
+  .datepicker--cell-day{
+    width: 30px;
+  }
+  
+}
+
+@media (max-width: 349px) {
+  .datepicker--cell-day{
+    width: 29px;
+  }
+  
+}
+
+@media (max-width: 341px) {
+  .datepicker--cell-day{
+    width: 28px;
+  }
+}
+
+@media (max-width: 334px) {
+  .datepicker--cell-day{
+    width: 27px;
+  }
+  
+}
+
+@media (max-width: 327px) {
+  .datepicker--cell-day{
+    width: 26px;
+  }
+  
+}
+
+@media (max-width: 321px) {
+  .datepicker--cell-day{
+    width: 25px;
+  }
+  
 }

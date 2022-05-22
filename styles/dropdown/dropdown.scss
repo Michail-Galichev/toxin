@@ -83,21 +83,16 @@
 
 .dropdown__action-buttons{
   display: flex;
+  margin: 0 7px 13px 14px;
   height: 15px;
- position: relative;
+  justify-content: space-between;
   }   
 
 .dropdown__clear{
   @include text-link;
-  position:absolute;
-  left: 14px;
-  top: 2px;
   display: none;
   
 }
 .dropdown__to-apply{
   @include text-link;
-  position:absolute;
-  left: 229px;
-  top: 2px;
 }

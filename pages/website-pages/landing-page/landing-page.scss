@@ -1,7 +1,7 @@
 body{
   margin: 0px;
   padding: 0px;
-  
+  font-family: Montserrat;    
 }
   
 .container{
@@ -12,7 +12,10 @@ body{
   }
 
   .landing-page__background-wrapper{
-    background-image: url(../../../static/image/landing-page.png);
+    background-image: url(../../../static/image/landing-page3.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat; 
   }
 
 
@@ -31,6 +34,10 @@ body{
     left: 30px;
   }
 
+  .landing-page__search-form-adaptive-wrapper{
+    display: none;
+  }
+  
   @media (max-width:900px){
     .landing-page__footer-wrapper{
       display: none;
@@ -44,3 +51,29 @@ body{
       display: block;
     } 
   }
+
+@media (max-width:670px){
+  .landing-page__search-form-wrapper{
+    margin-left: 30px;
+  }
+}
+
+@media (max-width:420px){
+  .landing-page__search-form-wrapper{
+    margin: 70px 20px 386px 20px;
+  }
+}
+
+@media (max-width:419px){
+  .landing-page__search-form-wrapper{
+    display: none;
+   
+  }
+
+  .landing-page__search-form-adaptive-wrapper{
+    display: block;
+    margin: 70px 20px 386px 20px;
+  }
+
+}
+

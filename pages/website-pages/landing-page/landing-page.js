@@ -151,6 +151,8 @@ function counterGuests (){
   /* кнопка очистить*/   
   $('.js-dropdown__clear').click(function(){
       $(this).hide();
+      $('.js-helper-block')
+      .css({'display' : 'block'});
       $('.js-count--first').val(0);
       $countFirst = 0;
       $('.js-count--average').val(0);
@@ -174,9 +176,12 @@ $(`.js-minus--first,.js-minus--average,.js-minus--last,
   $sumGuests = $countFirst + $countAverage + $countLast;
   if ($sumGuests === 0){
     $('.js-dropdown__clear').hide();
+    $('.js-helper-block').css({'display' : 'block'});
         
   } else {
     $('.js-dropdown__clear').show();
+    $('.js-helper-block')
+      .css({'display' : 'none'});
     $guestInputVal.css({
         'color' : 'rgba(31, 32, 65, 0.75)',
         'font-family' : 'Montserrat',
@@ -241,8 +246,27 @@ $(`.js-minus--first,.js-minus--average,.js-minus--last,
     'margin-top' : '16px'
   });
     
-  
-counterGuests ();
-openCloseDropdown();
+  function $changeBackground (){ 
+    var $backgrounds = [
+      '/landing-page.1c9b862d.png',
+      '/landing-page2.d9c64f6e.png',
+      '/landing-page3.1beb304b.png'
+      ]
+      var $currentImage = 0;
+      (function $showNextImage() {
+        var $backgroundBlock = $('.landing-page__background-wrapper');
+        $backgroundBlock.css(
+          'background-image', 'url(' + $backgrounds[$currentImage] + ')'
+        );
+        $currentImage += 1
+        if ($currentImage >= $backgrounds.length) {
+          $currentImage = 0
+        }
+        setTimeout($showNextImage, 5000)
+      }())
+   }
+  $changeBackground (); 
+  counterGuests ();
+  openCloseDropdown();
 
 });

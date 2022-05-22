@@ -101,3 +101,15 @@ position:relative;
 }
 
 
+@media (max-width:360px){
+  .toogle__label{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toogle--none-checked::before{
+  top: 4px;
+  }
+  .toogle__input--none-checked:checked ~ .toogle--none-checked::before{
+    top: 4px;
+  } 
+}

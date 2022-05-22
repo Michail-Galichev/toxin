@@ -4,7 +4,8 @@
     img(class="header__img--account-toxin" src="../../../static/image/toxin.svg", alt="")
 
   .header__menu--account
-    +menu-header("header__menu--link", "О нас", "Услуги", "Вакансии", "Новости", "Соглашения") 
+    +menu-header("header__account-ul","header__menu--link",false,"О нас",
+     "Услуги", "Вакансии", "Новости", "Соглашения", "expand_more") 
   .header__user-name 
     .header__vertical-line 
     .header__user #{userName}

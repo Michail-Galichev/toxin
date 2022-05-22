@@ -41,7 +41,6 @@
 
 .header__menu--link {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -52,8 +51,8 @@
 
 .header__menu--link:hover{
   color: rgba(31, 32, 65, 0.75);
- 
 }
+
 
 .header__menu--img {
   @include expand_more;
@@ -66,56 +65,53 @@
 
 }
 
+.header__ul--service,
+.header__ul--agreements{
+  margin-right: 0px;
+}
+
 .header__ul--about-us{
   padding-right: 2px; 
 }
 
-.header__ul--service {
-  margin-right: 0;
+.header__burger-wrapper{
+  max-width: 1440px;
+  display:none;
 }
 
-.header__ul--agreements {
-  margin-right: 0;
+.header__burger{
+  margin: 16px 0 18px 0;
+  background: #8ba4f9;
+  color: #fff;
+  display: none;  
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
 }
 
-.header__menu--burger{
-  margin: 18px 0 18px 0;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    from(rgba(188, 156, 255, 1)),
-    to(rgba(139, 164, 249, 1))
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-display: none;  
-font-size: 30px;
+.fa-bars{
+   margin-left: 3px;
+ }
+
+.header__buttons-wrapper{
+margin-top : 15px;
 }
 
 .header__buttons{
   display: flex;
-  align-items: center;
- position: relative; 
+  align-items: center;   
 }
 
-
 .header__buttons--to-come-in{
-  position: absolute;
-  top: 15px;
   @include button;
-  width: 87px;
-  left: -2px;
-  
+  width: 85px;
+  margin-right : 16px;  
 }
 
 .header__buttons--registration{
-  position: absolute;
   @include button;
   width: 196px;
-  top: 15px;
-  left: 105px;
   background: linear-gradient(180deg, rgba(188, 156, 255, 1) 0%, rgba(139, 164, 249, 1) 100%);
   color:#ffffff;
 }
@@ -135,19 +131,11 @@ font-size: 30px;
 }
 
 
-/* @media (max-width: 1400px){
-  .header__logo{
-    margin-left: 35px;
-    
-  }
-  .container{
-    max-width: 1320px;
-  }
-} */
+
 
 @media (max-width: 1320px){
   .header__logo{
-    margin-left: 30px;
+    margin-left: 20px;
     }
 }
 
@@ -164,17 +152,16 @@ font-size: 30px;
 }
 
 @media (max-width: 992px){
-  .header__buttons--visible,.header__menu--visible{
+  .header__buttons-wrapper,.header__menu--visible{
     display: none;
   }
-  .header__menu--burger{
-    display: block;
-    margin-right: 30px ;
+  .header__burger{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-right: 20px ;
   }
-  
   .header{
     justify-content: space-between;
-  }
-  
+  }  
 }
-

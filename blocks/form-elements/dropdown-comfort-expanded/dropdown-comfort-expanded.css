@@ -7,6 +7,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
 .dropdown-com-exp__text {
@@ -40,7 +41,6 @@
 }
 
 .dropdown-com-exp__input {
-  width: 266px;
   height: 44px;
   background: #FFFFFF;
   border: 1px solid rgba(31, 32, 65, 0.5);
@@ -93,7 +93,7 @@
 .dropdown-com-exp__expand-more {
   position: absolute;
   top: 20px;
-  left: 222px;
+  right: 0;
   width: 42px;
   height: 42px;
   font-family: Material Icons;
@@ -124,7 +124,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 266px;
+  width: 100%;
   border: 1px solid rgba(31, 32, 65, 0.5);
   border-top: none;
   -webkit-box-sizing: border-box;

@@ -52,7 +52,6 @@
 
 .header__menu--link {
   text-decoration: none;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -90,26 +89,37 @@
   margin-right: 20px;
 }
 
+.header__ul--service,
+.header__ul--agreements {
+  margin-right: 0px;
+}
+
 .header__ul--about-us {
   padding-right: 2px;
 }
 
-.header__ul--service {
-  margin-right: 0;
-}
-
-.header__ul--agreements {
-  margin-right: 0;
-}
-
-.header__menu--burger {
-  margin: 18px 0 18px 0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+.header__burger-wrapper {
+  max-width: 1440px;
   display: none;
-  font-size: 30px;
+}
+
+.header__burger {
+  margin: 16px 0 18px 0;
+  background: #8ba4f9;
+  color: #fff;
+  display: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.fa-bars {
+  margin-left: 3px;
+}
+
+.header__buttons-wrapper {
+  margin-top: 15px;
 }
 
 .header__buttons {
@@ -119,12 +129,9 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
 }
 
 .header__buttons--to-come-in {
-  position: absolute;
-  top: 15px;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -147,12 +154,11 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
-  width: 87px;
-  left: -2px;
+  width: 85px;
+  margin-right: 16px;
 }
 
 .header__buttons--registration {
-  position: absolute;
   height: 32px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fff)) padding-box, -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9)) border-box;
   background: linear-gradient(#fff, #fff) padding-box, linear-gradient(#bc9cff, #8ba4f9) border-box;
@@ -176,8 +182,6 @@
   font-size: 12px;
   line-height: 15px;
   width: 196px;
-  top: 15px;
-  left: 105px;
   background: -webkit-gradient(linear, left top, left bottom, from(#bc9cff), to(#8ba4f9));
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   color: #ffffff;
@@ -197,18 +201,9 @@
   background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
 }
 
-/* @media (max-width: 1400px){
-  .header__logo{
-    margin-left: 35px;
-    
-  }
-  .container{
-    max-width: 1320px;
-  }
-} */
 @media (max-width: 1320px) {
   .header__logo {
-    margin-left: 30px;
+    margin-left: 20px;
   }
 }
 
@@ -225,12 +220,20 @@
 }
 
 @media (max-width: 992px) {
-  .header__buttons--visible, .header__menu--visible {
+  .header__buttons-wrapper, .header__menu--visible {
     display: none;
   }
-  .header__menu--burger {
-    display: block;
-    margin-right: 30px;
+  .header__burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-right: 20px;
   }
   .header {
     -webkit-box-pack: justify;
