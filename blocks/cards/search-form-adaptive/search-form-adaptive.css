@@ -1,0 +1,72 @@
+.search-form__adaptive {
+  max-width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.search-form__header-adaptive {
+  height: 59px;
+  margin: 20px 30px 30px 30px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+}
+
+.search-form__arrival-adaptive-wrapper,
+.search-form__departure-adaptive-wrapper {
+  max-width: 320px;
+  margin: 0 30px;
+  position: relative;
+}
+
+.search-form__arrival-adaptive-wrapper {
+  margin-bottom: 20px;
+}
+
+.search-form__guests-adaptive-wrapper {
+  max-width: 320px;
+  margin: 20.56px 30px 30px 30px;
+}
+
+.search-form__button-adaptive-wrapper {
+  max-width: 313px;
+  margin: 31px 30px 30px 30px;
+}
+
+.search-form__calendar-wrapper {
+  max-width: 320px;
+  position: absolute;
+  z-index: 5;
+  top: 190px;
+  left: 30px;
+  display: none;
+}
+
+@media (max-width: 365px) {
+  .search-form__header-adaptive {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 322px) {
+  .search-form__header-adaptive {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=search-form-adaptive.css.map */
