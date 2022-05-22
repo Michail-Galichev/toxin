@@ -1,0 +1,18 @@
+.burger-wrapper      
+  .burger__header-wrapper
+    .burger__logo.js-logo
+        a(href="../../../pages/website-pages/landing-page/landing-page.pug")
+          img(class="menu-burger__img--logo" src="../../../static/image/logo-gradient.svg")
+        a(href="../../../pages/website-pages/landing-page/landing-page.pug")  
+          img(class="header__img--toxin js-img--toxin" src="../../../static/image/toxin.svg")
+    .burger__close-button.js-close-button &times
+  .burger__menu
+    +menu-header("header__burger-ul","header__menu-burger--link","header__menu-burger--li", 
+      "О нас","Услуги", "Вакансии", "Новости", "Соглашения") 
+  .burger__buttons-wrapper
+    .buttons-burger
+        a(class="burger__buttons--to-come-in js-buttons--to-come-in options" 
+        href="../../../pages/website-pages/sign-in/sign-in.pug") Войти
+        a(class="burger__buttons--registration js-buttons--registration" 
+        href="../../../pages/website-pages/registration/registration.pug") Зарегистрироваться
+  
