@@ -2,6 +2,8 @@ extends ../../../templates/sample
 block variables
   - var titlePage = 'Landing page/Guests dropdown'
   - var mainText = 'Подобрать номер'
+  - var dateDropdownIn = 'прибытие'
+  - var dateDropdownOut = 'выезд'
   - var dropdownGuests = 'гости'
 block style 
   include ../../../styles/dropdown/dropdown.css
@@ -13,19 +15,26 @@ block style
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
   include ../../../blocks/headers-footers/footer/footer.css
   include ../../../blocks/headers-footers/copyright/copyright.css
+  include ../../../blocks/cards/search-form-adaptive/search-form-adaptive.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
   
 block content 
   .container
-    .guests-dropdown__background-wrapper
+    .guests-dropdown__background-wrapper.js-guests-dropdown__background
       .guests-dropdown__header-wrapper.js-header-wrapper
         include ../../../blocks/headers-footers/header/header
       .guests-dropdown__search-form-wrapper.js-guests-dropdown__search-form
         include ../../../blocks/cards/search-form/search-form
+      .guests-dropdown__search-form-adaptive-wrapper.js-guests-dropdown__search-form--adaptive
+        include ../../../blocks/cards/search-form-adaptive/search-form-adaptive    
     .guests-dropdown__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
+    .guests-dropdown__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile  
     .guests-dropdown__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts
   script 
     include landing-page-guests-dropdown.js
-    
+    include ../../../blocks/headers-footers/header/header.js
