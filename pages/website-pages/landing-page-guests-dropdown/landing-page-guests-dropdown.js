@@ -22,16 +22,7 @@ $(function(){
   .css({
     'border' : '1px solid rgba(31, 32, 65, 0.5)'
   });
-
-  $('.js-header-wrapper .js-header__buttons')
-  .css({
-    'margin-top' : '2px'
-  });
-  $('.js-header-wrapper .js-header__logo')
-  .css({
-    'margin-top' : '16px'
-  });
-
+ 
   function $changeBackground (){ 
     var $backgrounds = [
       '/landing-page.1c9b862d.png',

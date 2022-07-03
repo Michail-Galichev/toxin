@@ -1,6 +1,7 @@
+@charset "UTF-8";
+/*-------------свойства формы----------*/
 .booking-form {
-  width: 380px;
-  height: 514px;
+  max-width: 380px;
   background: #FFFFFF;
   border: 1px solid rgba(0, 0, 0, 0.12);
   -webkit-box-sizing: border-box;
@@ -8,22 +9,35 @@
   -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-}
-
-.booking-form__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 49px 0 0 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+/*-------------свойства заголовка карточки----------*/
+.booking-form__header {
+  max-width: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 49px 30px 0 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .booking-form__number {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
   color: #1F2041;
+  width: 125px;
+  white-space: pre;
 }
 
 .booking-form__value {
@@ -31,24 +45,24 @@
 }
 
 .booking-form__luxury {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 15px;
   text-transform: uppercase;
   color: #BC9CFF;
-  margin: 6px 0 0 8px;
+  margin-left: 5px;
 }
 
 .booking-form__price {
-  font-family: Montserrat;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
   color: rgba(31, 32, 65, 0.5);
-  margin: 4px 0 0 103px;
+  width: 100px;
+  white-space: pre;
+  margin-top: 3px;
 }
 
 .booking-form__per-day {
@@ -56,14 +70,13 @@
   font-weight: normal;
 }
 
+/*-------------свойства полей ввода дат----------*/
 .booking-form__date-wrapper {
+  max-width: 320px;
   margin: 21px 30px 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .booking-form__arrival-wrapper,
@@ -72,11 +85,17 @@
   position: relative;
 }
 
+.booking-form__arrival-wrapper {
+  margin-right: 20px;
+}
+
+/*-------------свойства поля ввода количества гостей----------*/
 .booking-form__guests-wrapper {
   margin: 21px 30px 0 30px;
   max-width: 320px;
 }
 
+/*-------------блок расчёта стоимости номера----------*/
 .booking-form__cost-calculation-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -85,7 +104,6 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -93,45 +111,28 @@
   color: rgba(31, 32, 65, 0.75);
 }
 
+/*---------------цена за количество суток проживания---------------------*/
 .booking-form__cost-of-accommodation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 17px 30px 0 31px;
-  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.booking-form__total-cost {
-  position: absolute;
-  left: 262px;
-  width: 57px;
-}
-
-.booking-form__cost-of-services {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 10px 30px 0 31px;
-  position: relative;
-}
-
+/*------------сборы за доп услуги--------*/
+.booking-form__cost-of-services,
 .booking-form__additional {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 13px 30px 0 31px;
+  margin: 10px 30px 0 31px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: relative;
-}
-
-.booking-form__service-fee {
-  width: 214px;
-  white-space: pre;
-}
-
-.booking-form__amount-for-services {
-  width: 20px;
-  position: absolute;
-  left: 239px;
 }
 
 .booking-form__info-button {
@@ -141,7 +142,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 50%;
-  font-family: Montserrat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -161,20 +161,34 @@
   color: rgba(31, 32, 65, 0.25);
 }
 
+.booking-form__info-button--content {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.booking-form__amount-for-services {
+  width: 20px;
+  height: 24px;
+}
+
 .services-fee {
   top: 1px;
 }
 
 .booking-form__additional-services-fee {
-  width: 214px;
+  max-width: 190px;
   margin-right: 5px;
-  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
 }
 
+/*------------итоговая цена-----------*/
 .booking-form__final-cost {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -183,44 +197,47 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-family: Montserrat;
+}
+
+.booking-form__total--text,
+.booking-form__total--val {
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 19px;
   line-height: 23px;
   color: #1F2041;
-  position: relative;
-}
-
-.booking-form__total--val {
-  position: absolute;
-  left: 242px;
-  width: 77px;
 }
 
 .booking-form__button-wrapper {
-  margin: 20px 32px 20px 28px;
+  margin: 22px 32px 20px 28px;
 }
 
-.booking-form__amount-for-services {
-  margin-left: 60px;
-  width: 20px;
-  height: 24px;
+@media (max-width: 398px) {
+  .booking-form__info-button {
+    display: none;
+  }
 }
 
-.booking-form__amount-for-add-services {
-  position: absolute;
-  left: 282px;
-  top: -3px;
-}
-
-.booking-form__info-button--content {
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 14px;
-  text-align: right;
-  color: rgba(31, 32, 65, 0.25);
+@media (max-width: 360px) {
+  .booking-form__date-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .booking-form__arrival-wrapper {
+    max-width: 320px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .booking-form__departure-wrapper {
+    max-width: 320px;
+  }
+  .booking-form__luxury {
+    margin-left: 0;
+  }
+  .booking-form__service-fee {
+    width: 170px;
+  }
 }
 /*# sourceMappingURL=booking-form.css.map */

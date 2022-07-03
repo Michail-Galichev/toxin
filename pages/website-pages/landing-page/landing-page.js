@@ -237,14 +237,7 @@ $(`.js-minus--first,.js-minus--average,.js-minus--last,
   $('.js-landing-page__search-form')
   .find('.js-date-dropdown__input:last')
   .attr('placeholder', 'ДД.ММ.ГГГГ');
-  $('.js-header-wrapper .js-header__buttons')
-  .css({
-    'margin-top' : '2px'
-  });
-  $('.js-header-wrapper .js-header__logo')
-  .css({
-    'margin-top' : '16px'
-  });
+  
     
   function $changeBackground (){ 
     var $backgrounds = [

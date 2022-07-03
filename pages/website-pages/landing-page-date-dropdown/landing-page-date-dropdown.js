@@ -1,10 +1,6 @@
-$(function(){
-  $('.js-header-wrapper .js-header__buttons')
-  .css({
-    'margin-top' : '2px'
-  });
-  $('.js-header-wrapper .js-header__logo')
-  .css({
-    'margin-top' : '16px'
-  });
+$(function(){ 
+  $('.js-date-dropdown__search-form .js-date-dropdown__calendar')
+  .css('display', 'flex');
+  $('.js-date-dropdown__search-form--adaptive .js-date-dropdown__calendar')
+  .css('display', 'flex');
 });

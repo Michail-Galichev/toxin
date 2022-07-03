@@ -6,8 +6,9 @@ block variables
 block style 
   include ../../../styles/dropdown/dropdown.css
   include landing-page-date-dropdown.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
   include ../../../blocks/headers-footers/header/header.css
-  
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
   include ../../../blocks/cards/search-form/search-form.css
   include ../../../blocks/form-elements/buttons/buttons.css
   include ../../../blocks/form-elements/dropdown-guests-filled-in/dropdown-guests-filled-in.css
@@ -15,20 +16,26 @@ block style
   include ../../../blocks/headers-footers/footer/footer.css
   include ../../../blocks/headers-footers/copyright/copyright.css
   include ../../../blocks/cards/calendar/calendar.css
+  include ../../../blocks/cards/search-form-adaptive/search-form-adaptive.css
 block content 
   .container
     .date-dropdown__background-wrapper
       .date-dropdown__header-wrapper.js-header-wrapper
         include ../../../blocks/headers-footers/header/header
-      .date-dropdown__search-form-wrapper
+      .date-dropdown__search-form-adaptive-wrapper.js-date-dropdown__search-form--adaptive
+        include ../../../blocks/cards/search-form-adaptive/search-form-adaptive  
+      .date-dropdown__search-form-wrapper.js-date-dropdown__search-form
         include ../../../blocks/cards/search-form/search-form
         .date-dropdown__calendar-wrapper
           include ../../../blocks/cards/calendar/calendar
     .date-dropdown__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
+    .date-dropdown__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile  
     .date-dropdown__copyright-wrapper
       include ../../../blocks/headers-footers/copyright/copyright
 block scripts
   script 
     include landing-page-date-dropdown.js
     include ../../../blocks/cards/calendar/calendar.js
+    include ../../../blocks/headers-footers/header/header.js

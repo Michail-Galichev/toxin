@@ -4,14 +4,23 @@ $('.js-departure-date').attr('placeholder', '23.08.2019');
 $('.js-review-like--men .like__count--none-checked').text('12');
 $('.js-form-wrapper .js-button__price')
 .html('забронировать');
-$('.js-header-wrapper .js-header__buttons')
+$('.js-header-wrapper .js-header__logo')
   .css({
-    'margin-top' : '2px'
+    'margin-right' : '285px'
   });
-  $('.js-header-wrapper .js-header__logo')
-  .css({
-    'margin-top' : '16px'
-  });
+$('.js-header-wrapper .js-buttons--to-come-in')
+    .css({
+     'height' : '36px',
+     'margin-left' : '2px',
+     'margin-right' : '20px'
+
+    });
+$('.js-header-wrapper .js-buttons--registration')
+    .css({
+     'height' : '36px' 
+    });
+
+  
 
   function getLikeMen (){
     var $numOffClicks = 0;

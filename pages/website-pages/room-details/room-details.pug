@@ -3,15 +3,17 @@ block variables
   - var titlePage = 'Room details'
   - var dropdownGuests = 'гости'
   - var dateDropdownIn = 'прибытие'
-  - var dateDropdownOut = 'выезда'
+  - var dateDropdownOut = 'выезд'
   
 
 block style 
   include room-details.css
   include ../../../styles/dropdown/dropdown.css
+  include ../../../blocks/headers-footers/menu-burger/menu-burger.css
   include ../../../blocks/form-elements/like-buttons/like-buttons.css 
   include ../../../blocks/headers-footers/header/header.css
   include ../../../blocks/headers-footers/footer/footer.css
+  include ../../../blocks/headers-footers/footer-mobile/footer-mobile.css
   include ../../../blocks/headers-footers/copyright/copyright.css
   include ../../../blocks/cards/booking-form/booking-form.css
   include ../../../blocks/form-elements/date-dropdown/date-dropdown.css
@@ -23,17 +25,19 @@ block content
     .room-details__header-wrapper.js-header-wrapper
       include ../../../blocks/headers-footers/header/header
     .room-details__images-wrapper
-      .room-details__main-image
-      .room-details__additional-images
-        .room-details__additional-image--top
-        .room-details__additional-image--bottom
+      img.room-details__basic-image(src="../../../static/image/room-details/888.png")
+      .room-details__helper-images-wrapper
+        img.room-details__helper-top-image(src="../../../static/image/room-details/888-top.png")
+        img.room-details__helper-bottom-image(src="../../../static/image/room-details/888-bottom.png")
+        
+    
+    
+      
     .room-details__content-wrapper
       .room-details__text-wrapper
         .room-details__impression-intelligence
-          .room-details__intelligence
-            
-            .room-details__title Сведения о номере
-            
+          .room-details__intelligence   
+            .room-details__title--intelligence Сведения о номере
             .room-details__icons-wrapper
               .room-details__icon-wrapper
                 .material-icons-outlined.fa-gradient mood
@@ -60,7 +64,7 @@ block content
               
                   
           .room-details__impression
-            .room-details__impression--title Впечатления от номера
+            .room-details__title--impression Впечатления от номера
             .room-details__impression--diagramm
               .room-details__diagramm
                 canvas(id="myChart" height="125" width="122")
@@ -70,17 +74,14 @@ block content
               
                 
         .room-details__visitor-reviews
-          .room-details__review--title Отзывы посетителей номера
-            span.room-details__review--number 2 отзыва  
+          .room-details__title-wrapper
+            .room-details__title--review Отзывы посетителей номера
+            .room-details__review--number 2 отзыва  
           .room-details__reviews-wrapper
             .room-details__review-elements 
               .room-details__review
                 .room-details__review-img.img--men
                 .room-details__review-like.js-review-like--men
-                  include ../../../blocks/form-elements/like-buttons/like-none-checked
-              .room-details__review               
-                .room-details__review-img.img--women
-                .room-details__review-like.js-review-like--women
                   include ../../../blocks/form-elements/like-buttons/like-none-checked
             .room-details__reviews-content-wrapper
               .room-details__review-content
@@ -90,8 +91,13 @@ block content
                       | 5 дней назад
                 .room-details__review-text Великолепный матрас на кровати в основной спальне! 
                   | А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. 
-                  | Выкрикивал комплименты повару — никто не жаловался из соседей.
-
+                  | Выкрикивал комплименты повару — никто не жаловался из соседей.                        
+          .room-details__reviews-content-wrapper  
+            .room-details__review-elements
+              .room-details__review               
+                .room-details__review-img.img--women
+                .room-details__review-like.js-review-like--women
+                  include ../../../blocks/form-elements/like-buttons/like-none-checked            
               .room-details__review-content 
                 .room-details__review-user Патрисия Стёклышкова
                   span.room-details__review-time 
@@ -101,7 +107,7 @@ block content
             
         .room-details__rules-cansel
             .room-details__rules       
-              .room-details__rules-title Правила
+              .room-details__title--rules Правила
               .room-details__rules-content  
                 .room-details__rules-marker 
                   .room-details__marker  
@@ -114,13 +120,15 @@ block content
                 
 
             .room-details__cansel
-              .room-details__cansel-title Отмена
+              .room-details__title--cansel Отмена
               .room-details__cansel-content Бесплатная отмена в течение 48 ч. После этого при отмене не позднее чем за 5 дн. 
                 | до прибытия вы получите полный возврат за вычетом сбора за услуги.  
       .room-details__form-wrapper.js-form-wrapper
         include ../../../blocks/cards/booking-form/booking-form
         .room-details__calendar-wrapper.js-search-room__calendar
           include ../../../blocks/cards/calendar/calendar
+    .room-details__footer-mobile-wrapper
+      include ../../../blocks/headers-footers/footer-mobile/footer-mobile        
     .room-details__footer-wrapper
       include ../../../blocks/headers-footers/footer/footer
     .room-details__copyright-wrapper
@@ -129,5 +137,6 @@ block scripts
   script
     include room-details.js
     include diagramm.js
+    include ../../../blocks/headers-footers/header/header.js
     include ../landing-page/landing-page.js
     include ../../../blocks/cards/calendar/calendar.js

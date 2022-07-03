@@ -13,7 +13,7 @@
   width: 106px;
   display: flex;
   align-items: center;
-  margin: 14px 244px 0 140px;
+  margin: 15px 244px 0 140px;
   cursor: pointer;
   
 }
@@ -54,7 +54,7 @@
 }
 
 
-.header__menu--img {
+.header__menu--img{
   @include expand_more;
   width: 24px;
   height: 21px;
@@ -62,7 +62,7 @@
   justify-content: flex-start;
   padding-left: 1px;
   margin-right: 20px;
-
+  
 }
 
 .header__ul--service,
@@ -95,7 +95,7 @@
  }
 
 .header__buttons-wrapper{
-margin-top : 15px;
+margin-top : 17px;
 }
 
 .header__buttons{
