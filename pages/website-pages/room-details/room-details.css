@@ -256,6 +256,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-bottom: 27px;
 }
 
 .room-details__reviews-wrapper {
@@ -279,11 +280,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-right: 5px;
+  margin-right: 6px;
+  margin-top: 1px;
 }
 
 .room-details__review {
@@ -294,10 +292,11 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin-right: 6px;
 }
 
-.room-details__review:not(:last-child) {
-  margin-bottom: 75px;
+.room-details__review-elements:first-child {
+  margin-bottom: 22px;
 }
 
 .room-details__review-like {
@@ -322,7 +321,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 654px;
+  max-width: 655px;
 }
 
 .room-details__title-wrapper {
@@ -332,17 +331,15 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .room-details__review--number {
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  text-align: right;
   color: rgba(31, 32, 65, 0.5);
+  margin-top: 7px;
+  margin-right: 6px;
 }
 
 .room-details__review-content:not(:last-child) {
@@ -382,6 +379,7 @@ body {
   background-image: url(../../../static/image/room-details/women.svg);
 }
 
+/*-------------свойства блока <<Правила/Отмена>>---------*/
 .room-details__rules-cansel {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -414,29 +412,6 @@ body {
   margin-top: 25px;
 }
 
-.room-details__marker {
-  background-image: url(../../../static/image/room-details/marker.svg);
-  width: 10px;
-  height: 10px;
-  margin-bottom: 24px;
-}
-
-.room-details__cansel {
-  margin-top: 9px;
-  max-width: 341px;
-}
-
-.room-details__cansel-content {
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-  color: rgba(31, 32, 65, 0.75);
-  height: 140px;
-  color: rgba(31, 32, 65, 0.75);
-}
-
 .room-details__rules-ul {
   list-style: none;
   font-family: 'Montserrat';
@@ -456,6 +431,29 @@ body {
 
 .room-details__rules-li:last-child {
   white-space: wrap;
+}
+
+.room-details__marker {
+  background-image: url(../../../static/image/room-details/marker.svg);
+  width: 10px;
+  height: 10px;
+  margin-bottom: 24px;
+}
+
+.room-details__cansel {
+  margin-top: 5px;
+  max-width: 341px;
+}
+
+.room-details__cansel-content {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 140px;
+  color: rgba(31, 32, 65, 0.75);
 }
 
 .room-details__calendar-wrapper {
@@ -593,6 +591,17 @@ body {
 @media (max-width: 360px) {
   .room-details__review:first-child {
     margin-bottom: 160px;
+  }
+}
+
+@media (max-width: 340px) {
+  .room-details__impression--diagramm {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .room-details__diagramm--legend {
+    padding-left: 20px;
   }
 }
 /*# sourceMappingURL=room-details.css.map */

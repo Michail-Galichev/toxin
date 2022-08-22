@@ -118,3 +118,12 @@
     margin-bottom: 160px;
   }
 }
+
+@media (max-width:340px){
+  .room-details__impression--diagramm{
+    justify-content: flex-start;    
+  }
+  .room-details__diagramm--legend{
+    padding-left: 20px;
+  }
+}

@@ -41,7 +41,7 @@ font-size: 12px;
 line-height: 15px;
 text-transform: uppercase;
 color: #BC9CFF;
-margin-left: 5px ; 
+margin-left: 2px ; 
 }
 
 .booking-form__price{
@@ -108,10 +108,16 @@ color: rgba(31, 32, 65, 0.75);
 
 /*------------сборы за доп услуги--------*/
 
-.booking-form__cost-of-services,
-.booking-form__additional{
+.booking-form__cost-of-services{
   display: flex;
   margin: 10px 30px 0 31px;  
+  justify-content: space-between;
+  position: relative;  
+}
+
+.booking-form__additional{
+  display: flex;
+  margin: 13px 30px 0 31px;  
   justify-content: space-between;
   position: relative;  
 }
@@ -152,6 +158,10 @@ color: rgba(31, 32, 65, 0.75);
 .services-fee{
   top: 1px;
 } 
+
+.additional-services-fee{
+  top: 2px;
+}
 
 .booking-form__additional-services-fee{
   max-width: 190px;

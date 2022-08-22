@@ -124,4 +124,15 @@
     margin-bottom: 160px;
   }
 }
+
+@media (max-width: 340px) {
+  .room-details__impression--diagramm {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .room-details__diagramm--legend {
+    padding-left: 20px;
+  }
+}
 /*# sourceMappingURL=room-details-media.css.map */
