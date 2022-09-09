@@ -1,0 +1,105 @@
+@media (max-width: 1320px) {
+  .room-details__impression-intelligence {
+    flex-direction: column;
+  }
+  .room-details__impression {
+    margin-bottom: 40px;
+  }
+  .room-details__impression-intelligence {
+    width: 311px;
+  }
+  .room-details__content-wrapper {
+    margin: 65px 40px 49px 40px;
+  }
+}
+@media (max-width: 1160px) {
+  .room-details__content-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .room-details__images-wrapper,
+.room-details__helper-images-wrapper {
+    height: 100%;
+  }
+  .room-details__form-wrapper {
+    margin: auto;
+  }
+  .room-details__basic-image,
+.room-details__helper-top-image,
+.room-details__helper-bottom-image {
+    height: auto;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media (max-width: 900px) {
+  .room-details__footer-wrapper {
+    display: none;
+  }
+  .room-details__copyright-wrapper {
+    display: none;
+  }
+  .room-details__footer-mobile-wrapper {
+    display: block;
+  }
+}
+@media (max-width: 770px) {
+  .room-details__rules-cansel {
+    flex-direction: column;
+  }
+}
+@media (max-width: 604px) {
+  .room-details__images-wrapper {
+    flex-direction: column;
+  }
+  .room-details__basic-image,
+.room-details__helper-images-wrapper {
+    width: 100%;
+  }
+  .room-details__helper-images-wrapper {
+    flex-direction: row;
+  }
+  .room-details__content-wrapper {
+    margin: 65px 20px 49px 20px;
+  }
+  .room-details__review-content {
+    margin-bottom: 40px;
+  }
+  .room-details__review:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  .room-details__title-wrapper {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 506px) {
+  .room-details__review:first-child {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 433px) {
+  .room-details__review:first-child {
+    margin-bottom: 145px;
+  }
+}
+@media (max-width: 387px) {
+  .room-details__marker:last-child {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .room-details__review:first-child {
+    margin-bottom: 160px;
+  }
+}
+@media (max-width: 340px) {
+  .room-details__impression--diagramm {
+    justify-content: flex-start;
+  }
+  .room-details__diagramm--legend {
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=room-details-media.css.map */

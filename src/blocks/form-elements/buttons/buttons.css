@@ -1,0 +1,174 @@
+.buttons {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.buttons__header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-bottom: 16px;
+}
+
+.buttons__block {
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons__background,
+.buttons__border,
+.buttons__text {
+  display: flex;
+}
+
+.buttons__background-wrapper,
+.buttons__border-wrapper {
+  width: 97px;
+  margin-right: 19px;
+}
+
+.button__background--link {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  background: linear-gradient(180deg, rgb(188, 156, 255) 0%, rgb(139, 164, 249) 100%);
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.button__opacity {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button__border {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  margin-bottom: 17px;
+}
+
+.buttons__border-wrapper {
+  margin-right: 20px;
+  margin-bottom: 15px;
+}
+
+.button__text {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  justify-content: flex-start;
+}
+
+.buttons__text-wrapper {
+  margin-right: 20px;
+  margin-bottom: 14px;
+}
+
+.buttons__text-wrapper-opacity {
+  opacity: 0.5;
+}
+
+.buttons__price-wrapper {
+  margin: 15px 0 0 0;
+}
+
+.button {
+  position: relative;
+  cursor: pointer;
+}
+
+.button__price {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background: linear-gradient(180deg, rgb(188, 156, 255) 0%, rgb(139, 164, 249) 100%);
+}
+
+.button__arrow {
+  position: absolute;
+  color: #ffffff;
+  right: -3px;
+  cursor: pointer;
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button__arrow:hover + .button__price {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button__price:hover {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}
+
+.button__border:hover {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+}/*# sourceMappingURL=buttons.css.map */

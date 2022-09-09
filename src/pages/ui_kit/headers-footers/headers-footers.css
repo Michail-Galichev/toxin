@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 1350px;
+  background: #F4F4F6;
+}
+
+.logo__wrapper {
+  height: 48px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  margin-top: 64px;
+}
+
+.header__wrapper--account {
+  margin-top: 40px;
+}
+
+.footer__wrapper {
+  margin-top: 40px;
+}
+
+.footer-mobile__wrapper {
+  margin-top: 40px;
+}/*# sourceMappingURL=headers-footers.css.map */

@@ -1,0 +1,93 @@
+.registration-form {
+  max-width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.registration-form__header {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #1F2041;
+  margin: 40px 30px 0px 30px;
+}
+
+.registration-form__first-name-wrapper {
+  margin: 20px 30px 10px 29px;
+}
+
+.registration-form__last-name-wrapper {
+  margin: 8px 30px 10px 29px;
+}
+
+.registration-form__email-wrapper {
+  margin: 5px 30px 10px 30px;
+}
+
+.registration-form__password-wrapper {
+  margin: 0 30px 6px 30px;
+}
+
+.registration-form__radio-wrapper {
+  margin: 0px 129.26px 22px 30px;
+  display: flex;
+  position: relative;
+}
+
+.registration-form__date-of-birth-wrapper {
+  margin: 0px 30px 20px 30px;
+}
+
+.registration-form__toogle-wrapper {
+  margin: 0 30px 0 30px;
+}
+
+.registration-form__data-service {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #1F2041;
+  margin-left: 30px;
+}
+
+.registration-form__button-wrapper {
+  margin: 20px 32px 30px 28px;
+  cursor: pointer;
+}
+
+.registration-form__account-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 28px 30px 30px;
+}
+
+.registration-form__account-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  height: 42px;
+}
+
+.js-reg-form__account-button.registration-form__account-button-wrapper {
+  margin-left: 3px;
+  width: 99px;
+}
+
+@media (max-width: 370px) {
+  .registration-form__account-wrapper {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=registration-form.css.map */

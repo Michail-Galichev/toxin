@@ -1,0 +1,498 @@
+@charset "UTF-8";
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Montserrat, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+}
+
+/* ------------Стили фоновых изображений-------------- */
+.room-details__images-wrapper {
+  display: flex;
+  max-width: 1440px;
+  height: 485px;
+}
+
+.room-details__basic-image {
+  width: 68%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.room-details__helper-images-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  height: 485px;
+}
+
+.room-details__helper-top-image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: -2px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.room-details__helper-bottom-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* ------------Стили контентной части-------------- */
+.room-details__content-wrapper {
+  display: flex;
+  margin: 65px 140px 49px 140px;
+  justify-content: space-between;
+}
+
+.room-details__form-wrapper {
+  margin-top: 2px;
+}
+
+/*свойства подзаголовков страницы*/
+.room-details__title--intelligence,
+.room-details__title--impression,
+.room-details__title--review,
+.room-details__title--rules,
+.room-details__title--cansel {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+  margin-bottom: 20px;
+}
+
+.room-details__impression-intelligence {
+  display: flex;
+}
+
+/* ------------свойства блока <<Сведения о номере>>----------- */
+.material-icons-outlined {
+  width: 48px;
+  height: 48px;
+  font-family: Material Icons;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 41px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-right: 10px;
+}
+
+.room-details__title--intelligence {
+  margin-top: 3px;
+}
+
+/*градиент для иконок*/
+.fa-gradient {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(188, 156, 255)), to(rgb(139, 164, 249)));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.room-details__gorizont-line {
+  background: rgba(31, 32, 65, 0.1);
+  height: 1px;
+  margin-top: 17px;
+  margin-bottom: 19px;
+  width: 280px;
+}
+
+.room-details__icon-wrapper {
+  display: flex;
+  align-items: center;
+  height: 51px;
+  margin-right: 70px;
+}
+
+.room-details__icon-wrapper:first-child {
+  margin-bottom: 19px;
+}
+
+.room-details__icon-wrapper:last-child {
+  margin-bottom: 32px;
+}
+
+.room-details__description {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 48px;
+  width: 233px;
+}
+
+.room-details__description--title {
+  font-weight: 700;
+  text-align: left;
+  white-space: pre-wrap;
+}
+
+/* ------------свойства блока <<Впечатления о номере>>----------- */
+.room-details__impression {
+  display: flex;
+  flex-direction: column;
+  height: 170px;
+  width: 311px;
+  margin-top: 5px;
+}
+
+.room-details__impression--diagramm {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.room-details__diagramm--legend {
+  padding-top: 15px;
+  margin-top: 13px;
+  margin-left: 4px;
+}
+
+.js-li {
+  cursor: pointer;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.js-li:first-child {
+  list-style-image: url(../../../static/image/room-details/orange.svg);
+}
+
+.js-li:nth-child(2) {
+  list-style-image: url(../../../static/image/room-details/green.svg);
+}
+
+.js-li:nth-child(3) {
+  list-style-image: url(../../../static/image/room-details/blue.svg);
+}
+
+.js-li:last-child {
+  list-style-image: url(../../../static/image/room-details/grey.svg);
+}
+
+.room-details__impression--votes {
+  position: absolute;
+  top: 67px;
+  left: 28px;
+  z-index: -2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #BC9CFF;
+}
+
+/* ------------свойства блока <<Отзывы>>----------- */
+.room-details__visitor-reviews {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 27px;
+}
+
+.room-details__reviews-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details__review-img {
+  border-radius: 50%;
+  width: 47px;
+  height: 47px;
+  background-position: -22px -10px;
+}
+
+.room-details__review-elements {
+  display: flex;
+  margin-right: 6px;
+  margin-top: 1px;
+}
+
+.room-details__review {
+  display: flex;
+  flex-direction: column;
+  margin-right: 6px;
+}
+
+.room-details__review-elements:first-child {
+  margin-bottom: 22px;
+}
+
+.room-details__review-like {
+  margin-top: 13px;
+}
+
+.room-details__reviews-content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.room-details__review-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 655px;
+}
+
+.room-details__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details__review--number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+  margin-top: 7px;
+  margin-right: 6px;
+}
+
+.room-details__review-content:not(:last-child) {
+  margin-bottom: 23px;
+}
+
+.room-details__review-user {
+  max-width: 222px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.room-details__review-time {
+  font-weight: 400;
+}
+
+.room-details__review-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.img--men {
+  background-image: url(../../../static/image/room-details/men.svg);
+}
+
+.img--women {
+  background-image: url(../../../static/image/room-details/women.svg);
+}
+
+/*-------------свойства блока <<Правила/Отмена>>---------*/
+.room-details__rules-cansel {
+  display: flex;
+}
+
+.room-details__rules {
+  margin-right: 100px;
+  max-width: 260px;
+}
+
+.room-details__title--rules {
+  margin: 8px 0 0 18px;
+}
+
+.room-details__rules-content {
+  display: flex;
+}
+
+.room-details__rules-marker {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.room-details__rules-ul {
+  list-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding: 0;
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.room-details__rules-li {
+  margin-bottom: 10px;
+}
+
+.room-details__rules-li:last-child {
+  white-space: wrap;
+}
+
+.room-details__marker {
+  background-image: url(../../../static/image/room-details/marker.svg);
+  width: 10px;
+  height: 10px;
+  margin-bottom: 24px;
+}
+
+.room-details__cansel {
+  margin-top: 5px;
+  max-width: 341px;
+}
+
+.room-details__cansel-content {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  height: 140px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.room-details__calendar-wrapper {
+  position: absolute;
+  top: 780px;
+  left: 950px;
+  display: none;
+}
+
+.room-details__footer-mobile-wrapper {
+  display: none;
+}
+
+@media (max-width: 1320px) {
+  .room-details__impression-intelligence {
+    flex-direction: column;
+  }
+  .room-details__impression {
+    margin-bottom: 40px;
+  }
+  .room-details__impression-intelligence {
+    width: 311px;
+  }
+  .room-details__content-wrapper {
+    margin: 65px 40px 49px 40px;
+  }
+}
+@media (max-width: 1160px) {
+  .room-details__content-wrapper {
+    flex-direction: column;
+  }
+}
+@media (max-width: 992px) {
+  .room-details__images-wrapper,
+.room-details__helper-images-wrapper {
+    height: 100%;
+  }
+  .room-details__form-wrapper {
+    margin: auto;
+  }
+  .room-details__basic-image,
+.room-details__helper-top-image,
+.room-details__helper-bottom-image {
+    height: auto;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+}
+@media (max-width: 900px) {
+  .room-details__footer-wrapper {
+    display: none;
+  }
+  .room-details__copyright-wrapper {
+    display: none;
+  }
+  .room-details__footer-mobile-wrapper {
+    display: block;
+  }
+}
+@media (max-width: 770px) {
+  .room-details__rules-cansel {
+    flex-direction: column;
+  }
+}
+@media (max-width: 604px) {
+  .room-details__images-wrapper {
+    flex-direction: column;
+  }
+  .room-details__basic-image,
+.room-details__helper-images-wrapper {
+    width: 100%;
+  }
+  .room-details__helper-images-wrapper {
+    flex-direction: row;
+  }
+  .room-details__content-wrapper {
+    margin: 65px 20px 49px 20px;
+  }
+  .room-details__review-content {
+    margin-bottom: 40px;
+  }
+  .room-details__review:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  .room-details__title-wrapper {
+    flex-direction: column;
+    align-items: baseline;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 506px) {
+  .room-details__review:first-child {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 433px) {
+  .room-details__review:first-child {
+    margin-bottom: 145px;
+  }
+}
+@media (max-width: 387px) {
+  .room-details__marker:last-child {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .room-details__review:first-child {
+    margin-bottom: 160px;
+  }
+}
+@media (max-width: 340px) {
+  .room-details__impression--diagramm {
+    justify-content: flex-start;
+  }
+  .room-details__diagramm--legend {
+    padding-left: 20px;
+  }
+}/*# sourceMappingURL=room-details.css.map */

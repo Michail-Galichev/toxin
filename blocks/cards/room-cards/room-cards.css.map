@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,WAAW,CAAA;EACT,OAAO,EAAC,IAAI;EACZ,cAAc,EAAE,MAAM;CACvB;;AAED,AAAA,eAAe,CAAA;EACb,aAAa,EAAE,IAAI;CACpB",
-    "sources": [
-        "room-cards.scss"
-    ],
-    "names": [],
-    "file": "room-cards.css"
-}

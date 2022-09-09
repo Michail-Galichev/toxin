@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "text-field-hover-focus-mixins.scss"
-    ],
-    "names": [],
-    "file": "text-field-hover-focus-mixins.css"
-}

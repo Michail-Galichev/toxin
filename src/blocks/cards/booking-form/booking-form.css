@@ -1,0 +1,211 @@
+@charset "UTF-8";
+/*-------------свойства формы----------*/
+.booking-form {
+  max-width: 380px;
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+/*-------------свойства заголовка карточки----------*/
+.booking-form__header {
+  max-width: 320px;
+  display: flex;
+  margin: 49px 30px 0 30px;
+  justify-content: space-between;
+}
+
+.booking-form__number {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #1F2041;
+  width: 125px;
+  white-space: pre;
+}
+
+.booking-form__value {
+  font-size: 24px;
+}
+
+.booking-form__luxury {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #BC9CFF;
+  margin-left: 2px;
+}
+
+.booking-form__price {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(31, 32, 65, 0.5);
+  width: 100px;
+  white-space: pre;
+  margin-top: 3px;
+}
+
+.booking-form__per-day {
+  font-size: 12px;
+  font-weight: normal;
+}
+
+/*-------------свойства полей ввода дат----------*/
+.booking-form__date-wrapper {
+  max-width: 320px;
+  margin: 21px 30px 0 30px;
+  display: flex;
+}
+
+.booking-form__arrival-wrapper,
+.booking-form__departure-wrapper {
+  max-width: 150px;
+  position: relative;
+}
+
+.booking-form__arrival-wrapper {
+  margin-right: 20px;
+}
+
+/*-------------свойства поля ввода количества гостей----------*/
+.booking-form__guests-wrapper {
+  margin: 21px 30px 0 30px;
+  max-width: 320px;
+}
+
+/*-------------блок расчёта стоимости номера----------*/
+.booking-form__cost-calculation-wrapper {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+}
+
+/*---------------цена за количество суток проживания---------------------*/
+.booking-form__cost-of-accommodation {
+  display: flex;
+  margin: 17px 30px 0 31px;
+  justify-content: space-between;
+}
+
+/*------------сборы за доп услуги--------*/
+.booking-form__cost-of-services {
+  display: flex;
+  margin: 10px 30px 0 31px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.booking-form__additional {
+  display: flex;
+  margin: 13px 30px 0 31px;
+  justify-content: space-between;
+  position: relative;
+}
+
+.booking-form__info-button {
+  width: 20px;
+  height: 20px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-sizing: border-box;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: absolute;
+  left: 219px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.booking-form__info-button--content {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: right;
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.booking-form__amount-for-services {
+  width: 20px;
+  height: 24px;
+}
+
+.services-fee {
+  top: 1px;
+}
+
+.additional-services-fee {
+  top: 2px;
+}
+
+.booking-form__additional-services-fee {
+  max-width: 190px;
+  margin-right: 5px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*------------итоговая цена-----------*/
+.booking-form__final-cost {
+  display: flex;
+  margin: 30px 30px 0 31px;
+  justify-content: space-between;
+}
+
+.booking-form__total--text,
+.booking-form__total--val {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  color: #1F2041;
+}
+
+.booking-form__button-wrapper {
+  margin: 22px 32px 20px 28px;
+}
+
+@media (max-width: 398px) {
+  .booking-form__info-button {
+    display: none;
+  }
+}
+@media (max-width: 360px) {
+  .booking-form__date-wrapper {
+    flex-direction: column;
+  }
+  .booking-form__arrival-wrapper {
+    max-width: 320px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .booking-form__departure-wrapper {
+    max-width: 320px;
+  }
+  .booking-form__luxury {
+    margin-left: 0;
+  }
+  .booking-form__service-fee {
+    width: 170px;
+  }
+}/*# sourceMappingURL=booking-form.css.map */

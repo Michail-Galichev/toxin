@@ -1,0 +1,161 @@
+@charset "UTF-8";
+/*миксин кнопок дропдауна +*/
+/*миксин кнопок дропдауна -*/
+.dropdown__counting-block {
+  display: flex;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.dropdown__names {
+  display: flex;
+  flex-direction: column;
+  margin: 13px 19px 17px 15px;
+}
+
+.dropdown__count-buttons--plus {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+
+.dropdown__count-buttons--minus {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  position: absolute;
+  top: 6px;
+  right: 68px;
+}
+
+.dropdown__counters {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 13px;
+  right: 7px;
+}
+
+.dropdown__plus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  box-sizing: border-box;
+  border-radius: 22px;
+  cursor: pointer;
+  display: flex;
+  font-family: Montserrat;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.5);
+  margin-bottom: 7px;
+}
+
+.dropdown__minus {
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 22px;
+  font-family: Montserrat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(31, 32, 65, 0.25);
+  margin-bottom: 7px;
+}
+
+.dropdown__name {
+  width: 83px;
+  height: 15px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #1f2041;
+}
+
+.dropdown__name:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.dropdown__input {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  color: #1f2041;
+  display: flex;
+  height: 13px;
+  width: 84px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.dropdown__input:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.dropdown__input::-moz-placeholder {
+  text-align: center;
+  color: #1f2041;
+  opacity: 1;
+}
+
+.dropdown__input:-ms-input-placeholder {
+  text-align: center;
+  color: #1f2041;
+  opacity: 1;
+}
+
+.dropdown__input::placeholder {
+  text-align: center;
+  color: #1f2041;
+  opacity: 1;
+}
+
+.dropdown__action-buttons {
+  display: flex;
+  margin: 0 7px 13px 14px;
+  height: 15px;
+  justify-content: space-between;
+}
+
+.dropdown__clear {
+  height: 15px;
+  top: 131px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+  display: none;
+}
+
+.dropdown__to-apply {
+  height: 15px;
+  top: 131px;
+  cursor: pointer;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  color: #bc9cff;
+}/*# sourceMappingURL=dropdown.css.map */

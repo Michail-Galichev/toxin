@@ -1,0 +1,135 @@
+.burger-wrapper {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.burger__header-wrapper {
+  margin: 14px 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.burger__close-button {
+  font-size: 46px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #8ba4f9;
+  border-radius: 50%;
+}
+
+.burger__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-burger__img--logo {
+  margin-right: 12.5px;
+}
+
+.burger__menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__burger-ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__menu-burger--li {
+  margin-bottom: 20px;
+}
+
+.header__menu-burger--link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(31, 32, 65, 0.5);
+}
+
+.header__menu-burger--link:hover {
+  color: rgba(31, 32, 65, 0.75);
+}
+
+.burger__close-button {
+  cursor: pointer;
+}
+
+.burger__buttons-wrapper {
+  margin: 0 auto;
+}
+
+.buttons-burger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger__buttons--to-come-in {
+  height: 32px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  width: 85px;
+  margin-bottom: 20px;
+}
+
+.burger__buttons--registration {
+  height: 32px;
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgb(188, 156, 255), rgb(139, 164, 249)) border-box;
+  border: 2px solid transparent;
+  border-radius: 22px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #bc9cff;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  width: 196px;
+  background: linear-gradient(180deg, rgb(188, 156, 255) 0%, rgb(139, 164, 249) 100%);
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.burger__buttons--to-come-in:hover {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+}
+
+.burger__buttons--registration:hover {
+  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(rgba(188, 156, 255, 0.5), rgba(139, 164, 249, 0.5)) border-box;
+  border: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(188, 156, 255, 0.5) 0%, rgba(139, 164, 249, 0.5) 100%);
+}/*# sourceMappingURL=menu-burger.css.map */
