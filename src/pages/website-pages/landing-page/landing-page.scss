@@ -11,10 +11,28 @@ body{
     flex-direction: column;
   }
 
+  @keyframes background_change{
+    
+    from {
+      background-image: url(../../../static/image/landing-page.png);
+    }
+    40% {
+      background-image: url(../../../static/image/landing-page2.png);
+    }
+    70% {
+      background-image: url(../../../static/image/landing-page3.png);
+    }
+    to {
+      background-image: url(../../../static/image/landing-page.png);
+    }
+    
+  }
+  
   .landing-page__background-wrapper{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
+    animation: background_change 10s infinite;
   }
 
   .landing-page__search-form-wrapper{

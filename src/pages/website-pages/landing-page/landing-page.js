@@ -237,28 +237,8 @@ $(`.js-minus--first,.js-minus--average,.js-minus--last,
   $('.js-landing-page__search-form')
   .find('.js-date-dropdown__input:last')
   .attr('placeholder', 'ДД.ММ.ГГГГ');
-  
-    
-  function $changeBackground (){ 
-    var $backgrounds = [
-      '/landing-page.1c9b862d.png',
-      '/landing-page2.d9c64f6e.png',
-      '/landing-page3.1beb304b.png'
-      ]
-      var $currentImage = 0;
-      (function $showNextImage() {
-        var $backgroundBlock = $('.landing-page__background-wrapper');
-        $backgroundBlock.css(
-          'background-image', 'url(' + $backgrounds[$currentImage] + ')'
-        );
-        $currentImage += 1
-        if ($currentImage >= $backgrounds.length) {
-          $currentImage = 0
-        }
-        setTimeout($showNextImage, 5000)
-      }())
-   }
-  $changeBackground (); 
+     
+   
   counterGuests ();
   openCloseDropdown();
 
