@@ -12,10 +12,29 @@ body {
   flex-direction: column;
 }
 
+@-webkit-keyframes background_change_signin {
+  from {
+    background-image: url(../../../static/image/sign-in.png);
+  }
+  to {
+    background-image: url(../../../static/image/landing-page.png);
+  }
+}
+
+@keyframes background_change_signin {
+  from {
+    background-image: url(../../../static/image/sign-in.png);
+  }
+  to {
+    background-image: url(../../../static/image/landing-page.png);
+  }
+}
 .sign-in__background-wrapper {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: background_change_signin 10s infinite;
+          animation: background_change_signin 10s infinite;
 }
 
 .sign-in__form-wrapper {

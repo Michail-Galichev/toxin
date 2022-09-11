@@ -12,11 +12,29 @@ body {
   flex-direction: column;
 }
 
+@-webkit-keyframes background_change_registration {
+  from {
+    background-image: url(../../../static/image/registration.png);
+  }
+  to {
+    background-image: url(../../../static/image/landing-page.png);
+  }
+}
+
+@keyframes background_change_registration {
+  from {
+    background-image: url(../../../static/image/registration.png);
+  }
+  to {
+    background-image: url(../../../static/image/landing-page.png);
+  }
+}
 .registartion__background-wrapper {
-  background-image: url("../../../static/image/registration.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  -webkit-animation: background_change_registration 10s infinite;
+          animation: background_change_registration 10s infinite;
 }
 
 .registration__form-wrapper {

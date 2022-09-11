@@ -11,7 +11,7 @@ body{
     flex-direction: column;
   }
 
-  @keyframes background_change{
+  @keyframes background_change_landing{
     
     from {
       background-image: url(../../../static/image/landing-page.png);
@@ -32,7 +32,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat; 
-    animation: background_change 10s infinite;
+    animation: background_change_landing 10s infinite;
   }
 
   .landing-page__search-form-wrapper{

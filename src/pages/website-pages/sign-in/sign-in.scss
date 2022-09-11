@@ -9,8 +9,17 @@ body{
     min-width: 320px;
     display: flex;
     margin: 0 auto;
-    flex-direction: column;
-    
+    flex-direction: column;    
+  }
+
+  @keyframes background_change_signin {
+    from {
+      background-image: url(../../../static/image/sign-in.png);
+    }
+  
+    to {
+      background-image: url(../../../static/image/landing-page.png);
+    }
   }
 
   
@@ -18,6 +27,7 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation: background_change_signin 10s infinite;
   }
 
   

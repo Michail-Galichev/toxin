@@ -13,11 +13,21 @@ body{
   }
 
   
+@keyframes background_change_registration {
+  from {
+    background-image: url(../../../static/image/registration.png);
+  }
+
+  to {
+    background-image: url(../../../static/image/landing-page.png);
+  }
+}
+
   .registartion__background-wrapper{
-    background-image: url('../../../static/image/registration.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    animation: background_change_registration 10s infinite;
   }
 
   .registration__form-wrapper {
